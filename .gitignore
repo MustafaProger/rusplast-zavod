@@ -1,0 +1,11 @@
+.DS_Store
+.env
+node_modules/
+dist/
+.cache/
+.tmp/
+cms/.strapi/
+cms/.strapi-updater.json
+.strapi-updater.json
+cms/public/uploads/*
+!cms/public/uploads/.gitkeep

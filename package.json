@@ -1,0 +1,13 @@
+{
+  "name": "rusplast-zavod",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm run dev --prefix web",
+    "dev:cms": "npm run develop --prefix cms",
+    "build": "npm run build --prefix web && npm run build --prefix cms",
+    "qa:visual": "npm run qa:visual --prefix web",
+    "catalog:extract": "/Users/mustafa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/extract_products.py",
+    "cms:smoke:add": "node cms/scripts/cms-smoke.cjs",
+    "cms:smoke:cleanup": "node cms/scripts/cms-smoke.cjs --cleanup"
+  }
+}

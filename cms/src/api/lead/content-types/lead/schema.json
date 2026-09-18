@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": {
+    "singularName": "lead",
+    "pluralName": "leads",
+    "displayName": "Заявка",
+    "description": "Заявки с сайта"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "notificationStatus": {
+      "type": "enumeration",
+      "enum": ["Ожидает отправки", "Принято SMTP", "Ошибка отправки"],
+      "default": "Ожидает отправки",
+      "private": true
+    },
+    "notificationSentAt": { "type": "datetime", "private": true },
+    "notificationMessageId": { "type": "string", "private": true },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "comment": {
+      "type": "text"
+    },
+    "products": {
+      "type": "json"
+    },
+    "consent": {
+      "type": "boolean",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Новая",
+        "В работе",
+        "Закрыта"
+      ],
+      "default": "Новая"
+    },
+    "consentVersion": {
+      "type": "string"
+    },
+    "consentedAt": {
+      "type": "datetime"
+    }
+  }
+}
