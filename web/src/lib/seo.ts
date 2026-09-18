@@ -27,7 +27,8 @@ export function getSeo(rawPath: string) {
     '/blog': 'Блог РУСПЛАСТЗАВОДА: выбор гофры ПВХ, ПНД и FRHF, диаметры, нагрузка, документы и производство под СТМ. Практические материалы для закупки.',
   } as Record<string, string>)[path] || `${label}. ООО «РУСПЛАСТЗАВОД».`
   const canonical = `${SITE_URL}${exists ? path : '/404'}`
-  const image = `${SITE_URL}/images/optimized/${article?.image || landing?.image || 'hero-pipes'}-1280.webp`
+  const imageName = article?.image || landing?.image || 'hero-pipes'
+  const image = `${SITE_URL}${imageName.startsWith('/') ? imageName : `/images/optimized/${imageName}-1280.webp`}`
   const graph: Record<string, unknown>[] = [
     { '@type': 'Organization', '@id': organizationId, name: siteName, legalName: 'ООО «РУСПЛАСТЗАВОД»', url: SITE_URL, logo: `${SITE_URL}/favicon.svg`, foundingDate: '2021', taxID: '9721122788', telephone: '+7-966-007-05-01', email: 'rusplastzavod@gmail.com', address: { '@type': 'PostalAddress', addressCountry: 'RU', addressLocality: 'Москва', streetAddress: 'проспект Андропова, д. 10, помещение 98' }, location: { '@type': 'Place', name: 'Производство и склад РУСПЛАСТЗАВОДА', address: { '@type': 'PostalAddress', addressCountry: 'RU', addressRegion: 'Московская область', addressLocality: 'посёлок Рылеево, Раменский район', streetAddress: '608/1' } } },
     { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, url: SITE_URL, name: siteName, inLanguage: 'ru-RU', publisher: { '@id': organizationId } },

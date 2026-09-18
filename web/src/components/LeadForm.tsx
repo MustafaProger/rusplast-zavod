@@ -40,7 +40,7 @@ export function LeadForm({ items = [], mode = 'band', onClose, onQuantity }: Lea
       await createLead({
         name: String(form.get('name')).trim(), phone, email: String(form.get('email') || '').trim(),
         comment: String(form.get('comment') || '').trim(),
-        products: items.map(({ product, quantity }) => ({ sku: product.sku, name: product.name, image: product.image, material: product.material, diameter: product.outerDiameter, quantity, coilLength: product.coilLength, meters: product.coilLength * quantity, pricePerMeter: product.price })),
+        products: items.map(({ product, quantity }) => ({ sku: product.sku, name: product.name, image: productImage(product, 'detail'), material: product.material, diameter: product.outerDiameter, quantity, coilLength: product.coilLength, meters: product.coilLength * quantity, pricePerMeter: product.price })),
         consent: true, consentVersion: LEGAL_VERSION,
       })
       setSubmittedItems(items)
@@ -58,7 +58,7 @@ export function LeadForm({ items = [], mode = 'band', onClose, onQuantity }: Lea
       <span className="eyebrow">ВАША ПОСТАВКА</span><h3>{items.length ? 'Всё выбранное. Здесь.' : 'Начнём с вашего проекта.'}</h3>
       {items.length ? <>
         <ul className="selected-products">{items.map(({ product, quantity }) => <li key={product.sku}>
-          <img src={productImage(product)} alt={`${product.material}, ${product.color}`} width="800" height="476" />
+          <img src={productImage(product)} alt={`${product.material}, ${product.color}, артикул ${product.sku}`} width="360" height="240" />
           <div className="selected-product-info"><strong>{product.material} {product.loadClass.toLowerCase()} · Ø {product.outerDiameter} мм</strong><span>Арт. {product.sku} · {product.coilLength} м / бухта · {product.color}</span>
             <div className="quantity-row"><div className="quantity-control"><button type="button" aria-label={`Уменьшить количество ${product.sku}`} disabled={sending || quantity <= 1} onClick={() => onQuantity?.(product.sku, quantity - 1)}><Minus size={14} /></button><input aria-label={`Количество бухт ${product.sku}`} type="number" min="1" max="9999" value={quantity} disabled={sending} onChange={event => onQuantity?.(product.sku, Math.max(1, Math.min(9999, Math.floor(Number(event.target.value) || 1))))} /><button type="button" aria-label={`Увеличить количество ${product.sku}`} disabled={sending || quantity >= 9999} onClick={() => onQuantity?.(product.sku, quantity + 1)}><Plus size={14} /></button></div><small>бухт · {quantity * product.coilLength} м</small></div>
           </div>

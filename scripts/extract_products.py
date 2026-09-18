@@ -32,13 +32,13 @@ def number(value: object) -> float | None:
     return float(match.group(0).replace(",", ".")) if match else None
 
 
-def product_image(color: str) -> str:
-    normalized = color.lower()
-    if "оранж" in normalized:
-        return "/images/pipe-orange.png"
-    if "сер" in normalized:
-        return "/images/pipe-gray.jpg"
-    return "/images/pipe-black.jpg"
+def product_image(sku: str) -> str:
+    image = f"/images/products/{sku}.webp"
+    thumbnail = f"/images/products/{sku}-thumb.webp"
+    for asset in (image, thumbnail):
+        if not (ROOT / "web" / "public" / asset.lstrip("/")).is_file():
+            raise ValueError(f"Generate a unique product image before importing SKU {sku}: {asset}")
+    return image
 
 
 def main() -> None:
@@ -89,7 +89,7 @@ def main() -> None:
                 "packageHeight": number(row[19]),
                 "compression": clean(row[20]).replace("Н", " Н"),
                 "price": price,
-                "image": product_image(color),
+                "image": product_image(sku),
                 "featured": sku in {"2021022", "2021030", "2021010", "2021018"},
             }
         )

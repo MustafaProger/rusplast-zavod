@@ -26,7 +26,7 @@
     "packageHeight": 19.0,
     "compression": "350 Н",
     "price": 6.85,
-    "image": "/images/pipe-gray.jpg",
+    "image": "/images/products/2021022.webp",
     "featured": true
   },
   {
@@ -56,7 +56,7 @@
     "packageHeight": 23.0,
     "compression": "350 Н",
     "price": 10.4,
-    "image": "/images/pipe-gray.jpg",
+    "image": "/images/products/2021024.webp",
     "featured": false
   },
   {
@@ -86,7 +86,7 @@
     "packageHeight": 20.0,
     "compression": "350 Н",
     "price": 12.75,
-    "image": "/images/pipe-gray.jpg",
+    "image": "/images/products/2021026.webp",
     "featured": false
   },
   {
@@ -116,7 +116,7 @@
     "packageHeight": 22.0,
     "compression": "350 Н",
     "price": 21.97,
-    "image": "/images/pipe-gray.jpg",
+    "image": "/images/products/2021031.webp",
     "featured": false
   },
   {
@@ -146,7 +146,7 @@
     "packageHeight": 19.0,
     "compression": "750 Н",
     "price": 10.26,
-    "image": "/images/pipe-gray.jpg",
+    "image": "/images/products/2021028.webp",
     "featured": false
   },
   {
@@ -176,7 +176,7 @@
     "packageHeight": 23.0,
     "compression": "750 Н",
     "price": 12.46,
-    "image": "/images/pipe-gray.jpg",
+    "image": "/images/products/2021030.webp",
     "featured": true
   },
   {
@@ -206,7 +206,7 @@
     "packageHeight": 20.0,
     "compression": "750 Н",
     "price": 19.1,
-    "image": "/images/pipe-gray.jpg",
+    "image": "/images/products/2021032.webp",
     "featured": false
   },
   {
@@ -236,7 +236,7 @@
     "packageHeight": 22.0,
     "compression": "750 Н",
     "price": 32.0,
-    "image": "/images/pipe-gray.jpg",
+    "image": "/images/products/2021033.webp",
     "featured": false
   },
   {
@@ -266,7 +266,7 @@
     "packageHeight": 19.0,
     "compression": "350 Н",
     "price": 8.25,
-    "image": "/images/pipe-black.jpg",
+    "image": "/images/products/2021001.webp",
     "featured": false
   },
   {
@@ -296,7 +296,7 @@
     "packageHeight": 23.0,
     "compression": "350 Н",
     "price": 9.9,
-    "image": "/images/pipe-black.jpg",
+    "image": "/images/products/2021005.webp",
     "featured": false
   },
   {
@@ -326,7 +326,7 @@
     "packageHeight": 20.0,
     "compression": "350 Н",
     "price": 14.46,
-    "image": "/images/pipe-black.jpg",
+    "image": "/images/products/2021017.webp",
     "featured": false
   },
   {
@@ -356,7 +356,7 @@
     "packageHeight": 22.0,
     "compression": "350 Н",
     "price": 24.5,
-    "image": "/images/pipe-black.jpg",
+    "image": "/images/products/2021018.webp",
     "featured": true
   },
   {
@@ -386,7 +386,7 @@
     "packageHeight": 19.0,
     "compression": "350 Н",
     "price": 9.08,
-    "image": "/images/pipe-orange.png",
+    "image": "/images/products/2021002.webp",
     "featured": false
   },
   {
@@ -416,7 +416,7 @@
     "packageHeight": 23.0,
     "compression": "350 Н",
     "price": 10.89,
-    "image": "/images/pipe-orange.png",
+    "image": "/images/products/2021006.webp",
     "featured": false
   },
   {
@@ -446,7 +446,7 @@
     "packageHeight": 20.0,
     "compression": "350 Н",
     "price": 15.91,
-    "image": "/images/pipe-orange.png",
+    "image": "/images/products/2021010.webp",
     "featured": true
   },
   {
@@ -476,7 +476,7 @@
     "packageHeight": 22.0,
     "compression": "350 Н",
     "price": 26.95,
-    "image": "/images/pipe-orange.png",
+    "image": "/images/products/2021011.webp",
     "featured": false
   }
 ]

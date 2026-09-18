@@ -21,7 +21,7 @@ export function ProductModal({ product, selected, onToggleSelected, onClose }: P
 
   return (
     <Modal className="product-modal" label={`${product.material}, ${product.loadClass}, ${product.outerDiameter} мм`} onClose={onClose}>
-        <div className="modal-product-image"><img src={productImage(product)} alt={`${product.material} гофротруба ${product.color.toLowerCase()}`} width="800" height="476" /></div>
+        <div className="modal-product-image"><img src={productImage(product, 'detail')} alt={`${product.material} гофротруба ${product.color.toLowerCase()}, ${product.outerDiameter} мм, артикул ${product.sku}`} width="768" height="512" /></div>
         <div className="modal-product-content">
           <span className="modal-sku">Арт. {product.sku}</span>
           <h2 id="product-title">{product.material} {product.loadClass.toLowerCase()} · Ø {product.outerDiameter} мм</h2>

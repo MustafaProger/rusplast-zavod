@@ -65,7 +65,7 @@ export function Catalog({ products, selected, onToggleSelected, onOpenProduct, s
           const isSelected = selected.includes(product.sku)
           return (
             <article className="product-row" key={product.sku}>
-              <button className="product-image" onClick={() => onOpenProduct(product)} aria-label={`Подробнее: ${product.material}, ${product.loadClass}, ${product.outerDiameter} мм, артикул ${product.sku}`}><img loading="lazy" src={productImage(product)} alt={`${product.material} гофротруба ${product.color.toLowerCase()}, ${product.outerDiameter} мм`} width="800" height="476" /></button>
+              <button className="product-image" onClick={() => onOpenProduct(product)} aria-label={`Подробнее: ${product.material}, ${product.loadClass}, ${product.outerDiameter} мм, артикул ${product.sku}`}><img loading="lazy" decoding="async" src={productImage(product)} alt={`${product.material} гофротруба ${product.color.toLowerCase()}, ${product.outerDiameter} мм, артикул ${product.sku}`} width="360" height="240" /></button>
               <div className="product-kind"><span className={`material-dot ${product.color.toLowerCase()}`} />{product.material} · {product.loadClass}</div>
               <strong className="product-diameter">Ø {product.outerDiameter} <small>мм</small></strong>
               <span className="product-sku">Арт. {product.sku}</span>

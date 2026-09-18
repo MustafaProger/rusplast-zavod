@@ -5,6 +5,9 @@ import type { ReactNode } from 'react'
 import './Editorial.css'
 
 export function EditorialImage({ name, alt, eager = false, className = '' }: { name: string; alt: string; eager?: boolean; className?: string }) {
+  if (name.startsWith('/images/products/')) {
+    return <img className={className} src={name} alt={alt} width="768" height="512" loading={eager ? 'eager' : 'lazy'} fetchPriority={eager ? 'high' : undefined} decoding={eager ? undefined : 'async'} />
+  }
   const wide = name === 'pipe-gray' || name === 'pipe-black'
   return <img className={className} src={`/images/optimized/${name}-1280.webp`} srcSet={`/images/optimized/${name}-640.webp 640w, /images/optimized/${name}-1280.webp ${wide ? 800 : 1280}w`} sizes="(max-width: 640px) 100vw, (max-width: 960px) 70vw, 800px" alt={alt} width={wide ? 800 : 1536} height={wide ? 476 : 1024} loading={eager ? 'eager' : 'lazy'} fetchPriority={eager ? 'high' : undefined} decoding={eager ? undefined : 'async'} />
 }

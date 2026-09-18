@@ -1,9 +1,14 @@
 import seedProducts from '../data/products.json'
 import type { Product } from '../types'
 
-export function productImage(product: Product) {
-  const name = ({ '/images/pipe-gray.jpg': 'pipe-gray', '/images/pipe-black.jpg': 'pipe-black', '/images/pipe-orange.png': 'pipe-orange' } as Record<string, string>)[product.image]
-  return name ? `/images/optimized/${name}-640.webp` : product.image
+const generatedImages = new Map(seedProducts.map(product => [product.sku, product.image]))
+
+export function productImage(product: Product, size: 'thumbnail' | 'detail' = 'thumbnail') {
+  // Existing CMS records may still contain the old shared photographs.
+  // Resolve this catalog's generated illustrations by SKU in every product view.
+  const image = generatedImages.get(product.sku)
+  if (!image) return product.image
+  return size === 'thumbnail' ? image.replace(/\.webp$/, '-thumb.webp') : image
 }
 
 export function productDescription(product: Product) {
