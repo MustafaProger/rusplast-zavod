@@ -73,7 +73,7 @@ export function LeadForm({ items = [], mode = 'band', onClose, onQuantity }: Lea
       <label><span>Ваше имя</span><input name="name" autoComplete="name" placeholder="Как к вам обращаться" required maxLength={100} disabled={sending} /></label>
       <label><span>Телефон</span><input name="phone" type="tel" autoComplete="tel" placeholder="+7 (999) 123-45-67" required maxLength={25} disabled={sending} /></label>
       <label className="full-field"><span>Электронная почта</span><input name="email" type="email" autoComplete="email" placeholder="name@company.ru" required maxLength={254} disabled={sending} /></label>
-      <label className="comment-field"><span>Комментарий <small>необязательно</small></span><textarea name="comment" placeholder="Объём, город доставки или особые требования" maxLength={3000} disabled={sending} /></label>
+      <label className="comment-field"><span>Комментарий <small>необязательно</small></span><textarea name="comment" placeholder="Объём, город доставки или особые требования. Не указывайте паспортные и платёжные данные." maxLength={3000} disabled={sending} /></label>
       <label className="consent"><input type="checkbox" name="consent" required disabled={sending} /><span>Даю {legalLink('consent', 'согласие на обработку персональных данных')}.</span></label>
       <p className="form-policy">{legalLink('privacy', 'Политика конфиденциальности')} · {legalLink('terms', 'Пользовательское соглашение')}</p>
       {error && <p className="form-error" role="alert">{error}</p>}
@@ -90,6 +90,6 @@ export function LeadForm({ items = [], mode = 'band', onClose, onQuantity }: Lea
 export function ContactSection({ items, onQuantity }: Pick<LeadFormProps, 'items' | 'onQuantity'>) {
   return <>
     <section className="contact-cta" id="request"><div className="contact-intro"><span className="eyebrow">ДАВАЙТЕ ОБСУДИМ ВАШ ПРОЕКТ</span><h2>Хорошая поставка<br /><span>начинается с диалога.</span></h2><p>Стандартная партия или особые характеристики.<br />Подготовим решение под вашу задачу.</p></div><LeadForm items={items} onQuantity={onQuantity} /></section>
-    <section className="contacts section" id="contacts"><span className="eyebrow">ВСЕГДА НА СВЯЗИ</span><h2>Прямой контакт.</h2><div className="contact-grid"><div><span>Отдел продаж · Пн–Пт, 10:00–18:00</span><a className="contact-phone" href="tel:+79660070501">+7 (966) 007-05-01</a><a href="mailto:rusplastzavod@gmail.com">rusplastzavod@gmail.com</a></div><address>Московская область,<br />Раменский район, пос. Рылеево, 608/1</address></div><div className="legal-line">ООО «РУСПЛАСТЗАВОД» · ИНН 9721122788 · ОГРН 1217700129602</div></section>
+    <section className="contacts section" id="contacts"><span className="eyebrow">ВСЕГДА НА СВЯЗИ</span><h2>Прямой контакт.</h2><div className="contact-grid"><div><span>Отдел продаж · Пн–Пт, 10:00–18:00</span><a className="contact-phone" href="tel:+79660070501">+7 (966) 007-05-01</a><a href="mailto:rusplastfactory@mail.ru">rusplastfactory@mail.ru</a></div><address>Московская область,<br />Раменский район, пос. Рылеево, 608/1</address></div><div className="legal-line">ООО «РУСПЛАСТЗАВОД» · ИНН 9721122788 · ОГРН 1217700129602</div></section>
   </>
 }

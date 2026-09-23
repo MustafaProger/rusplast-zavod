@@ -9,3 +9,5 @@ cms/.strapi-updater.json
 .strapi-updater.json
 cms/public/uploads/*
 !cms/public/uploads/.gitkeep
+
+dist-server/

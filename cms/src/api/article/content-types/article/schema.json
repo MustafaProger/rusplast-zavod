@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Статья"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "seoTitle": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "required": true
+    },
+    "imageAlt": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "text",
+      "required": true
+    },
+    "takeaway": {
+      "type": "text",
+      "required": true
+    },
+    "sections": {
+      "type": "json",
+      "required": true
+    },
+    "sources": {
+      "type": "json",
+      "required": true
+    },
+    "related": {
+      "type": "json",
+      "required": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "publishedOn": {
+      "type": "date"
+    },
+    "modifiedOn": {
+      "type": "date"
+    },
+    "publicationInputSha256": {
+      "type": "string",
+      "private": true
+    },
+    "imageGeneration": {
+      "type": "json",
+      "private": true
+    }
+  }
+}

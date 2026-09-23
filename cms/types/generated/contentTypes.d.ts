@@ -443,6 +443,83 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
+  collectionName: 'articles';
+  info: {
+    displayName: '\u0421\u0442\u0430\u0442\u044C\u044F';
+    pluralName: 'articles';
+    singularName: 'article';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    author: Schema.Attribute.String;
+    category: Schema.Attribute.String & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    imageAlt: Schema.Attribute.String & Schema.Attribute.Required;
+    imageGeneration: Schema.Attribute.JSON & Schema.Attribute.Private;
+    intro: Schema.Attribute.Text & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::article.article'
+    > &
+      Schema.Attribute.Private;
+    modifiedOn: Schema.Attribute.Date;
+    publicationInputSha256: Schema.Attribute.String & Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    publishedOn: Schema.Attribute.Date;
+    related: Schema.Attribute.JSON & Schema.Attribute.Required;
+    sections: Schema.Attribute.JSON & Schema.Attribute.Required;
+    seoTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    sources: Schema.Attribute.JSON & Schema.Attribute.Required;
+    takeaway: Schema.Attribute.Text & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiDocumentDocument extends Struct.CollectionTypeSchema {
+  collectionName: 'documents';
+  info: {
+    displayName: '\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442';
+    pluralName: 'documents';
+    singularName: 'document';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    file: Schema.Attribute.Media<'files'> & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::document.document'
+    > &
+      Schema.Attribute.Private;
+    pages: Schema.Attribute.Media<'images', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    sortOrder: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiLeadLead extends Struct.CollectionTypeSchema {
   collectionName: 'leads';
   info: {
@@ -458,6 +535,9 @@ export interface ApiLeadLead extends Struct.CollectionTypeSchema {
     comment: Schema.Attribute.Text;
     consent: Schema.Attribute.Boolean & Schema.Attribute.Required;
     consentedAt: Schema.Attribute.DateTime;
+    consentMethod: Schema.Attribute.String & Schema.Attribute.Private;
+    consentText: Schema.Attribute.Text & Schema.Attribute.Private;
+    consentTextSha256: Schema.Attribute.String & Schema.Attribute.Private;
     consentVersion: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -481,6 +561,7 @@ export interface ApiLeadLead extends Struct.CollectionTypeSchema {
     phone: Schema.Attribute.String & Schema.Attribute.Required;
     products: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
+    retentionExpiresAt: Schema.Attribute.DateTime & Schema.Attribute.Private;
     status: Schema.Attribute.Enumeration<
       [
         '\u041D\u043E\u0432\u0430\u044F',
@@ -548,6 +629,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     packageLength: Schema.Attribute.Float;
     packageType: Schema.Attribute.String;
     packageWidth: Schema.Attribute.Float;
+    photo: Schema.Attribute.Media<'images'>;
     price: Schema.Attribute.Decimal &
       Schema.Attribute.Required &
       Schema.Attribute.SetMinMax<
@@ -1081,6 +1163,8 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::article.article': ApiArticleArticle;
+      'api::document.document': ApiDocumentDocument;
       'api::lead.lead': ApiLeadLead;
       'api::product.product': ApiProductProduct;
       'plugin::content-releases.release': PluginContentReleasesRelease;

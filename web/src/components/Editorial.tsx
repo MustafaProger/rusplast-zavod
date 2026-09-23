@@ -1,11 +1,14 @@
 import { ArrowDown, ArrowRight, ArrowUpRight, Clock3 } from 'lucide-react'
-import { articles, articlePath, readingMinutes, type Article, type ContentSection } from '../data/editorial'
+import { articlePath, readingMinutes, type Article, type ContentSection } from '../data/editorial'
 import { landingPages, type LandingPage } from '../data/pages'
 import type { ReactNode } from 'react'
 import './Editorial.css'
+import { useContent } from '../lib/content'
 
 export function EditorialImage({ name, alt, eager = false, className = '' }: { name: string; alt: string; eager?: boolean; className?: string }) {
-  if (name.startsWith('/images/products/')) {
+  const { images } = useContent()
+  name = images[name] || name
+  if (name.startsWith('/') || name.startsWith('https://') || name.startsWith('http://')) {
     return <img className={className} src={name} alt={alt} width="768" height="512" loading={eager ? 'eager' : 'lazy'} fetchPriority={eager ? 'high' : undefined} decoding={eager ? undefined : 'async'} />
   }
   const wide = name === 'pipe-gray' || name === 'pipe-black'
@@ -34,10 +37,11 @@ function ArticleCard({ article }: { article: Article }) {
 }
 
 export function BlogPage() {
+  const { articles } = useContent()
   return <main id="main-content" className="editorial-page">
     <div className="editorial-container"><Breadcrumbs items={[{ label: 'Блог' }]} />
       <header className="editorial-heading"><span className="eyebrow">БЛОГ РУСПЛАСТЗАВОДА</span><h1>Блог о гофротрубах.<br /><span>Всё дело в деталях.</span></h1><p>Гофротрубы, комплектующие и производство.<br className="desktop-break" /> Практические материалы для тех, кто выбирает и закупает.</p></header>
-      <div className="blog-divider"><span>Все материалы</span><span>06 статей · от выбора до поставки</span></div>
+      <div className="blog-divider"><span>Все материалы</span><span>{articles.length} · от выбора до поставки</span></div>
       <div className="article-grid">{articles.map(article => <ArticleCard key={article.slug} article={article} />)}</div>
       <RequestCallout />
     </div>
@@ -45,13 +49,16 @@ export function BlogPage() {
 }
 
 export function RelatedArticles({ slugs }: { slugs: string[] }) {
+  const { articles } = useContent()
   return <section className="related-articles"><div className="related-heading"><h2>Продолжить чтение.</h2><a className="editorial-link" href="/blog">Весь блог <ArrowRight size={17} /></a></div><div className="article-grid">{slugs.map(slug => articles.find(article => article.slug === slug)).filter((article): article is Article => Boolean(article)).map(article => <ArticleCard article={article} key={article.slug} />)}</div></section>
 }
 
 export function ArticlePage({ article }: { article: Article }) {
+  const publishedAt = article.publishedAt || '2026-09-18'
+  const publishedLabel = new Intl.DateTimeFormat('ru-RU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(publishedAt))
   return <main id="main-content" className="editorial-page article-page"><div className="editorial-container">
     <Breadcrumbs items={[{ label: 'Блог', href: '/blog' }, { label: article.title }]} />
-    <header className="article-header"><span className="eyebrow">{article.category}</span><h1>{article.title}</h1><p className="article-intro">{article.intro}</p><div className="article-meta"><span>По материалам РУСПЛАСТЗАВОДА</span><span><Clock3 size={15} /> {readingMinutes(article)} мин чтения</span><span>Подготовлено <time dateTime="2026-09-18">18 сентября 2026</time></span></div></header>
+    <header className="article-header"><span className="eyebrow">{article.category}</span><h1>{article.title}</h1><p className="article-intro">{article.intro}</p><div className="article-meta"><span>{article.author || 'Редакция РУСПЛАСТЗАВОДА'}</span><span><Clock3 size={15} /> {readingMinutes(article)} мин чтения</span><span>Опубликовано <time dateTime={publishedAt}>{publishedLabel}</time></span></div></header>
     <figure className="article-cover"><div className="article-cover-media"><EditorialImage name={article.image} alt={article.imageAlt} eager /></div><figcaption>Иллюстрация к материалу. Характеристики уточняйте по выбранному изделию.</figcaption></figure>
     <div className="article-layout"><aside className="article-toc"><nav aria-label="Содержание статьи"><span className="eyebrow">В ЭТОЙ СТАТЬЕ</span><ol>{article.sections.map(section => <li key={section.id}><a href={`#${section.id}`}>{section.title}</a></li>)}</ol><a className="editorial-link" href="/catalog">Каталог продукции <ArrowUpRight size={16} /></a></nav></aside>
       <article className="article-body"><div className="article-takeaway"><span>Главное при выборе</span><p>{article.takeaway}</p></div><ContentSections sections={article.sections} />
@@ -78,6 +85,7 @@ export function RequestCallout({ onRequest }: { onRequest?: () => void }) {
 }
 
 export function BlogPreview() {
+  const { articles } = useContent()
   return <section className="section blog-preview"><div className="section-heading"><div><span className="eyebrow">БЛОГ РУСПЛАСТЗАВОДА</span><h2>Больше ясности.<br /><span>В каждой детали.</span></h2></div><a className="editorial-link" href="/blog">Все статьи <ArrowRight size={17} /></a></div><div className="article-grid">{articles.slice(0, 3).map(article => <ArticleCard key={article.slug} article={article} />)}</div></section>
 }
 

@@ -1,0 +1,2562 @@
+{
+  "images": {
+    "2021001": "https://cms.rusplast-zavod.ru/uploads/rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6.webp",
+    "2021002": "https://cms.rusplast-zavod.ru/uploads/rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881.webp",
+    "2021005": "https://cms.rusplast-zavod.ru/uploads/rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3.webp",
+    "2021006": "https://cms.rusplast-zavod.ru/uploads/rpz_46b79715edd9705c4c16_2021006_d8dcfeb005.webp",
+    "2021010": "https://cms.rusplast-zavod.ru/uploads/rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed.webp",
+    "2021011": "https://cms.rusplast-zavod.ru/uploads/rpz_0398b3361be76d6e1f5b_2021011_7462c544ee.webp",
+    "2021017": "https://cms.rusplast-zavod.ru/uploads/rpz_07e15d6de8340a4a1b04_2021017_1105d2613e.webp",
+    "2021018": "https://cms.rusplast-zavod.ru/uploads/rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06.webp",
+    "2021022": "https://cms.rusplast-zavod.ru/uploads/rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58.webp",
+    "2021024": "https://cms.rusplast-zavod.ru/uploads/rpz_92e9ea473e467c4b3a91_2021024_c7165c6528.webp",
+    "2021026": "https://cms.rusplast-zavod.ru/uploads/rpz_45511eb5e84c2607222d_2021026_7a79762963.webp",
+    "2021028": "https://cms.rusplast-zavod.ru/uploads/rpz_079ef0303522f6661674_2021028_805f4dcc9f.webp",
+    "2021030": "https://cms.rusplast-zavod.ru/uploads/rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7.webp",
+    "2021031": "https://cms.rusplast-zavod.ru/uploads/rpz_f400e5e77451c39bae59_2021031_e2ee7b1001.webp",
+    "2021032": "https://cms.rusplast-zavod.ru/uploads/rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670.webp",
+    "2021033": "https://cms.rusplast-zavod.ru/uploads/rpz_8db6471b0c62a95bacd4_2021033_5022982f41.webp",
+    "pipe-gray": "https://cms.rusplast-zavod.ru/uploads/rpz_dd8d0e7f43cc56454e0a_pipe_gray_4b8372d6ab.jpg",
+    "pipe-black": "https://cms.rusplast-zavod.ru/uploads/rpz_32fbebd4ab36379469ff_pipe_black_b0a7a0d950.jpg",
+    "pipe-orange-original": "https://cms.rusplast-zavod.ru/uploads/rpz_5baed7da7154c841da90_pipe_orange_original_03e55e3f3f.jpg",
+    "hero-pipes": "https://cms.rusplast-zavod.ru/uploads/rpz_9894810fe7d4cc93356d_hero_pipes_1280_9708ac7620.webp",
+    "/images/products/2021022.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58.webp",
+    "/images/products/2021024.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_92e9ea473e467c4b3a91_2021024_c7165c6528.webp",
+    "/images/products/2021026.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_45511eb5e84c2607222d_2021026_7a79762963.webp",
+    "/images/products/2021031.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_f400e5e77451c39bae59_2021031_e2ee7b1001.webp",
+    "/images/products/2021028.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_079ef0303522f6661674_2021028_805f4dcc9f.webp",
+    "/images/products/2021030.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7.webp",
+    "/images/products/2021032.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670.webp",
+    "/images/products/2021033.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_8db6471b0c62a95bacd4_2021033_5022982f41.webp",
+    "/images/products/2021001.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6.webp",
+    "/images/products/2021005.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3.webp",
+    "/images/products/2021017.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_07e15d6de8340a4a1b04_2021017_1105d2613e.webp",
+    "/images/products/2021018.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06.webp",
+    "/images/products/2021002.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881.webp",
+    "/images/products/2021006.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_46b79715edd9705c4c16_2021006_d8dcfeb005.webp",
+    "/images/products/2021010.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed.webp",
+    "/images/products/2021011.webp": "https://cms.rusplast-zavod.ru/uploads/rpz_0398b3361be76d6e1f5b_2021011_7462c544ee.webp"
+  },
+  "products": [
+    {
+      "id": 34,
+      "documentId": "f5a9hphnqf6fycydvqqztqpk",
+      "name": "Гофрированная труба РПЗ ПВХ (D16мм) Серая Легкая,пожаростойкая, негорючая, самозатухающая длина 100 м",
+      "slug": "gofrotruba-2021022",
+      "sku": "2021022",
+      "material": "ПВХ",
+      "loadClass": "Легкая",
+      "description": "Труба гибкая гофрированная (гофра электроизоляционная) серая выполнена из поливинилхлорида. \nПредназначена для защиты и изоляции токоведущих проводников, слаботочных и силовых. \nМонтируется внутри зданий заподлицо - под полами, бетоном, мебелью, а также открыто - поверх потолков и стен. \nУдобна в установке, легкая - имеет малый удельный вес, быстро крепится с помощью специальных клипс. \nГофротруба негорючая, пожаробезопасная (отвечает нормам ГОСТ 30244-94 ГОСТ 30402-96 ГОСТ 12.1.044-89(п.4.18)), в случае КЗ в проводе препятствует возгоранию. \nТруба гофрированная ПВХ поставляется в бухтах с внутренней монтажной проволокой «протяжкой», которая позволяет зацепить кабель или провод за петлю на конце и быстро протянуть проводник внутри всей длины бухты.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -25 до +60",
+      "combustibility": "не горючий (ПВ-0)",
+      "halogenFree": false,
+      "uvResistant": false,
+      "frostResistant": false,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Серый",
+      "innerDiameter": 10.7,
+      "outerDiameter": 16,
+      "bendRadius": 48,
+      "climate": "УХЛ2 (ГОСТ 15150-69)",
+      "coilWeight": "3,1кг",
+      "coilLength": 100,
+      "packageLength": 50,
+      "packageWidth": 50,
+      "packageHeight": 19,
+      "compression": "350 Н",
+      "price": 6.85,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58.webp",
+      "featured": true,
+      "createdAt": "2026-09-04T18:30:35.749Z",
+      "updatedAt": "2026-09-23T09:57:41.835Z",
+      "publishedAt": "2026-09-04T18:30:35.750Z",
+      "photo": {
+        "id": 1,
+        "documentId": "qke86lnutu7nz2mlgald4yye",
+        "name": "rpz-3424c4caa911c4d559c1-2021022.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПВХ (D16мм) Серая Легкая,пожаростойкая, негорючая, самозатухающая длина 100 м",
+        "caption": "Импорт исходного файла 2021022.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58.webp",
+            "hash": "small_rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58",
+            "mime": "image/webp",
+            "name": "small_rpz-3424c4caa911c4d559c1-2021022.webp",
+            "path": null,
+            "size": 18.96,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 18956
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58.webp",
+            "hash": "medium_rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58",
+            "mime": "image/webp",
+            "name": "medium_rpz-3424c4caa911c4d559c1-2021022.webp",
+            "path": null,
+            "size": 33.76,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 33758
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58.webp",
+            "hash": "thumbnail_rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-3424c4caa911c4d559c1-2021022.webp",
+            "path": null,
+            "size": 4.93,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4934
+          }
+        },
+        "hash": "rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 41.29,
+        "url": "/uploads/rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:41.809Z",
+        "updatedAt": "2026-09-23T09:57:41.809Z",
+        "publishedAt": "2026-09-23T09:57:41.810Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_3424c4caa911c4d559c1_2021022_0e5ecfac58.webp"
+    },
+    {
+      "id": 36,
+      "documentId": "wj670lqqwgjvfho3z8zkrhfj",
+      "name": "Гофрированная труба РПЗ ПВХ (D20мм) Серая Легкая, пожаростойкая, негорючая, самозатухающая, длина 100 м",
+      "slug": "gofrotruba-2021024",
+      "sku": "2021024",
+      "material": "ПВХ",
+      "loadClass": "Легкая",
+      "description": "Труба гибкая гофрированная (гофра электроизоляционная) серая выполнена из поливинилхлорида. \nПредназначена для защиты и изоляции токоведущих проводников, слаботочных и силовых. \nМонтируется внутри зданий заподлицо - под полами, бетоном, мебелью, а также открыто - поверх потолков и стен. \nУдобна в установке, легкая - имеет малый удельный вес, быстро крепится с помощью специальных клипс. \nГофротруба негорючая, пожаробезопасная (отвечает нормам ГОСТ 30244-94 ГОСТ 30402-96 ГОСТ 12.1.044-89(п.4.18)), в случае КЗ в проводе препятствует возгоранию. \nТруба гофрированная ПВХ поставляется в бухтах с внутренней монтажной проволокой «протяжкой», которая позволяет зацепить кабель или провод за петлю на конце и быстро протянуть проводник внутри всей длины бухты.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -25 до +60",
+      "combustibility": "не горючий (ПВ-0)",
+      "halogenFree": false,
+      "uvResistant": false,
+      "frostResistant": false,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Серый",
+      "innerDiameter": 14.1,
+      "outerDiameter": 20,
+      "bendRadius": 60,
+      "climate": "УХЛ2 (ГОСТ 15150-69)",
+      "coilWeight": "4,2кг",
+      "coilLength": 100,
+      "packageLength": 55,
+      "packageWidth": 55,
+      "packageHeight": 23,
+      "compression": "350 Н",
+      "price": 10.4,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_92e9ea473e467c4b3a91_2021024_c7165c6528.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.753Z",
+      "updatedAt": "2026-09-23T09:57:42.033Z",
+      "publishedAt": "2026-09-04T18:30:35.753Z",
+      "photo": {
+        "id": 2,
+        "documentId": "rbannbo0em0tr77er5j5en91",
+        "name": "rpz-92e9ea473e467c4b3a91-2021024.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПВХ (D20мм) Серая Легкая, пожаростойкая, негорючая, самозатухающая, длина 100 м",
+        "caption": "Импорт исходного файла 2021024.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_92e9ea473e467c4b3a91_2021024_c7165c6528.webp",
+            "hash": "small_rpz_92e9ea473e467c4b3a91_2021024_c7165c6528",
+            "mime": "image/webp",
+            "name": "small_rpz-92e9ea473e467c4b3a91-2021024.webp",
+            "path": null,
+            "size": 15.57,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 15566
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_92e9ea473e467c4b3a91_2021024_c7165c6528.webp",
+            "hash": "medium_rpz_92e9ea473e467c4b3a91_2021024_c7165c6528",
+            "mime": "image/webp",
+            "name": "medium_rpz-92e9ea473e467c4b3a91-2021024.webp",
+            "path": null,
+            "size": 26.51,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 26508
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_92e9ea473e467c4b3a91_2021024_c7165c6528.webp",
+            "hash": "thumbnail_rpz_92e9ea473e467c4b3a91_2021024_c7165c6528",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-92e9ea473e467c4b3a91-2021024.webp",
+            "path": null,
+            "size": 4.24,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4240
+          }
+        },
+        "hash": "rpz_92e9ea473e467c4b3a91_2021024_c7165c6528",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 32.53,
+        "url": "/uploads/rpz_92e9ea473e467c4b3a91_2021024_c7165c6528.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:42.019Z",
+        "updatedAt": "2026-09-23T09:57:42.019Z",
+        "publishedAt": "2026-09-23T09:57:42.020Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_92e9ea473e467c4b3a91_2021024_c7165c6528.webp"
+    },
+    {
+      "id": 38,
+      "documentId": "gcv0y36tmo911kx8wwax5ny7",
+      "name": "Гофрированная труба РПЗ ПВХ (D25мм) Серая Легкая, пожаростойкая, негорючая, самозатухающая, длина 50 м",
+      "slug": "gofrotruba-2021026",
+      "sku": "2021026",
+      "material": "ПВХ",
+      "loadClass": "Легкая",
+      "description": "Труба гибкая гофрированная (гофра электроизоляционная) серая выполнена из поливинилхлорида. \nПредназначена для защиты и изоляции токоведущих проводников, слаботочных и силовых. \nМонтируется внутри зданий заподлицо - под полами, бетоном, мебелью, а также открыто - поверх потолков и стен. \nУдобна в установке, легкая - имеет малый удельный вес, быстро крепится с помощью специальных клипс. \nГофротруба негорючая, пожаробезопасная (отвечает нормам ГОСТ 30244-94 ГОСТ 30402-96 ГОСТ 12.1.044-89(п.4.18)), в случае КЗ в проводе препятствует возгоранию. \nТруба гофрированная ПВХ поставляется в бухтах с внутренней монтажной проволокой «протяжкой», которая позволяет зацепить кабель или провод за петлю на конце и быстро протянуть проводник внутри всей длины бухты.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -25 до +60",
+      "combustibility": "не горючий (ПВ-0)",
+      "halogenFree": false,
+      "uvResistant": false,
+      "frostResistant": false,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Серый",
+      "innerDiameter": 18.3,
+      "outerDiameter": 25,
+      "bendRadius": 75,
+      "climate": "УХЛ2 (ГОСТ 15150-69)",
+      "coilWeight": "3,1кг",
+      "coilLength": 50,
+      "packageLength": 55,
+      "packageWidth": 55,
+      "packageHeight": 20,
+      "compression": "350 Н",
+      "price": 12.75,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_45511eb5e84c2607222d_2021026_7a79762963.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.755Z",
+      "updatedAt": "2026-09-23T09:57:42.238Z",
+      "publishedAt": "2026-09-04T18:30:35.756Z",
+      "photo": {
+        "id": 3,
+        "documentId": "zcfi99gfv4lut5lnxk53kfxa",
+        "name": "rpz-45511eb5e84c2607222d-2021026.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПВХ (D25мм) Серая Легкая, пожаростойкая, негорючая, самозатухающая, длина 50 м",
+        "caption": "Импорт исходного файла 2021026.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_45511eb5e84c2607222d_2021026_7a79762963.webp",
+            "hash": "small_rpz_45511eb5e84c2607222d_2021026_7a79762963",
+            "mime": "image/webp",
+            "name": "small_rpz-45511eb5e84c2607222d-2021026.webp",
+            "path": null,
+            "size": 18.38,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 18376
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_45511eb5e84c2607222d_2021026_7a79762963.webp",
+            "hash": "medium_rpz_45511eb5e84c2607222d_2021026_7a79762963",
+            "mime": "image/webp",
+            "name": "medium_rpz-45511eb5e84c2607222d-2021026.webp",
+            "path": null,
+            "size": 31.71,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 31712
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_45511eb5e84c2607222d_2021026_7a79762963.webp",
+            "hash": "thumbnail_rpz_45511eb5e84c2607222d_2021026_7a79762963",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-45511eb5e84c2607222d-2021026.webp",
+            "path": null,
+            "size": 4.72,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4724
+          }
+        },
+        "hash": "rpz_45511eb5e84c2607222d_2021026_7a79762963",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 38.99,
+        "url": "/uploads/rpz_45511eb5e84c2607222d_2021026_7a79762963.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:42.225Z",
+        "updatedAt": "2026-09-23T09:57:42.225Z",
+        "publishedAt": "2026-09-23T09:57:42.226Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_45511eb5e84c2607222d_2021026_7a79762963.webp"
+    },
+    {
+      "id": 40,
+      "documentId": "rrp8j6kt9pb5fjfzgcvp8rw1",
+      "name": "Гофрированная труба РПЗ ПВХ (D32мм) Серая Легкая, пожаростойкая, негорючая, самозатухающая, длина 50 м",
+      "slug": "gofrotruba-2021031",
+      "sku": "2021031",
+      "material": "ПВХ",
+      "loadClass": "Легкая",
+      "description": "Гофрированная труба из ПВХ подходит для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды. Материал изготовления - ПВХ пластикат (соответствует требованиям пожарной безопасности по ГОСТ, категория горения ПВ-0) препятствует возгоранию изделия. Имеют высокую коррозионную и химическую стойкость. Труба является диэлектриком, что гарантирует защиту от поражения электрическим током. Выдерживает высокие механические нагрузки и допускает заливку в бетон. Подходит для использования в помещениях или на открытом воздухе, без прямого воздействия солнечных лучей.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -25 до +60",
+      "combustibility": "не горючий (ПВ-0)",
+      "halogenFree": false,
+      "uvResistant": false,
+      "frostResistant": false,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Серый",
+      "innerDiameter": 24.3,
+      "outerDiameter": 32,
+      "bendRadius": 75,
+      "climate": "УХЛ2 (ГОСТ 15150-69)",
+      "coilWeight": "4,2кг",
+      "coilLength": 50,
+      "packageLength": 60,
+      "packageWidth": 60,
+      "packageHeight": 22,
+      "compression": "350 Н",
+      "price": 21.97,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_f400e5e77451c39bae59_2021031_e2ee7b1001.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.758Z",
+      "updatedAt": "2026-09-23T09:57:42.442Z",
+      "publishedAt": "2026-09-04T18:30:35.758Z",
+      "photo": {
+        "id": 4,
+        "documentId": "xbgi9pbe9naqi9h1gke2kwkk",
+        "name": "rpz-f400e5e77451c39bae59-2021031.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПВХ (D32мм) Серая Легкая, пожаростойкая, негорючая, самозатухающая, длина 50 м",
+        "caption": "Импорт исходного файла 2021031.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_f400e5e77451c39bae59_2021031_e2ee7b1001.webp",
+            "hash": "small_rpz_f400e5e77451c39bae59_2021031_e2ee7b1001",
+            "mime": "image/webp",
+            "name": "small_rpz-f400e5e77451c39bae59-2021031.webp",
+            "path": null,
+            "size": 19.33,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 19334
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_f400e5e77451c39bae59_2021031_e2ee7b1001.webp",
+            "hash": "medium_rpz_f400e5e77451c39bae59_2021031_e2ee7b1001",
+            "mime": "image/webp",
+            "name": "medium_rpz-f400e5e77451c39bae59-2021031.webp",
+            "path": null,
+            "size": 34.27,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 34274
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_f400e5e77451c39bae59_2021031_e2ee7b1001.webp",
+            "hash": "thumbnail_rpz_f400e5e77451c39bae59_2021031_e2ee7b1001",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-f400e5e77451c39bae59-2021031.webp",
+            "path": null,
+            "size": 4.98,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4976
+          }
+        },
+        "hash": "rpz_f400e5e77451c39bae59_2021031_e2ee7b1001",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 42.91,
+        "url": "/uploads/rpz_f400e5e77451c39bae59_2021031_e2ee7b1001.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:42.426Z",
+        "updatedAt": "2026-09-23T09:57:42.426Z",
+        "publishedAt": "2026-09-23T09:57:42.427Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_f400e5e77451c39bae59_2021031_e2ee7b1001.webp"
+    },
+    {
+      "id": 42,
+      "documentId": "d0yx87cfapgmxqtx6nfr1qh4",
+      "name": "Гофрированная труба РПЗ ПВХ (D16мм) Серая Тяжелая, пожаростойкая, негорючая, самозатухающая, длина 100 м",
+      "slug": "gofrotruba-2021028",
+      "sku": "2021028",
+      "material": "ПВХ",
+      "loadClass": "Тяжелая",
+      "description": "Гофрированная труба из ПВХ подходит для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды. Материал изготовления - ПВХ пластикат (соответствует требованиям пожарной безопасности по ГОСТ, категория горения ПВ-0) препятствует возгоранию изделия. Имеют высокую коррозионную и химическую стойкость. Труба является диэлектриком, что гарантирует защиту от поражения электрическим током. Выдерживает высокие механические нагрузки и допускает заливку в бетон. Подходит для использования в помещениях или на открытом воздухе, без прямого воздействия солнечных лучей.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -25 до +60",
+      "combustibility": "не горючий (ПВ-0)",
+      "halogenFree": false,
+      "uvResistant": false,
+      "frostResistant": false,
+      "concretePour": true,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Серый",
+      "innerDiameter": 10.7,
+      "outerDiameter": 16,
+      "bendRadius": 48,
+      "climate": "УХЛ2 (ГОСТ 15150-69)",
+      "coilWeight": "6кг",
+      "coilLength": 100,
+      "packageLength": 50,
+      "packageWidth": 50,
+      "packageHeight": 19,
+      "compression": "750 Н",
+      "price": 10.26,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_079ef0303522f6661674_2021028_805f4dcc9f.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.761Z",
+      "updatedAt": "2026-09-23T09:57:42.639Z",
+      "publishedAt": "2026-09-04T18:30:35.761Z",
+      "photo": {
+        "id": 5,
+        "documentId": "xxy25bgbh11nbesd6pwaqcal",
+        "name": "rpz-079ef0303522f6661674-2021028.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПВХ (D16мм) Серая Тяжелая, пожаростойкая, негорючая, самозатухающая, длина 100 м",
+        "caption": "Импорт исходного файла 2021028.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_079ef0303522f6661674_2021028_805f4dcc9f.webp",
+            "hash": "small_rpz_079ef0303522f6661674_2021028_805f4dcc9f",
+            "mime": "image/webp",
+            "name": "small_rpz-079ef0303522f6661674-2021028.webp",
+            "path": null,
+            "size": 20.09,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 20094
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_079ef0303522f6661674_2021028_805f4dcc9f.webp",
+            "hash": "medium_rpz_079ef0303522f6661674_2021028_805f4dcc9f",
+            "mime": "image/webp",
+            "name": "medium_rpz-079ef0303522f6661674-2021028.webp",
+            "path": null,
+            "size": 36.49,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 36486
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_079ef0303522f6661674_2021028_805f4dcc9f.webp",
+            "hash": "thumbnail_rpz_079ef0303522f6661674_2021028_805f4dcc9f",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-079ef0303522f6661674-2021028.webp",
+            "path": null,
+            "size": 4.93,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4928
+          }
+        },
+        "hash": "rpz_079ef0303522f6661674_2021028_805f4dcc9f",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 45.33,
+        "url": "/uploads/rpz_079ef0303522f6661674_2021028_805f4dcc9f.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:42.626Z",
+        "updatedAt": "2026-09-23T09:57:42.626Z",
+        "publishedAt": "2026-09-23T09:57:42.626Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_079ef0303522f6661674_2021028_805f4dcc9f.webp"
+    },
+    {
+      "id": 44,
+      "documentId": "sf65j45d93ei3kairdibetsf",
+      "name": "Гофрированная труба РПЗ ПВХ (D20мм) Серая Тяжелая, пожаростойкая, негорючая, самозатухающая, длина 100 м",
+      "slug": "gofrotruba-2021030",
+      "sku": "2021030",
+      "material": "ПВХ",
+      "loadClass": "Тяжелая",
+      "description": "Гофрированная труба из ПВХ подходит для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды. Материал изготовления - ПВХ пластикат (соответствует требованиям пожарной безопасности по ГОСТ, категория горения ПВ-0) препятствует возгоранию изделия. Имеют высокую коррозионную и химическую стойкость. Труба является диэлектриком, что гарантирует защиту от поражения электрическим током. Выдерживает высокие механические нагрузки и допускает заливку в бетон. Подходит для использования в помещениях или на открытом воздухе, без прямого воздействия солнечных лучей.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -25 до +60",
+      "combustibility": "не горючий (ПВ-0)",
+      "halogenFree": false,
+      "uvResistant": false,
+      "frostResistant": false,
+      "concretePour": true,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Серый",
+      "innerDiameter": 14.1,
+      "outerDiameter": 20,
+      "bendRadius": 60,
+      "climate": "УХЛ2 (ГОСТ 15150-69)",
+      "coilWeight": "7,5кг",
+      "coilLength": 100,
+      "packageLength": 55,
+      "packageWidth": 55,
+      "packageHeight": 23,
+      "compression": "750 Н",
+      "price": 12.46,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7.webp",
+      "featured": true,
+      "createdAt": "2026-09-04T18:30:35.763Z",
+      "updatedAt": "2026-09-23T09:57:42.829Z",
+      "publishedAt": "2026-09-04T18:30:35.764Z",
+      "photo": {
+        "id": 6,
+        "documentId": "hrm1hm4krhjs3bcbo8hrtka7",
+        "name": "rpz-d8e52f316e8e854dcb4a-2021030.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПВХ (D20мм) Серая Тяжелая, пожаростойкая, негорючая, самозатухающая, длина 100 м",
+        "caption": "Импорт исходного файла 2021030.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7.webp",
+            "hash": "small_rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7",
+            "mime": "image/webp",
+            "name": "small_rpz-d8e52f316e8e854dcb4a-2021030.webp",
+            "path": null,
+            "size": 16.1,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 16102
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7.webp",
+            "hash": "medium_rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7",
+            "mime": "image/webp",
+            "name": "medium_rpz-d8e52f316e8e854dcb4a-2021030.webp",
+            "path": null,
+            "size": 28.28,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 28284
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7.webp",
+            "hash": "thumbnail_rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-d8e52f316e8e854dcb4a-2021030.webp",
+            "path": null,
+            "size": 4.3,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4302
+          }
+        },
+        "hash": "rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 35.47,
+        "url": "/uploads/rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:42.816Z",
+        "updatedAt": "2026-09-23T09:57:42.816Z",
+        "publishedAt": "2026-09-23T09:57:42.816Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_d8e52f316e8e854dcb4a_2021030_bb8bba7dd7.webp"
+    },
+    {
+      "id": 46,
+      "documentId": "fzg1tz7akobt26bpsrnh3i1r",
+      "name": "Гофрированная труба РПЗ ПВХ (D25мм) Серая Тяжелая, пожаростойкая, негорючая, самозатухающая, длина 50 м",
+      "slug": "gofrotruba-2021032",
+      "sku": "2021032",
+      "material": "ПВХ",
+      "loadClass": "Тяжелая",
+      "description": "Гофрированная труба из ПВХ подходит для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды. Материал изготовления - ПВХ пластикат (соответствует требованиям пожарной безопасности по ГОСТ, категория горения ПВ-0) препятствует возгоранию изделия. Имеют высокую коррозионную и химическую стойкость. Труба является диэлектриком, что гарантирует защиту от поражения электрическим током. Выдерживает высокие механические нагрузки и допускает заливку в бетон. Подходит для использования в помещениях или на открытом воздухе, без прямого воздействия солнечных лучей.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -25 до +60",
+      "combustibility": "не горючий (ПВ-0)",
+      "halogenFree": false,
+      "uvResistant": false,
+      "frostResistant": false,
+      "concretePour": true,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Серый",
+      "innerDiameter": 18.3,
+      "outerDiameter": 25,
+      "bendRadius": 75,
+      "climate": "УХЛ2 (ГОСТ 15150-69)",
+      "coilWeight": "6кг",
+      "coilLength": 50,
+      "packageLength": 55,
+      "packageWidth": 55,
+      "packageHeight": 20,
+      "compression": "750 Н",
+      "price": 19.1,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.766Z",
+      "updatedAt": "2026-09-23T09:57:43.022Z",
+      "publishedAt": "2026-09-04T18:30:35.766Z",
+      "photo": {
+        "id": 7,
+        "documentId": "z3zrfs9f9iopi5zpibtr6l7g",
+        "name": "rpz-d3e37f4c8baebcb9e784-2021032.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПВХ (D25мм) Серая Тяжелая, пожаростойкая, негорючая, самозатухающая, длина 50 м",
+        "caption": "Импорт исходного файла 2021032.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670.webp",
+            "hash": "small_rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670",
+            "mime": "image/webp",
+            "name": "small_rpz-d3e37f4c8baebcb9e784-2021032.webp",
+            "path": null,
+            "size": 19,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 19002
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670.webp",
+            "hash": "medium_rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670",
+            "mime": "image/webp",
+            "name": "medium_rpz-d3e37f4c8baebcb9e784-2021032.webp",
+            "path": null,
+            "size": 34.17,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 34172
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670.webp",
+            "hash": "thumbnail_rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-d3e37f4c8baebcb9e784-2021032.webp",
+            "path": null,
+            "size": 4.5,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4502
+          }
+        },
+        "hash": "rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 41.82,
+        "url": "/uploads/rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:43.010Z",
+        "updatedAt": "2026-09-23T09:57:43.010Z",
+        "publishedAt": "2026-09-23T09:57:43.010Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_d3e37f4c8baebcb9e784_2021032_5ca7de1670.webp"
+    },
+    {
+      "id": 48,
+      "documentId": "zu48bapf8pyghiepfzsspojx",
+      "name": "Гофрированная труба РПЗ ПВХ (D32мм) Серая Тяжелая, пожаростойкая, негорючая, самозатухающая, длина 50 м",
+      "slug": "gofrotruba-2021033",
+      "sku": "2021033",
+      "material": "ПВХ",
+      "loadClass": "Тяжелая",
+      "description": "Гофрированная труба из ПВХ подходит для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды. Материал изготовления - ПВХ пластикат (соответствует требованиям пожарной безопасности по ГОСТ, категория горения ПВ-0) препятствует возгоранию изделия. Имеют высокую коррозионную и химическую стойкость. Труба является диэлектриком, что гарантирует защиту от поражения электрическим током. Выдерживает высокие механические нагрузки и допускает заливку в бетон. Подходит для использования в помещениях или на открытом воздухе, без прямого воздействия солнечных лучей.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -25 до +60",
+      "combustibility": "не горючий (ПВ-0)",
+      "halogenFree": false,
+      "uvResistant": false,
+      "frostResistant": false,
+      "concretePour": true,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Серый",
+      "innerDiameter": 24.3,
+      "outerDiameter": 32,
+      "bendRadius": 75,
+      "climate": "УХЛ2 (ГОСТ 15150-69)",
+      "coilWeight": "7,5кг",
+      "coilLength": 50,
+      "packageLength": 60,
+      "packageWidth": 60,
+      "packageHeight": 22,
+      "compression": "750 Н",
+      "price": 32,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_8db6471b0c62a95bacd4_2021033_5022982f41.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.769Z",
+      "updatedAt": "2026-09-23T09:57:43.208Z",
+      "publishedAt": "2026-09-04T18:30:35.769Z",
+      "photo": {
+        "id": 8,
+        "documentId": "smtw2a5c1pihciw7nwx6tprh",
+        "name": "rpz-8db6471b0c62a95bacd4-2021033.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПВХ (D32мм) Серая Тяжелая, пожаростойкая, негорючая, самозатухающая, длина 50 м",
+        "caption": "Импорт исходного файла 2021033.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_8db6471b0c62a95bacd4_2021033_5022982f41.webp",
+            "hash": "small_rpz_8db6471b0c62a95bacd4_2021033_5022982f41",
+            "mime": "image/webp",
+            "name": "small_rpz-8db6471b0c62a95bacd4-2021033.webp",
+            "path": null,
+            "size": 17.84,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 17844
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_8db6471b0c62a95bacd4_2021033_5022982f41.webp",
+            "hash": "medium_rpz_8db6471b0c62a95bacd4_2021033_5022982f41",
+            "mime": "image/webp",
+            "name": "medium_rpz-8db6471b0c62a95bacd4-2021033.webp",
+            "path": null,
+            "size": 30.57,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 30574
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_8db6471b0c62a95bacd4_2021033_5022982f41.webp",
+            "hash": "thumbnail_rpz_8db6471b0c62a95bacd4_2021033_5022982f41",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-8db6471b0c62a95bacd4-2021033.webp",
+            "path": null,
+            "size": 4.82,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4820
+          }
+        },
+        "hash": "rpz_8db6471b0c62a95bacd4_2021033_5022982f41",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 37.77,
+        "url": "/uploads/rpz_8db6471b0c62a95bacd4_2021033_5022982f41.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:43.196Z",
+        "updatedAt": "2026-09-23T09:57:43.196Z",
+        "publishedAt": "2026-09-23T09:57:43.197Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_8db6471b0c62a95bacd4_2021033_5022982f41.webp"
+    },
+    {
+      "id": 50,
+      "documentId": "vbhx6w92ht5i08z9qvelf7rj",
+      "name": "Гофрированная труба РПЗ ПНД (D16мм) Черная Легкая, стойкая к УФ, Безгалогенность (HF), длина 100 м",
+      "slug": "gofrotruba-2021001",
+      "sku": "2021001",
+      "material": "ПНД",
+      "loadClass": "Легкая",
+      "description": "Гофрированная труба из полиэтилена низкого давления. Предназначена для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды при прокладке сложных систем и трасс. Применяются для скрытой и открытой прокладки в несущих и ограждающих конструкциях из несгораемых материалов жилых, административных и производственных зданий и сооружений. Труба не классифицируется по стойкости к горению и является горючим продуктом.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -55 до +90",
+      "combustibility": "Горючий",
+      "halogenFree": true,
+      "uvResistant": true,
+      "frostResistant": true,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Черный",
+      "innerDiameter": 10.7,
+      "outerDiameter": 16,
+      "bendRadius": 48,
+      "climate": "УХЛ1 (ГОСТ 15150-69)",
+      "coilWeight": "3,1кг",
+      "coilLength": 100,
+      "packageLength": 50,
+      "packageWidth": 50,
+      "packageHeight": 19,
+      "compression": "350 Н",
+      "price": 8.25,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.771Z",
+      "updatedAt": "2026-09-23T09:57:43.398Z",
+      "publishedAt": "2026-09-04T18:30:35.772Z",
+      "photo": {
+        "id": 9,
+        "documentId": "soi45qm3utj5az0cf7l8i2ri",
+        "name": "rpz-cc31e934ac25a0d5f50f-2021001.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПНД (D16мм) Черная Легкая, стойкая к УФ, Безгалогенность (HF), длина 100 м",
+        "caption": "Импорт исходного файла 2021001.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6.webp",
+            "hash": "small_rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6",
+            "mime": "image/webp",
+            "name": "small_rpz-cc31e934ac25a0d5f50f-2021001.webp",
+            "path": null,
+            "size": 18.98,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 18982
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6.webp",
+            "hash": "medium_rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6",
+            "mime": "image/webp",
+            "name": "medium_rpz-cc31e934ac25a0d5f50f-2021001.webp",
+            "path": null,
+            "size": 33.89,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 33892
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6.webp",
+            "hash": "thumbnail_rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-cc31e934ac25a0d5f50f-2021001.webp",
+            "path": null,
+            "size": 4.96,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4960
+          }
+        },
+        "hash": "rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 42.39,
+        "url": "/uploads/rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:43.385Z",
+        "updatedAt": "2026-09-23T09:57:43.385Z",
+        "publishedAt": "2026-09-23T09:57:43.385Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_cc31e934ac25a0d5f50f_2021001_31b16b83b6.webp"
+    },
+    {
+      "id": 52,
+      "documentId": "ufo5v7iupsr1m9jc7bxffox3",
+      "name": "Гофрированная труба РПЗ ПНД (D20мм) Черная Легкая, стойкая к УФ, Безгалогенность (HF), длина 100 м",
+      "slug": "gofrotruba-2021005",
+      "sku": "2021005",
+      "material": "ПНД",
+      "loadClass": "Легкая",
+      "description": "Гофрированная труба из полиэтилена низкого давления . Предназначена для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды при прокладке сложных систем и трасс. Применяются для скрытой и открытой прокладки в несущих и ограждающих конструкциях из несгораемых материалов жилых, административных и производственных зданий и сооружений. Труба не классифицируется по стойкости к горению и является горючим продуктом.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -55 до +90",
+      "combustibility": "Горючий",
+      "halogenFree": true,
+      "uvResistant": true,
+      "frostResistant": true,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Черный",
+      "innerDiameter": 14.5,
+      "outerDiameter": 20,
+      "bendRadius": 60,
+      "climate": "УХЛ1 (ГОСТ 15150-69)",
+      "coilWeight": "4,2кг",
+      "coilLength": 100,
+      "packageLength": 55,
+      "packageWidth": 55,
+      "packageHeight": 23,
+      "compression": "350 Н",
+      "price": 9.9,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.774Z",
+      "updatedAt": "2026-09-23T09:57:43.613Z",
+      "publishedAt": "2026-09-04T18:30:35.774Z",
+      "photo": {
+        "id": 10,
+        "documentId": "zqyepvyhkvnmfobrq7hz4kfj",
+        "name": "rpz-7e927dc6bf56a7b8e333-2021005.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПНД (D20мм) Черная Легкая, стойкая к УФ, Безгалогенность (HF), длина 100 м",
+        "caption": "Импорт исходного файла 2021005.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3.webp",
+            "hash": "small_rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3",
+            "mime": "image/webp",
+            "name": "small_rpz-7e927dc6bf56a7b8e333-2021005.webp",
+            "path": null,
+            "size": 16.75,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 16748
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3.webp",
+            "hash": "medium_rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3",
+            "mime": "image/webp",
+            "name": "medium_rpz-7e927dc6bf56a7b8e333-2021005.webp",
+            "path": null,
+            "size": 29.62,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 29616
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3.webp",
+            "hash": "thumbnail_rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-7e927dc6bf56a7b8e333-2021005.webp",
+            "path": null,
+            "size": 4.21,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4212
+          }
+        },
+        "hash": "rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 36.21,
+        "url": "/uploads/rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:43.601Z",
+        "updatedAt": "2026-09-23T09:57:43.601Z",
+        "publishedAt": "2026-09-23T09:57:43.601Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_7e927dc6bf56a7b8e333_2021005_3fc419f2c3.webp"
+    },
+    {
+      "id": 54,
+      "documentId": "gwjiwuo3f4pazcadxhdlkxz5",
+      "name": "Гофрированная труба РПЗ ПНД (D25мм) Черная Легкая, стойкая к УФ, Безгалогенность (HF), длина 50 м",
+      "slug": "gofrotruba-2021017",
+      "sku": "2021017",
+      "material": "ПНД",
+      "loadClass": "Легкая",
+      "description": "Гофрированная труба из полиэтилена низкого давления . Предназначена для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды при прокладке сложных систем и трасс. Применяются для скрытой и открытой прокладки в несущих и ограждающих конструкциях из несгораемых материалов жилых, административных и производственных зданий и сооружений. Труба не классифицируется по стойкости к горению и является горючим продуктом.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -55 до +90",
+      "combustibility": "Горючий",
+      "halogenFree": true,
+      "uvResistant": true,
+      "frostResistant": true,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Черный",
+      "innerDiameter": 18.3,
+      "outerDiameter": 25,
+      "bendRadius": 75,
+      "climate": "УХЛ1 (ГОСТ 15150-69)",
+      "coilWeight": "3,1кг",
+      "coilLength": 50,
+      "packageLength": 55,
+      "packageWidth": 55,
+      "packageHeight": 20,
+      "compression": "350 Н",
+      "price": 14.46,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_07e15d6de8340a4a1b04_2021017_1105d2613e.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.776Z",
+      "updatedAt": "2026-09-23T09:57:43.830Z",
+      "publishedAt": "2026-09-04T18:30:35.777Z",
+      "photo": {
+        "id": 11,
+        "documentId": "nnitl8wlmtrvkyfo2q6w4x9p",
+        "name": "rpz-07e15d6de8340a4a1b04-2021017.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПНД (D25мм) Черная Легкая, стойкая к УФ, Безгалогенность (HF), длина 50 м",
+        "caption": "Импорт исходного файла 2021017.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_07e15d6de8340a4a1b04_2021017_1105d2613e.webp",
+            "hash": "small_rpz_07e15d6de8340a4a1b04_2021017_1105d2613e",
+            "mime": "image/webp",
+            "name": "small_rpz-07e15d6de8340a4a1b04-2021017.webp",
+            "path": null,
+            "size": 20.51,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 20508
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_07e15d6de8340a4a1b04_2021017_1105d2613e.webp",
+            "hash": "medium_rpz_07e15d6de8340a4a1b04_2021017_1105d2613e",
+            "mime": "image/webp",
+            "name": "medium_rpz-07e15d6de8340a4a1b04-2021017.webp",
+            "path": null,
+            "size": 36.31,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 36312
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_07e15d6de8340a4a1b04_2021017_1105d2613e.webp",
+            "hash": "thumbnail_rpz_07e15d6de8340a4a1b04_2021017_1105d2613e",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-07e15d6de8340a4a1b04-2021017.webp",
+            "path": null,
+            "size": 5.55,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 5552
+          }
+        },
+        "hash": "rpz_07e15d6de8340a4a1b04_2021017_1105d2613e",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 44.5,
+        "url": "/uploads/rpz_07e15d6de8340a4a1b04_2021017_1105d2613e.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:43.817Z",
+        "updatedAt": "2026-09-23T09:57:43.817Z",
+        "publishedAt": "2026-09-23T09:57:43.818Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_07e15d6de8340a4a1b04_2021017_1105d2613e.webp"
+    },
+    {
+      "id": 56,
+      "documentId": "xonvy4sjtb50byf7v7jkvcbg",
+      "name": "Гофрированная труба РПЗ ПНД (D32мм) Черная Легкая, стойкая к УФ, Безгалогенность (HF), длина 50 м",
+      "slug": "gofrotruba-2021018",
+      "sku": "2021018",
+      "material": "ПНД",
+      "loadClass": "Легкая",
+      "description": "Гофрированная труба из полиэтилена низкого давления . Предназначена для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды при прокладке сложных систем и трасс. Применяются для скрытой и открытой прокладки в несущих и ограждающих конструкциях из несгораемых материалов жилых, административных и производственных зданий и сооружений. Труба не классифицируется по стойкости к горению и является горючим продуктом.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -55 до +90",
+      "combustibility": "Горючий",
+      "halogenFree": true,
+      "uvResistant": true,
+      "frostResistant": true,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Черный",
+      "innerDiameter": 24.3,
+      "outerDiameter": 32,
+      "bendRadius": 75,
+      "climate": "УХЛ1 (ГОСТ 15150-69)",
+      "coilWeight": "4,2кг",
+      "coilLength": 50,
+      "packageLength": 60,
+      "packageWidth": 60,
+      "packageHeight": 22,
+      "compression": "350 Н",
+      "price": 24.5,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06.webp",
+      "featured": true,
+      "createdAt": "2026-09-04T18:30:35.779Z",
+      "updatedAt": "2026-09-23T09:57:44.021Z",
+      "publishedAt": "2026-09-04T18:30:35.779Z",
+      "photo": {
+        "id": 12,
+        "documentId": "vkee5nnju8v1u2n5i12x85jf",
+        "name": "rpz-a858a7a4fdbf5218e3c1-2021018.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПНД (D32мм) Черная Легкая, стойкая к УФ, Безгалогенность (HF), длина 50 м",
+        "caption": "Импорт исходного файла 2021018.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06.webp",
+            "hash": "small_rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06",
+            "mime": "image/webp",
+            "name": "small_rpz-a858a7a4fdbf5218e3c1-2021018.webp",
+            "path": null,
+            "size": 15.93,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 15934
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06.webp",
+            "hash": "medium_rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06",
+            "mime": "image/webp",
+            "name": "medium_rpz-a858a7a4fdbf5218e3c1-2021018.webp",
+            "path": null,
+            "size": 29.92,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 29916
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06.webp",
+            "hash": "thumbnail_rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-a858a7a4fdbf5218e3c1-2021018.webp",
+            "path": null,
+            "size": 3.75,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 3754
+          }
+        },
+        "hash": "rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 37.09,
+        "url": "/uploads/rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:44.009Z",
+        "updatedAt": "2026-09-23T09:57:44.009Z",
+        "publishedAt": "2026-09-23T09:57:44.009Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_a858a7a4fdbf5218e3c1_2021018_7f849f9e06.webp"
+    },
+    {
+      "id": 58,
+      "documentId": "vfggvo5qlbps85e8ihyn4sxf",
+      "name": "Гофрированная труба РПЗ ПНД (D16мм) Оранжевая Легкая, стойкая к УФ, Безгалогенность (HF), длина 100 м",
+      "slug": "gofrotruba-2021002",
+      "sku": "2021002",
+      "material": "ПНД",
+      "loadClass": "Легкая",
+      "description": "Гофрированная труба из полиэтилена низкого давления . Предназначена для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды при прокладке сложных систем и трасс. Применяются для скрытой и открытой прокладки в несущих и ограждающих конструкциях из несгораемых материалов жилых, административных и производственных зданий и сооружений. Труба не классифицируется по стойкости к горению и является горючим продуктом.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -55 до +90",
+      "combustibility": "Горючий",
+      "halogenFree": true,
+      "uvResistant": true,
+      "frostResistant": true,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Оранжевый",
+      "innerDiameter": 10.7,
+      "outerDiameter": 16,
+      "bendRadius": 48,
+      "climate": "УХЛ1 (ГОСТ 15150-69)",
+      "coilWeight": "3,1кг",
+      "coilLength": 100,
+      "packageLength": 50,
+      "packageWidth": 50,
+      "packageHeight": 19,
+      "compression": "350 Н",
+      "price": 9.08,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.781Z",
+      "updatedAt": "2026-09-23T09:57:44.229Z",
+      "publishedAt": "2026-09-04T18:30:35.781Z",
+      "photo": {
+        "id": 13,
+        "documentId": "xcgj0pu6fww2lrlkr6ds5pmh",
+        "name": "rpz-aa8c6a8717989ee5c772-2021002.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПНД (D16мм) Оранжевая Легкая, стойкая к УФ, Безгалогенность (HF), длина 100 м",
+        "caption": "Импорт исходного файла 2021002.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881.webp",
+            "hash": "small_rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881",
+            "mime": "image/webp",
+            "name": "small_rpz-aa8c6a8717989ee5c772-2021002.webp",
+            "path": null,
+            "size": 17.34,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 17344
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881.webp",
+            "hash": "medium_rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881",
+            "mime": "image/webp",
+            "name": "medium_rpz-aa8c6a8717989ee5c772-2021002.webp",
+            "path": null,
+            "size": 30.37,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 30368
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881.webp",
+            "hash": "thumbnail_rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-aa8c6a8717989ee5c772-2021002.webp",
+            "path": null,
+            "size": 4.66,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4658
+          }
+        },
+        "hash": "rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 38.28,
+        "url": "/uploads/rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:44.217Z",
+        "updatedAt": "2026-09-23T09:57:44.217Z",
+        "publishedAt": "2026-09-23T09:57:44.217Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_aa8c6a8717989ee5c772_2021002_12ab3ba881.webp"
+    },
+    {
+      "id": 60,
+      "documentId": "z0eps0s4v1qnk2kds8dg1xtm",
+      "name": "Гофрированная труба РПЗ ПНД (D20мм) Оранжевая Легкая, стойкая к УФ, Безгалогенность (HF), длина 100 м",
+      "slug": "gofrotruba-2021006",
+      "sku": "2021006",
+      "material": "ПНД",
+      "loadClass": "Легкая",
+      "description": "Гофрированная труба из полиэтилена низкого давления . Предназначена для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды при прокладке сложных систем и трасс. Применяются для скрытой и открытой прокладки в несущих и ограждающих конструкциях из несгораемых материалов жилых, административных и производственных зданий и сооружений. Труба не классифицируется по стойкости к горению и является горючим продуктом.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -55 до +90",
+      "combustibility": "Горючий",
+      "halogenFree": true,
+      "uvResistant": true,
+      "frostResistant": true,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Оранжевый",
+      "innerDiameter": 14.5,
+      "outerDiameter": 20,
+      "bendRadius": 60,
+      "climate": "УХЛ1 (ГОСТ 15150-69)",
+      "coilWeight": "4,2кг",
+      "coilLength": 100,
+      "packageLength": 55,
+      "packageWidth": 55,
+      "packageHeight": 23,
+      "compression": "350 Н",
+      "price": 10.89,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_46b79715edd9705c4c16_2021006_d8dcfeb005.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.783Z",
+      "updatedAt": "2026-09-23T09:57:44.433Z",
+      "publishedAt": "2026-09-04T18:30:35.784Z",
+      "photo": {
+        "id": 14,
+        "documentId": "gtf4r5zru0706kbpvzhthcfh",
+        "name": "rpz-46b79715edd9705c4c16-2021006.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПНД (D20мм) Оранжевая Легкая, стойкая к УФ, Безгалогенность (HF), длина 100 м",
+        "caption": "Импорт исходного файла 2021006.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_46b79715edd9705c4c16_2021006_d8dcfeb005.webp",
+            "hash": "small_rpz_46b79715edd9705c4c16_2021006_d8dcfeb005",
+            "mime": "image/webp",
+            "name": "small_rpz-46b79715edd9705c4c16-2021006.webp",
+            "path": null,
+            "size": 21.31,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 21314
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_46b79715edd9705c4c16_2021006_d8dcfeb005.webp",
+            "hash": "medium_rpz_46b79715edd9705c4c16_2021006_d8dcfeb005",
+            "mime": "image/webp",
+            "name": "medium_rpz-46b79715edd9705c4c16-2021006.webp",
+            "path": null,
+            "size": 37.25,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 37248
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_46b79715edd9705c4c16_2021006_d8dcfeb005.webp",
+            "hash": "thumbnail_rpz_46b79715edd9705c4c16_2021006_d8dcfeb005",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-46b79715edd9705c4c16-2021006.webp",
+            "path": null,
+            "size": 5.5,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 5504
+          }
+        },
+        "hash": "rpz_46b79715edd9705c4c16_2021006_d8dcfeb005",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 46.65,
+        "url": "/uploads/rpz_46b79715edd9705c4c16_2021006_d8dcfeb005.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:44.420Z",
+        "updatedAt": "2026-09-23T09:57:44.420Z",
+        "publishedAt": "2026-09-23T09:57:44.420Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_46b79715edd9705c4c16_2021006_d8dcfeb005.webp"
+    },
+    {
+      "id": 62,
+      "documentId": "z77tz3iojj587bxo2ofwv6vx",
+      "name": "Гофрированная труба РПЗ ПНД (D25мм) Оранжевая Легкая, стойкая к УФ, Безгалогенность (HF), длина 50 м",
+      "slug": "gofrotruba-2021010",
+      "sku": "2021010",
+      "material": "ПНД",
+      "loadClass": "Легкая",
+      "description": "Гофрированная труба из полиэтилена низкого давления . Предназначена для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды при прокладке сложных систем и трасс. Применяются для скрытой и открытой прокладки в несущих и ограждающих конструкциях из несгораемых материалов жилых, административных и производственных зданий и сооружений. Труба не классифицируется по стойкости к горению и является горючим продуктом.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -55 до +90",
+      "combustibility": "Горючий",
+      "halogenFree": true,
+      "uvResistant": true,
+      "frostResistant": true,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Оранжевый",
+      "innerDiameter": 18.3,
+      "outerDiameter": 25,
+      "bendRadius": 75,
+      "climate": "УХЛ1 (ГОСТ 15150-69)",
+      "coilWeight": "3,1кг",
+      "coilLength": 50,
+      "packageLength": 55,
+      "packageWidth": 55,
+      "packageHeight": 20,
+      "compression": "350 Н",
+      "price": 15.91,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed.webp",
+      "featured": true,
+      "createdAt": "2026-09-04T18:30:35.785Z",
+      "updatedAt": "2026-09-23T09:57:44.627Z",
+      "publishedAt": "2026-09-04T18:30:35.786Z",
+      "photo": {
+        "id": 15,
+        "documentId": "jheujbt3rcdi0kdracpsj8yv",
+        "name": "rpz-9d334a113b98c55a19ac-2021010.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПНД (D25мм) Оранжевая Легкая, стойкая к УФ, Безгалогенность (HF), длина 50 м",
+        "caption": "Импорт исходного файла 2021010.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed.webp",
+            "hash": "small_rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed",
+            "mime": "image/webp",
+            "name": "small_rpz-9d334a113b98c55a19ac-2021010.webp",
+            "path": null,
+            "size": 16.56,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 16558
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed.webp",
+            "hash": "medium_rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed",
+            "mime": "image/webp",
+            "name": "medium_rpz-9d334a113b98c55a19ac-2021010.webp",
+            "path": null,
+            "size": 28.23,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 28232
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed.webp",
+            "hash": "thumbnail_rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-9d334a113b98c55a19ac-2021010.webp",
+            "path": null,
+            "size": 4.63,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 4634
+          }
+        },
+        "hash": "rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 36.56,
+        "url": "/uploads/rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:44.615Z",
+        "updatedAt": "2026-09-23T09:57:44.615Z",
+        "publishedAt": "2026-09-23T09:57:44.615Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_9d334a113b98c55a19ac_2021010_e21fa2c8ed.webp"
+    },
+    {
+      "id": 64,
+      "documentId": "dd5658u6z4tiyxy29llablb3",
+      "name": "Гофрированная труба РПЗ ПНД (D32мм) Оранжевая Легкая, стойкая к УФ, Безгалогенность (HF), длина 50 м",
+      "slug": "gofrotruba-2021011",
+      "sku": "2021011",
+      "material": "ПНД",
+      "loadClass": "Легкая",
+      "description": "Гофрированная труба из полиэтилена низкого давления . Предназначена для защиты изолированных проводов и кабелей от механических повреждений и агрессивного воздействия окружающей среды при прокладке сложных систем и трасс. Применяются для скрытой и открытой прокладки в несущих и ограждающих конструкциях из несгораемых материалов жилых, административных и производственных зданий и сооружений. Труба не классифицируется по стойкости к горению и является горючим продуктом.",
+      "packageType": "Стрейч пленка",
+      "temperature": "от -55 до +90",
+      "combustibility": "Горючий",
+      "halogenFree": true,
+      "uvResistant": true,
+      "frostResistant": true,
+      "concretePour": false,
+      "protection": "IP55 (ГОСТ 14254-2015)",
+      "color": "Оранжевый",
+      "innerDiameter": 24.3,
+      "outerDiameter": 32,
+      "bendRadius": 75,
+      "climate": "УХЛ1 (ГОСТ 15150-69)",
+      "coilWeight": "4,2кг",
+      "coilLength": 50,
+      "packageLength": 60,
+      "packageWidth": 60,
+      "packageHeight": 22,
+      "compression": "350 Н",
+      "price": 26.95,
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_0398b3361be76d6e1f5b_2021011_7462c544ee.webp",
+      "featured": false,
+      "createdAt": "2026-09-04T18:30:35.788Z",
+      "updatedAt": "2026-09-23T09:57:44.837Z",
+      "publishedAt": "2026-09-04T18:30:35.788Z",
+      "photo": {
+        "id": 16,
+        "documentId": "s2u1txn61s0qmb664fcwqs0g",
+        "name": "rpz-0398b3361be76d6e1f5b-2021011.webp",
+        "alternativeText": "Гофрированная труба РПЗ ПНД (D32мм) Оранжевая Легкая, стойкая к УФ, Безгалогенность (HF), длина 50 м",
+        "caption": "Импорт исходного файла 2021011.webp",
+        "focalPoint": null,
+        "width": 768,
+        "height": 512,
+        "formats": {
+          "small": {
+            "ext": ".webp",
+            "url": "/uploads/small_rpz_0398b3361be76d6e1f5b_2021011_7462c544ee.webp",
+            "hash": "small_rpz_0398b3361be76d6e1f5b_2021011_7462c544ee",
+            "mime": "image/webp",
+            "name": "small_rpz-0398b3361be76d6e1f5b-2021011.webp",
+            "path": null,
+            "size": 18.11,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 18112
+          },
+          "medium": {
+            "ext": ".webp",
+            "url": "/uploads/medium_rpz_0398b3361be76d6e1f5b_2021011_7462c544ee.webp",
+            "hash": "medium_rpz_0398b3361be76d6e1f5b_2021011_7462c544ee",
+            "mime": "image/webp",
+            "name": "medium_rpz-0398b3361be76d6e1f5b-2021011.webp",
+            "path": null,
+            "size": 31.13,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 31134
+          },
+          "thumbnail": {
+            "ext": ".webp",
+            "url": "/uploads/thumbnail_rpz_0398b3361be76d6e1f5b_2021011_7462c544ee.webp",
+            "hash": "thumbnail_rpz_0398b3361be76d6e1f5b_2021011_7462c544ee",
+            "mime": "image/webp",
+            "name": "thumbnail_rpz-0398b3361be76d6e1f5b-2021011.webp",
+            "path": null,
+            "size": 5.1,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 5100
+          }
+        },
+        "hash": "rpz_0398b3361be76d6e1f5b_2021011_7462c544ee",
+        "ext": ".webp",
+        "mime": "image/webp",
+        "size": 38.76,
+        "url": "/uploads/rpz_0398b3361be76d6e1f5b_2021011_7462c544ee.webp",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2026-09-23T09:57:44.823Z",
+        "updatedAt": "2026-09-23T09:57:44.823Z",
+        "publishedAt": "2026-09-23T09:57:44.823Z"
+      },
+      "imageThumbnail": "https://cms.rusplast-zavod.ru/uploads/small_rpz_0398b3361be76d6e1f5b_2021011_7462c544ee.webp"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "skolko-buht-gofrotruby-zakazat",
+      "title": "Сколько бухт гофротрубы заказать: расчёт метража по артикулам",
+      "seoTitle": "Сколько бухт гофротрубы заказать: расчёт и пример заявки",
+      "description": "Как перевести нужный метраж гофротрубы в количество бухт, рассчитать остаток и оформить заявку по артикулам. Пример для позиций ПВХ и ПНД из каталога.",
+      "category": "Закупка гофротрубы",
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_c4bae3a04374c857464a_pipe_gray_1280_51839bb112.webp",
+      "imageAlt": "Серая гофрированная труба ПВХ с зондом",
+      "intro": "Чтобы рассчитать количество бухт гофротрубы, разделите нужный метраж каждой позиции на длину её бухты. Если заказываете только целые бухты, округлите результат вверх. Главное — считать отдельно по артикулам и явно указывать единицы в заявке. Ниже разберём расчёт, остаток после округления и формулировку заказа на примере конкретных позиций каталога РУСПЛАСТЗАВОДА.",
+      "takeaway": "Рассчитывайте бухты отдельно для каждого артикула: потребность в метрах разделите на длину бухты и при заказе целыми бухтами округлите вверх. В заявке укажите одновременно количество бухт, длину одной бухты и общий метраж. Возможность отпуска части бухты уточняйте отдельно.",
+      "sections": [
+        {
+          "id": "what-to-check",
+          "list": [],
+          "links": [
+            {
+              "href": "/catalog/pvh",
+              "label": "Проверить длину бухты выбранной позиции ПВХ"
+            },
+            {
+              "href": "/catalog/pnd",
+              "label": "Проверить длину бухты выбранной позиции ПНД"
+            },
+            {
+              "href": "/blog/legkaya-i-tyazhelaya-gofra",
+              "label": "Как различать лёгкую и тяжёлую гофротрубу"
+            }
+          ],
+          "title": "Какие данные нужны для расчёта",
+          "paragraphs": [
+            "Рекомендуем начинать с перечня уже выбранных артикулов и потребности в метрах по каждому из них. Эта статья помогает оформить количество к закупке; сам требуемый метраж нужно взять из вашей согласованной ведомости. Если одна позиция встречается в нескольких строках, сначала проверьте совпадение артикула и согласованной комплектации.",
+            "Для расчёта выпишите длину бухты именно из карточки выбранного товара. У ПВХ артикула 2021024 длина бухты составляет 100 м. У ПНД артикула 2021010 длина бухты составляет 50 м. Эти значения относятся к указанным позициям: не подставляйте длину знакомой бухты в расчёт другого артикула без проверки.",
+            "Удобно подготовить таблицу с четырьмя исходными полями: артикул, описание позиции, потребность в метрах и длина одной бухты. Описание поможет заметить ошибку при переносе артикула, а отдельные колонки для метража исключат неоднозначную запись количества."
+          ]
+        },
+        {
+          "id": "calculation",
+          "list": [],
+          "links": [],
+          "title": "Как перевести метры в целые бухты",
+          "paragraphs": [
+            "Для заказа целыми бухтами используйте формулу: количество бухт = потребность в метрах / длина одной бухты с округлением результата вверх до целого числа. Затем умножьте полученное количество на длину бухты — это расчётный метраж заказа.",
+            "Например, условная потребность составляет 230 м, а выбранная позиция выпускается в бухте 100 м. Деление даёт 2,3. При заказе целыми бухтами получаются 3 бухты, то есть 300 м. Разница между заказанным и требуемым количеством составляет 70 м.",
+            "Если деление даёт целое число, округление ничего не добавляет: для потребности 200 м при длине бухты 100 м расчёт даёт 2 бухты. Рекомендуем сохранять в таблице и исходную потребность, и рассчитанное количество, чтобы при согласовании было видно происхождение каждой цифры."
+          ]
+        },
+        {
+          "id": "example",
+          "list": [],
+          "links": [],
+          "table": {
+            "rows": [
+              [
+                "2021024",
+                "230",
+                "100",
+                "3",
+                "300",
+                "70"
+              ],
+              [
+                "2021010",
+                "120",
+                "50",
+                "3",
+                "150",
+                "30"
+              ]
+            ],
+            "caption": "Условный расчёт при заказе целыми бухтами",
+            "headings": [
+              "Артикул",
+              "Потребность, м",
+              "Длина бухты, м",
+              "Количество бухт",
+              "Метраж заказа, м",
+              "Разница, м"
+            ]
+          },
+          "title": "Пример расчёта заказа из двух артикулов",
+          "paragraphs": [
+            "Ниже приведён условный пример закупки, а не сведения о выполненном заказе. Для позиции 2021024 примем потребность 230 м, для позиции 2021010 — 120 м. Длины бухт взяты из соответствующих каталогов; количество и разница рассчитаны для покупки целых бухт.",
+            "По двум строкам получается 450 м к заказу при суммарной потребности 350 м. Однако рекомендуем сохранять разницу отдельно по каждой позиции: дополнительные 70 м одного артикула нельзя автоматически засчитать в потребность по другому. Общую сумму используйте только как дополнительный итог ведомости."
+          ]
+        },
+        {
+          "id": "rounding-and-remainder",
+          "list": [],
+          "links": [],
+          "title": "Как согласовать разницу после округления",
+          "paragraphs": [
+            "Разница после округления — арифметический результат выбранного количества целых бухт. Рекомендуем показывать её отдельной колонкой и не называть автоматически необходимым запасом. Если в исходной потребности уже учтено дополнительное количество, повторное увеличение заявки стоит отдельно согласовать.",
+            "Если рассчитанный метраж превышает нужный, можно сформулировать вопрос поставщику: «Требуется 230 м артикула 2021024. Возможен ли отпуск такого количества или нужно заказать 3 бухты по 100 м?» Возможность отпуска части бухты уточните у поставщика до согласования заказа.",
+            "При изменении потребности пересчитайте всю строку: количество бухт, итоговый метраж и разницу. Не ограничивайтесь исправлением одной цифры в названии или комментарии — иначе в заявке могут остаться разные версии количества."
+          ]
+        },
+        {
+          "id": "order-wording",
+          "list": [
+            "Артикул и описание выбранной позиции.",
+            "Количество бухт и длина одной бухты в метрах.",
+            "Общий метраж по строке.",
+            "Комплектация, которую нужно подтвердить.",
+            "Комментарий о допустимости частичного отпуска, если он требуется."
+          ],
+          "links": [],
+          "title": "Как записать количество в заявке",
+          "paragraphs": [
+            "Рекомендуем указывать единицу измерения рядом с каждым количеством. Запись «2021024 — 3» оставляет открытым вопрос, что именно требуется. Более ясная формулировка для приведённого примера: «Артикул 2021024 — 3 бухты по 100 м, всего 300 м». Для второй строки: «Артикул 2021010 — 3 бухты по 50 м, всего 150 м».",
+            "Если коммерческое предложение составлено в метрах, а ваша ведомость — в бухтах, проверьте пересчёт до согласования. Рекомендуем попросить сохранить обе величины в ответе поставщика, чтобы можно было сопоставить предложение с исходной заявкой.",
+            "Комплектацию лучше выделить в отдельное поле. Если для заказа важен зонд или другой элемент, сформулируйте запрос на подтверждение по конкретному артикулу. Комплектацию и наличие зонда подтвердите по выбранному артикулу при заказе. Изображение не заменяет согласованное описание поставки."
+          ]
+        },
+        {
+          "id": "receiving",
+          "list": [],
+          "links": [],
+          "title": "Что сверить при приёмке количества",
+          "paragraphs": [
+            "Рекомендуем сверять поставку с последней согласованной версией заявки по строкам. Сначала сопоставьте артикулы, затем количество бухт и указанный метраж каждой бухты. Простого совпадения общего количества упаковок недостаточно: в приведённом примере обе строки содержат по три бухты, но имеют разный итоговый метраж.",
+            "Проверьте, согласуются ли данные на доступных обозначениях товара и в сопроводительных сведениях с заказом. Умножение количества бухт на заявленную длину позволяет проверить расчёт, но само по себе не подтверждает фактическую длину трубы внутри упаковки.",
+            "Если обнаружено расхождение, рекомендуем записать его по конкретному артикулу: что согласовано, что указано при поставке и какое количество требует уточнения. Приложите фотографию обозначений, если они есть. Такая запись поможет обсудить разницу без повторного восстановления всего расчёта."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://rusplast-zavod.ru/catalog/pvh",
+          "label": "Актуальный каталог РУСПЛАСТЗАВОДА: ПВХ"
+        },
+        {
+          "href": "https://rusplast-zavod.ru/catalog/pnd",
+          "label": "Актуальный каталог РУСПЛАСТЗАВОДА: ПНД"
+        }
+      ],
+      "related": [
+        "diametr-gofrotruby-16-20-25-32",
+        "legkaya-i-tyazhelaya-gofra"
+      ],
+      "publishedAt": "2026-09-23",
+      "author": "Редакция РУСПЛАСТЗАВОДА"
+    },
+    {
+      "slug": "gofra-pvh-ili-pnd",
+      "title": "ПВХ или ПНД: какую гофру выбрать для кабеля",
+      "seoTitle": "Гофра ПВХ или ПНД: отличия и выбор для кабеля",
+      "description": "Сравниваем гофрированные трубы ПВХ и ПНД: материал, нагрузку, температуру и условия применения. На что смотреть в характеристиках перед заказом.",
+      "category": "Выбор трубы",
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_a411b917bfd2319e9b09_blog_pvh_pnd_1280_ab903ea64a.webp",
+      "imageAlt": "Образцы серой, чёрной и оранжевой гофротрубы с открытыми торцами",
+      "intro": "Гофрированную трубу выбирают по условиям кабельной трассы, а затем по материалу, диаметру и исполнению. ПВХ и ПНД решают похожую задачу защиты кабеля, но отличаются характеристиками. Одинаковый диаметр или цвет ещё не делают две трубы взаимозаменяемыми.",
+      "takeaway": "Сначала определите условия прокладки и требования проекта. Затем сравните конкретные артикулы: материал, внутренний диаметр, сжатие, температуру и документы.",
+      "sections": [
+        {
+          "id": "material",
+          "title": "Что обозначают ПВХ и ПНД",
+          "paragraphs": [
+            "ПВХ — поливинилхлорид, ПНД — полиэтилен низкого давления. В ассортименте РУСПЛАСТЗАВОДА трубы ПВХ представлены в сером цвете, ПНД — в чёрном и оранжевом. Для обеих групп в каталоге есть наружные диаметры 16, 20, 25 и 32 мм.",
+            "Материал задаёт часть свойств, но не заменяет описание изделия. У труб из одного полимера могут различаться механическая прочность, добавки, допустимые температуры и область применения. Поэтому запрос «гофра 20 мм» стоит дополнить условиями объекта."
+          ]
+        },
+        {
+          "id": "comparison",
+          "table": {
+            "rows": [
+              [
+                "Исполнение",
+                "Лёгкое и тяжёлое",
+                "Лёгкое"
+              ],
+              [
+                "Сопротивление сжатию",
+                "350 Н / 750 Н",
+                "350 Н"
+              ],
+              [
+                "Эксплуатация",
+                "−25…+60 °C",
+                "−55…+90 °C"
+              ],
+              [
+                "Безгалогенность",
+                "Нет",
+                "Указана в таблице"
+              ],
+              [
+                "Заливка бетоном",
+                "Для тяжёлого исполнения",
+                "Для этих позиций не заявлена"
+              ],
+              [
+                "Поведение при горении",
+                "Проверяется по сертификату ПВХ",
+                "Горючий материал"
+              ]
+            ],
+            "caption": "Параметры труб из предоставленной таблицы продукции",
+            "headings": [
+              "Параметр",
+              "ПВХ",
+              "ПНД"
+            ]
+          },
+          "title": "Сравнение по данным ассортимента",
+          "paragraphs": [
+            "Таблица относится к представленным изделиям РПЗ. Её нельзя автоматически переносить на любую гофротрубу из ПВХ или ПНД другого исполнения. Температура эксплуатации также не равна допустимой температуре монтажа."
+          ]
+        },
+        {
+          "id": "indoor",
+          "links": [
+            {
+              "href": "/catalog/pvh",
+              "label": "Посмотреть трубы ПВХ"
+            }
+          ],
+          "title": "На что смотреть при прокладке внутри здания",
+          "paragraphs": [
+            "Для внутренней трассы сравнивают требования проекта к распространению горения и механическим воздействиям. На трубы ПВХ предоставлен сертификат ЕАЭС с приложением: в нём перечислены подтверждаемые показатели, включая стойкость к воздействию открытого пламени и распространению горения при групповой прокладке.",
+            "Это не означает, что труба исключает короткое замыкание или обеспечивает работоспособность всей линии при пожаре. Кабель, соединения, крепления и способ прокладки подбираются как система. Для участка под стяжкой отдельно проверяют разрешение на заливку бетоном: в таблице РПЗ оно указано у тяжёлых труб ПВХ."
+          ]
+        },
+        {
+          "id": "outdoor",
+          "links": [
+            {
+              "href": "/catalog/pnd",
+              "label": "Посмотреть трубы ПНД"
+            }
+          ],
+          "title": "Почему для улицы недостаточно выбрать чёрную трубу",
+          "paragraphs": [
+            "Цвет помогает различать изделия, но сам по себе не подтверждает стойкость к ультрафиолету. У ПНД-позиций в предоставленной таблице есть отметка о стойкости к УФ; при согласовании поставки этот параметр нужно связать с артикулом и паспортом конкретного исполнения.",
+            "Прокладка в грунте добавляет требования к нагрузке, влажности и конструкции трассы. Название «ПНД» не является разрешением на подземный монтаж любой лёгкой гофры. Если трасса проходит в земле, передайте её условия поставщику и проектировщику до выбора позиции."
+          ]
+        },
+        {
+          "id": "diameter",
+          "links": [
+            {
+              "href": "/blog/diametr-gofrotruby-16-20-25-32",
+              "label": "Как сравнивать диаметры 16–32 мм"
+            }
+          ],
+          "title": "Проверьте проход для кабеля и крепёж",
+          "paragraphs": [
+            "Наружный диаметр нужен для подбора клипс и сопряжений. Внутренний показывает доступное пространство для кабеля. Например, у ПВХ 20 мм в таблице указан внутренний диаметр 14,1 мм, а у ПНД 20 мм — 14,5 мм. Эти значения полезны для предварительного сравнения, окончательный подбор выполняют по паспорту.",
+            "Учитывают наружный размер кабеля, количество линий, повороты и условия протяжки. Подбирать гофру только по сечению жилы неверно: два кабеля с одинаковым сечением могут иметь разные наружные размеры."
+          ]
+        },
+        {
+          "id": "request",
+          "list": [
+            "Материал и наружный диаметр трубы.",
+            "Лёгкое или тяжёлое исполнение, требуемое сжатие.",
+            "Условия: помещение, солнечный свет, бетон или другая среда.",
+            "Метраж, наличие зонда и комплектующие.",
+            "Адрес доставки и требуемые документы."
+          ],
+          "links": [
+            {
+              "href": "/catalog",
+              "label": "Перейти в каталог гофрированных труб"
+            }
+          ],
+          "title": "Что указать в запросе на поставку",
+          "paragraphs": [
+            "Чем точнее исходные данные, тем проще получить сопоставимые предложения. Помимо метража, укажите, где проходит трасса и какие требования уже зафиксированы в проекте. Если есть спецификация, перенесите из неё материал, исполнение и требования к документам без сокращений."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "href": "/documents/sertifikat-eaes-pvh-00023-25.pdf",
+          "label": "Сертификат ЕАЭС на трубы ПВХ и приложение (PDF)"
+        },
+        {
+          "href": "/documents/sertifikat-pnd-75311.pdf",
+          "label": "Добровольный сертификат на трубы ПНД (PDF)"
+        }
+      ],
+      "related": [
+        "diametr-gofrotruby-16-20-25-32",
+        "legkaya-i-tyazhelaya-gofra"
+      ],
+      "publishedAt": "2026-09-18",
+      "author": "Редакция РУСПЛАСТЗАВОДА"
+    },
+    {
+      "slug": "diametr-gofrotruby-16-20-25-32",
+      "title": "Диаметры гофротрубы 16, 20, 25 и 32 мм: как читать размеры",
+      "seoTitle": "Диаметр гофротрубы 16, 20, 25, 32 мм: таблица размеров",
+      "description": "Наружный и внутренний диаметр гофры ПВХ и ПНД, подбор клипс и проверка метража. Таблица размеров 16–32 мм из ассортимента РУСПЛАСТЗАВОДА.",
+      "category": "Размеры и комплектация",
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_6c84d13940b6597a7228_blog_diameters_1280_1dcfa699c4.webp",
+      "imageAlt": "Четыре образца серой гофротрубы разных диаметров рядом со штангенциркулем",
+      "intro": "Диаметр гофротрубы в названии обычно обозначает её наружный размер. Для выбора прохода под кабель нужен внутренний диаметр, а для крепления — наружный. Разберём четыре размера из каталога РПЗ и сведения, которые стоит проверить перед закупкой.",
+      "takeaway": "«Гофра 20 мм» не означает внутренний проход 20 мм. Сверяйте оба диаметра и подбирайте клипсу по наружному размеру трубы.",
+      "sections": [
+        {
+          "id": "two-sizes",
+          "title": "Два диаметра — две разные задачи",
+          "paragraphs": [
+            "Наружный диаметр определяет габарит трубы и совместимость с крепежом. Внутренний диаметр нужен для оценки пространства, через которое пройдёт кабель. Разница между ними зависит от конструкции гофры, поэтому нельзя получить точный внутренний размер простым вычитанием произвольной толщины стенки.",
+            "В закупочной спецификации удобно указывать наружный диаметр, материал, исполнение и артикул. Внутренний размер проверяют дополнительно, особенно если заменяют изделие другого производителя или меняют тип кабеля."
+          ]
+        },
+        {
+          "id": "table",
+          "links": [
+            {
+              "href": "/catalog/pvh",
+              "label": "Каталог труб ПВХ"
+            },
+            {
+              "href": "/catalog/pnd",
+              "label": "Каталог труб ПНД"
+            }
+          ],
+          "table": {
+            "rows": [
+              [
+                "16",
+                "10,7",
+                "10,7"
+              ],
+              [
+                "20",
+                "14,1",
+                "14,5"
+              ],
+              [
+                "25",
+                "18,3",
+                "18,3"
+              ],
+              [
+                "32",
+                "24,3",
+                "24,3"
+              ]
+            ],
+            "caption": "Наружный и внутренний диаметр, мм",
+            "headings": [
+              "Наружный",
+              "Внутренний ПВХ",
+              "Внутренний ПНД"
+            ]
+          },
+          "title": "Таблица размеров труб РПЗ",
+          "paragraphs": [
+            "Ниже приведены значения из таблицы ассортимента. Это данные для предварительного подбора, а не производственные допуски. В сертификате ПВХ размеры записаны с допусками и отличаются от каталожных номиналов; для точного сопряжения запросите паспорт выбранного артикула."
+          ]
+        },
+        {
+          "id": "cable",
+          "list": [
+            "Зафиксируйте марку и наружный размер каждого кабеля.",
+            "Уточните число кабелей на участке.",
+            "Отметьте повороты и доступные точки протяжки.",
+            "Проверьте внутренний диаметр и требования к изгибу."
+          ],
+          "title": "Почему нельзя выбирать только по сечению жилы",
+          "paragraphs": [
+            "Сечение проводника и наружный диаметр кабеля — разные величины. На габарит влияют число жил, изоляция, оболочка и конструкция. Поэтому универсальная таблица вида «сечение — диаметр гофры» без указания кабеля может привести к ошибке.",
+            "Для подбора соберите наружные размеры кабелей из их документации, количество кабелей в трубе и схему трассы. Длинный участок с несколькими поворотами предъявляет другие требования к протяжке, чем короткий прямой отрезок. Допустимое заполнение и радиусы изгиба определяются проектом и документацией на изделия."
+          ]
+        },
+        {
+          "id": "clips",
+          "links": [
+            {
+              "href": "/catalog/aksessuary",
+              "label": "Клипсы, площадки и распаечные коробки"
+            }
+          ],
+          "title": "Как подобрать клипсы и распаечные коробки",
+          "paragraphs": [
+            "Для гофры с наружным диаметром 16 мм выбирают крепёж соответствующего типоразмера; такой же принцип применяют к 20, 25 и 32 мм. В ассортименте есть обычные клипсы и крепёж для монтажного пистолета. Это разные изделия, и способ установки следует указать в заказе.",
+            "Коробку подбирают с учётом числа вводов, места для соединений и способа ввода трубы. В таблице комплектующих есть коробки 65×65×45, 80×80×50 и 100×100×50 мм, а также сальники. Одни только внешние размеры коробки не подтверждают совместимость конкретного ввода."
+          ]
+        },
+        {
+          "id": "quantity",
+          "title": "Метры, бухты, упаковки: как избежать ошибки",
+          "paragraphs": [
+            "Трубы заказывают в бухтах, но сравнивают цену часто за метр. Крепёж может поставляться упаковками и коробами. Эти единицы важно разделять: «100» в названии упаковки клипс — количество штук, а не метров и не коробок.",
+            "Расчёт для согласованной длины бухты прост: количество бухт умножают на метраж одной бухты. Например, 12 бухт по 100 м — это 1 200 м. Это пример расчёта, а не указание длины любой позиции каталога. Перед оплатой сверяйте метраж в счёте: в исходной таблице заголовок размерной колонки и названия некоторых труб расходятся."
+          ]
+        },
+        {
+          "id": "checklist",
+          "list": [
+            "Наружный диаметр: 16 / 20 / 25 / 32 мм.",
+            "Материал и исполнение трубы.",
+            "Внутренний диаметр по паспорту.",
+            "Длина бухты и суммарный метраж.",
+            "Клипсы нужного размера и способа крепления."
+          ],
+          "links": [
+            {
+              "href": "/blog/legkaya-i-tyazhelaya-gofra",
+              "label": "Чем отличаются лёгкая и тяжёлая трубы"
+            }
+          ],
+          "title": "Короткая проверка спецификации",
+          "paragraphs": [
+            "Перед отправкой заявки сверьте, что размер указан в миллиметрах, количество — в понятной единице, а рядом есть материал и исполнение. Если важен определённый проход, запишите требование к внутреннему диаметру отдельно. Это поможет согласовать замену без потери нужных характеристик."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "href": "/documents/sertifikat-eaes-pvh-00023-25.pdf",
+          "label": "Сертификат ЕАЭС на трубы ПВХ и приложение (PDF)"
+        }
+      ],
+      "related": [
+        "gofra-pvh-ili-pnd",
+        "legkaya-i-tyazhelaya-gofra"
+      ],
+      "publishedAt": "2026-09-18",
+      "author": "Редакция РУСПЛАСТЗАВОДА"
+    },
+    {
+      "slug": "legkaya-i-tyazhelaya-gofra",
+      "title": "Лёгкая и тяжёлая гофра: что означают 350 и 750 Н",
+      "seoTitle": "Лёгкая и тяжёлая гофра: отличия, 350 Н и 750 Н",
+      "description": "Разбираем сопротивление сжатию, применение гофры в бетоне и выбор исполнения. Сравнение лёгких и тяжёлых труб ПВХ из каталога РПЗ.",
+      "category": "Выбор трубы",
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_65c7987409c555201743_blog_compression_1280_b8a36b5c18.webp",
+      "imageAlt": "Образец серой гофротрубы между плитами установки для испытания на сжатие",
+      "intro": "Лёгкое и тяжёлое исполнение гофротрубы различают по характеристикам изделия, а не только по массе бухты. Для закупки важны сопротивление сжатию, разрешённые условия прокладки и размеры. В ассортименте РПЗ лёгкие трубы имеют показатель 350 Н, тяжёлые ПВХ — 750 Н.",
+      "takeaway": "750 Н — характеристика сопротивления сжатию при испытании. Это не допустимый вес человека, оборудования или слоя бетона на трубе.",
+      "sections": [
+        {
+          "id": "compression",
+          "title": "Как понимать сопротивление сжатию",
+          "paragraphs": [
+            "Показатель в ньютонах характеризует механическое поведение трубы в условиях соответствующего испытания. Сравнивать значения корректно для изделий с сопоставимыми методами и условиями испытаний. Число 750 больше 350, но не описывает все воздействия, которые возникнут на строительной площадке.",
+            "Прямой перевод этого числа в «сколько килограммов выдержит труба» не даёт безопасного правила монтажа. В реальной конструкции действуют точечные нагрузки, деформация, температура и особенности основания. Решение принимают по проекту и документации конкретной продукции."
+          ]
+        },
+        {
+          "id": "compare",
+          "links": [
+            {
+              "href": "/catalog/pvh",
+              "label": "Выбрать исполнение в каталоге ПВХ"
+            }
+          ],
+          "table": {
+            "rows": [
+              [
+                "Сжатие",
+                "350 Н",
+                "750 Н"
+              ],
+              [
+                "Наружные диаметры",
+                "16, 20, 25, 32 мм",
+                "16, 20, 25, 32 мм"
+              ],
+              [
+                "Заливка бетоном",
+                "Не заявлена",
+                "Заявлена"
+              ],
+              [
+                "Температура эксплуатации",
+                "−25…+60 °C",
+                "−25…+60 °C"
+              ]
+            ],
+            "caption": "Сравнение исполнений по таблице продукции",
+            "headings": [
+              "Характеристика",
+              "Лёгкая ПВХ",
+              "Тяжёлая ПВХ"
+            ]
+          },
+          "title": "Что различается у труб ПВХ РПЗ",
+          "paragraphs": [
+            "Оба исполнения представлены в сером цвете и наружных диаметрах 16–32 мм. Ключевое различие в таблице — механический показатель и возможность заливки бетоном. По одному цвету отличить требуемое исполнение нельзя: нужен артикул или маркировка упаковки."
+          ]
+        },
+        {
+          "id": "concrete",
+          "title": "Как выбирать гофру под заливку бетоном",
+          "paragraphs": [
+            "Если трасса будет заливаться бетоном, это условие нужно назвать уже при запросе цены. В предоставленных материалах есть расхождение: общее описание отдельных лёгких труб упоминает бетон, но в отдельной колонке «Заливка бетоном» для них стоит «нет». Для выбора учитывайте характеристику конкретного исполнения и подтверждающий паспорт.",
+            "Тяжёлая ПВХ отмечена как подходящая для заливки. Однако сама эта отметка не задаёт схему крепления, толщину слоя или допустимые нагрузки на участке. Их определяет проект. До начала работ проверьте маркировку доставленных бухт и соответствие согласованной спецификации."
+          ]
+        },
+        {
+          "id": "weight",
+          "links": [
+            {
+              "href": "/blog/diametr-gofrotruby-16-20-25-32",
+              "label": "Разобраться в диаметрах гофротруб"
+            }
+          ],
+          "title": "Почему масса бухты не заменяет характеристику",
+          "paragraphs": [
+            "Масса зависит от метража, диаметра и конструкции трубы. Сравнение двух бухт без этих данных малоинформативно: более тяжёлая упаковка может просто содержать больше метров. Если масса важна для закупки или производства под СТМ, её согласуют вместе с длиной бухты и допустимыми отклонениями.",
+            "Кроме сжатия, проверьте внутренний диаметр и минимальный радиус изгиба. Более прочное исполнение должно подходить к кабелю, крепежу и геометрии трассы. Замена одной позиции на другую требует проверки всего набора параметров."
+          ]
+        },
+        {
+          "id": "pnd",
+          "links": [
+            {
+              "href": "/catalog/pnd",
+              "label": "Доступные трубы ПНД"
+            }
+          ],
+          "title": "Есть ли тяжёлая ПНД в этом каталоге",
+          "paragraphs": [
+            "В предоставленной таблице труб ПНД представлены лёгкие чёрные и оранжевые позиции с показателем 350 Н. Наличие тяжёлой ПВХ не означает, что то же исполнение есть у ПНД. Для запроса нестандартной продукции нужно отдельно согласовать материал и требуемые характеристики.",
+            "Также не стоит переносить разрешение на бетон с ПВХ 750 Н на любую ПНД того же диаметра. Материал и исполнение проверяются одновременно. Если нужного сочетания нет в каталоге, направьте запрос с условиями применения."
+          ]
+        },
+        {
+          "id": "order",
+          "links": [
+            {
+              "href": "/blog/dokumenty-na-gofrotrubu",
+              "label": "Какие документы запросить на трубы"
+            }
+          ],
+          "title": "Как записать исполнение в заявку",
+          "paragraphs": [
+            "Практичная строка заявки содержит материал, размер, класс и метраж. Например: «ПВХ, наружный диаметр 20 мм, тяжёлая, 750 Н; требуется подтверждение применения под заливку бетоном». Количество и длину бухт добавляют после согласования конкретного артикула.",
+            "Перед приёмкой сравните артикулы в счёте, маркировку и комплект документов. Не заменяйте проверку обещанием «усиленная гофра»: такое описание без измеримого показателя не позволяет сравнить два предложения."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "href": "/documents/sertifikat-eaes-pvh-00023-25.pdf",
+          "label": "Сертификат ЕАЭС на трубы ПВХ и приложение (PDF)"
+        }
+      ],
+      "related": [
+        "gofra-pvh-ili-pnd",
+        "dokumenty-na-gofrotrubu"
+      ],
+      "publishedAt": "2026-09-18",
+      "author": "Редакция РУСПЛАСТЗАВОДА"
+    },
+    {
+      "slug": "gofrotruba-frhf",
+      "title": "Гофротруба FRHF: что уточнить перед заказом",
+      "seoTitle": "Гофротруба FRHF: безгалогенность, свойства и заказ",
+      "description": "Чем FRHF отличается от HF, какие характеристики и документы нужны для подбора. Как согласовать заказную гофротрубу FRHF у производителя.",
+      "category": "Материалы",
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_b1c2f26fdc4453f0a570_blog_frhf_1280_7dfa0f2f27.webp",
+      "imageAlt": "Тёмные гофрированные трубы в металлическом кабельном лотке технического помещения",
+      "intro": "FRHF используют как обозначение безгалогенного трудногорючего исполнения гофротрубы. Для РУСПЛАСТЗАВОДА это заказная продукция: характеристики и документы согласуют под конкретный запрос. Разберём, что нужно выяснить до включения трубы в спецификацию.",
+      "takeaway": "Маркировка FRHF не заменяет технический паспорт и не подтверждает огнестойкость всей кабельной линии. Требования проекта нужно сопоставить с документами конкретного изделия.",
+      "sections": [
+        {
+          "id": "meaning",
+          "links": [
+            {
+              "href": "/catalog/frhf",
+              "label": "Заказные трубы FRHF"
+            }
+          ],
+          "title": "Что означает обозначение FRHF",
+          "paragraphs": [
+            "В обозначении труб FR означает Fire Retardant, а HF — Halogen Free. Речь идёт о двух разных свойствах: поведении материала при воздействии пламени и отсутствии галогенов в соответствующем исполнении. Для закупки недостаточно увидеть аббревиатуру: нужны подтверждаемые показатели и методы испытаний.",
+            "Не следует обещать полное отсутствие дыма или любых опасных продуктов горения только на основании HF. Показатели дымообразования и состава продуктов горения, если они требуются проектом, проверяют отдельно."
+          ]
+        },
+        {
+          "id": "hf",
+          "links": [
+            {
+              "href": "/blog/gofra-pvh-ili-pnd",
+              "label": "Сравнение труб ПВХ и ПНД"
+            }
+          ],
+          "title": "Почему HF и FRHF нельзя приравнивать",
+          "paragraphs": [
+            "В таблице ассортимента ПНД одновременно отмечены безгалогенность и горючесть. Эти сведения не противоречат друг другу: отсутствие галогенов само по себе не описывает стойкость к распространению пламени. Поэтому обычную ПНД нельзя автоматически использовать как замену заказной FRHF.",
+            "Обратное также требует проверки: название «трудногорючая» не сообщает наружный и внутренний диаметр, сопротивление сжатию или температуру монтажа. Для замены важно совпадение всего набора требований, а не одного свойства."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Свойства трубы и работоспособность линии",
+          "paragraphs": [
+            "Гофра — один из элементов кабельной трассы. Если проект предусматривает работу линии в условиях пожара, проверяют документированное решение для кабеля, креплений и способа монтажа в целом. Один сертификат на материал трубы не доказывает характеристики произвольной сборки.",
+            "Поэтому нельзя объявлять FRHF универсально обязательной для любого общественного здания или подходящей для любой противопожарной системы. В запросе поставщику следует привести конкретное требование проектной документации и перечень подтверждений, которые нужны на объекте."
+          ]
+        },
+        {
+          "id": "spec",
+          "list": [
+            "Назначение изделия и условия прокладки.",
+            "Наружный и внутренний диаметр, требуемое сжатие.",
+            "Температурные условия эксплуатации и монтажа.",
+            "Требования к распространению горения и безгалогенности.",
+            "Необходимые испытания, сертификаты и маркировка.",
+            "Метраж партии, цвет, длина бухты, зонд и упаковка."
+          ],
+          "title": "Какие параметры включить в запрос",
+          "paragraphs": [
+            "Для заказного изготовления полезно заранее разделить обязательные параметры и пожелания. Так производитель сможет оценить техническую возможность и подготовить предложение без подмены требований. Цвет и упаковку согласуют после основных характеристик."
+          ]
+        },
+        {
+          "id": "documents",
+          "links": [
+            {
+              "href": "/blog/dokumenty-na-gofrotrubu",
+              "label": "Как читать документы на гофротрубу"
+            }
+          ],
+          "title": "Как согласовать документы на заказную продукцию",
+          "paragraphs": [
+            "Предоставленный сертификат ЕАЭС РУСПЛАСТЗАВОДА относится к трубам из ПВХ, а добровольный сертификат — к ПНД. В изученном комплекте нет отдельного документа, который подтверждает характеристики всех будущих исполнений FRHF. Поэтому их нельзя представлять на сайте как уже сертифицированные под любой проект.",
+            "Если продукция производится под торговой маркой заказчика, заранее согласуйте, кто оформляет документы и какие модели, состав и площадка производства входят в их область действия. Документы на другой бренд или другую композицию нельзя автоматически считать достаточными."
+          ]
+        },
+        {
+          "id": "supply",
+          "links": [
+            {
+              "href": "/#about",
+              "label": "Производство гофротрубы под СТМ"
+            }
+          ],
+          "title": "Как организована поставка FRHF",
+          "paragraphs": [
+            "FRHF у РУСПЛАСТЗАВОДА не заявлена как складская позиция. Запрос начинается с технического задания, после чего согласуются исполнение, объём, стоимость и срок производства. Каталожную цену ПВХ или ПНД нельзя использовать для предварительной оценки такой партии без расчёта.",
+            "Для первого обращения достаточно описать задачу, приложить требования к характеристикам через согласованный с менеджером канал и указать плановый метраж. Если есть собственная торговая марка, сообщите об этом сразу: маркировка и комплект документов повлияют на подготовку заказа."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://tdme.ru/category/Truby_gofrirovannye_bezgalogennye_trudnogoryuchie_FRHF",
+          "label": "Номенклатура FRHF у производителя TDM ELECTRIC"
+        },
+        {
+          "href": "/documents/sertifikat-eaes-pvh-00023-25.pdf",
+          "label": "Сертификат ЕАЭС на трубы ПВХ и приложение (PDF)"
+        },
+        {
+          "href": "/documents/sertifikat-pnd-75311.pdf",
+          "label": "Добровольный сертификат на трубы ПНД (PDF)"
+        }
+      ],
+      "related": [
+        "dokumenty-na-gofrotrubu",
+        "gofrotruba-pod-stm"
+      ],
+      "publishedAt": "2026-09-18",
+      "author": "Редакция РУСПЛАСТЗАВОДА"
+    },
+    {
+      "slug": "dokumenty-na-gofrotrubu",
+      "title": "Документы на гофротрубу: сертификат, протокол и письмо",
+      "seoTitle": "Сертификат на гофротрубу: как проверить комплект документов",
+      "description": "Что содержат сертификаты ПВХ и ПНД, протоколы испытаний и информационное письмо. Чек-лист проверки документов перед закупкой гофротруб.",
+      "category": "Документы",
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_a878e3ee8d12d43eedea_blog_documents_1280_8f9213c5b1.webp",
+      "imageAlt": "Комплект технических документов и образцы гофротрубы на рабочем столе",
+      "intro": "Сертификат, протокол испытаний и информационное письмо отвечают на разные вопросы. Для приёмки важно проверить не только наличие PDF, но и его связь с поставляемой продукцией. Ниже — разбор документов РУСПЛАСТЗАВОДА и последовательность проверки комплекта.",
+      "takeaway": "Сопоставьте изготовителя, материал, наименование продукции, область действия и сроки. Результат испытания одного образца нельзя переносить на весь ассортимент без основания.",
+      "sections": [
+        {
+          "id": "pvc",
+          "links": [
+            {
+              "href": "/documents/sertifikat-eaes-pvh-00023-25.pdf",
+              "label": "Сертификат ЕАЭС на трубы ПВХ и приложение (PDF)"
+            }
+          ],
+          "title": "Сертификат ЕАЭС на трубы ПВХ",
+          "paragraphs": [
+            "В предоставленном сертификате ЕАЭС RU C-RU.НК07.В.00023/25 указаны гибкие гофрированные трубы из поливинилхлорида для кабелей и проводов по ТУ 22.21.29-001-47696084-2021. На бланке записан срок с 9 октября 2025 года по 8 октября 2030 года включительно.",
+            "Приложение перечисляет подтверждаемые требования: теплостойкость, стойкость к зажиганию нагретой проволокой, к воздействию открытого пламени и к распространению горения при групповой прокладке. Там же приведены условия хранения. Поэтому при проверке нужен весь комплект, включая вторую страницу.",
+            "Даты на скане показывают указанный в документе период, но не заменяют проверку текущего статуса записи в официальном реестре. На сайте опубликованы предоставленные копии."
+          ]
+        },
+        {
+          "id": "tests",
+          "table": {
+            "rows": [
+              [
+                "101С/ЭП/2025",
+                "ПВХ Д16, арт. 2021022",
+                "Распространение горения при групповой прокладке"
+              ],
+              [
+                "102С/ЭП/2025",
+                "ПВХ Д25, арт. 2021032",
+                "Распространение горения при групповой прокладке"
+              ],
+              [
+                "103С/ЭП/2025",
+                "ПВХ Д50, арт. 2021240",
+                "Теплостойкость, нагретая проволока, открытое пламя и групповая прокладка"
+              ]
+            ],
+            "caption": "Образцы и содержание предоставленных протоколов",
+            "headings": [
+              "Протокол",
+              "Образец",
+              "Содержание"
+            ]
+          },
+          "title": "Что содержат три протокола испытаний",
+          "paragraphs": [
+            "Протоколы № 101С/ЭП/2025, 102С/ЭП/2025 и 103С/ЭП/2025 датированы 15 августа 2025 года и относятся к образцам ПВХ. Они позволяют увидеть, что именно испытывалось, какими методами и какой результат получен.",
+            "В каждом протоколе оговорено, что результаты относятся к испытанным образцам. Диаметры и исполнения при закупке сверяют с областью сертификата и паспортом товара; сам факт наличия протокола на диаметр 50 мм не означает, что такая позиция есть в текущем онлайн-каталоге."
+          ]
+        },
+        {
+          "id": "pnd",
+          "links": [
+            {
+              "href": "/documents/sertifikat-pnd-75311.pdf",
+              "label": "Добровольный сертификат на трубы ПНД (PDF)"
+            }
+          ],
+          "title": "Добровольный сертификат на ПНД",
+          "paragraphs": [
+            "Сертификат № РОСС RU.32001.04ИБФ1.ОСП32.75311 выдан в системе добровольной сертификации «ПромТехСтандарт» на гибкие гофрированные трубы ПНД. На скане указан срок с 23 апреля 2025 года по 22 апреля 2028 года.",
+            "Его следует называть добровольным сертификатом, а не пожарным сертификатом на весь ассортимент. Он относится к указанной продукции и нормативному документу. Наличие этого бланка не делает ПНД негорючей: в таблице продукции она отмечена как горючий материал."
+          ]
+        },
+        {
+          "id": "letter",
+          "links": [
+            {
+              "href": "/documents/informacionnoe-pismo-pnd-klipsy-198-25.pdf",
+              "label": "Информационное письмо № 198/25 (PDF)"
+            }
+          ],
+          "title": "О чём говорит информационное письмо",
+          "paragraphs": [
+            "Письмо № 198/25 от 23 апреля 2025 года рассматривает вопрос обязательного подтверждения соответствия требованиям пожарной безопасности для труб ПНД и клипс. Это иной документ, чем протокол измерения характеристик: он не устанавливает сопротивление сжатию, стойкость к УФ или степень защиты изделия.",
+            "В письме есть условие о действии информации до изменения перечисленных нормативных документов. Поэтому при закупке нужно оценивать актуальность письма на дату поставки. Его содержание не следует превращать в бессрочное заявление, что для продукции никогда не нужны никакие подтверждения."
+          ]
+        },
+        {
+          "id": "check",
+          "list": [
+            "Изготовитель и идентификаторы юридического лица.",
+            "Материал, артикул, диаметр и исполнение.",
+            "Приложения и перечень подтверждённых показателей.",
+            "Сроки на документе и актуальный статус записи.",
+            "Маркировка, паспорт и документы на партию."
+          ],
+          "links": [
+            {
+              "href": "/#certificates",
+              "label": "Все опубликованные документы"
+            },
+            {
+              "href": "/catalog",
+              "label": "Перейти к каталогу продукции"
+            }
+          ],
+          "title": "Что проверить перед приёмкой",
+          "paragraphs": [
+            "Начните со спецификации и маркировки поставки. Затем сопоставьте их с документами, проверяя материал, изготовителя и область применения. Если в старом скане указан прежний адрес компании, сравните ИНН и ОГРН с актуальными реквизитами и уточните изменения у поставщика.",
+            "В протоколе 102 образец назван лёгким, тогда как в ассортиментной таблице этот артикул отнесён к тяжёлым. Это повод запросить уточнение по конкретной поставке, а не самостоятельно исправлять исходный документ."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "href": "/documents/sertifikat-eaes-pvh-00023-25.pdf",
+          "label": "Сертификат ЕАЭС на трубы ПВХ и приложение (PDF)"
+        },
+        {
+          "href": "/documents/sertifikat-pnd-75311.pdf",
+          "label": "Добровольный сертификат на трубы ПНД (PDF)"
+        },
+        {
+          "href": "/documents/protokol-101-2025.pdf",
+          "label": "Протокол № 101С/ЭП/2025 (PDF)"
+        },
+        {
+          "href": "/documents/protokol-102-2025.pdf",
+          "label": "Протокол № 102С/ЭП/2025 (PDF)"
+        },
+        {
+          "href": "/documents/protokol-103-2025.pdf",
+          "label": "Протокол № 103С/ЭП/2025 (PDF)"
+        }
+      ],
+      "related": [
+        "legkaya-i-tyazhelaya-gofra",
+        "gofrotruba-frhf"
+      ],
+      "publishedAt": "2026-09-18",
+      "author": "Редакция РУСПЛАСТЗАВОДА"
+    },
+    {
+      "slug": "gofrotruba-pod-stm",
+      "title": "Гофротруба под СТМ: как подготовить заказ на производство",
+      "seoTitle": "Производство гофротрубы под СТМ: подготовка заказа",
+      "description": "Что включить в техническое задание на гофротрубу под своим брендом: материал, размеры, упаковка, маркировка, документы и график поставок.",
+      "category": "Производство и закупки",
+      "image": "https://cms.rusplast-zavod.ru/uploads/rpz_be986e328df17e0e678e_blog_private_label_1280_0a219aeb90.webp",
+      "imageAlt": "Упакованные бухты гофротрубы, чистые этикетки и коробки на упаковочном столе",
+      "intro": "Производство гофротрубы под СТМ позволяет выпускать продукцию под брендом заказчика. Чтобы партия соответствовала ожиданиям, до расчёта цены нужно согласовать технические характеристики, упаковку, маркировку и документы. Собрали последовательность подготовки запроса для оптовых компаний и дистрибьюторов.",
+      "takeaway": "Хорошее техническое задание на СТМ описывает саму трубу, единицы поставки, этикетку и критерии приёмки. Логотип — только одна часть заказа.",
+      "sections": [
+        {
+          "id": "format",
+          "links": [
+            {
+              "href": "/#about",
+              "label": "Условия производства под СТМ"
+            }
+          ],
+          "title": "Что входит в производство под своей маркой",
+          "paragraphs": [
+            "СТМ — собственная торговая марка заказчика; для такого формата также используют названия Private Label и контрактное производство. Заказчик задаёт требования к продукту и бренду, а производитель согласует возможность выпуска, условия и состав партии.",
+            "РУСПЛАСТЗАВОД выпускает кабеленесущую продукцию в Раменском районе Московской области. По сведениям о компании, производство работает с 2021 года, включает три экструзионные линии и более 1 700 м² производственных помещений. Полный цикл включает подготовку сырья и выпуск готовой продукции.",
+            "Эти сведения описывают площадку, но не являются обещанием свободной мощности или фиксированного срока для любого заказа. Загрузку и график конкретной партии согласуют отдельно."
+          ]
+        },
+        {
+          "id": "specification",
+          "list": [
+            "Материал, диаметры и исполнение.",
+            "Сопротивление сжатию и условия применения.",
+            "Цвет, наличие зонда и длина бухты.",
+            "Требования к испытаниям и подтверждающим документам."
+          ],
+          "links": [
+            {
+              "href": "/blog/legkaya-i-tyazhelaya-gofra",
+              "label": "Лёгкая и тяжёлая гофра: параметры для сравнения"
+            }
+          ],
+          "title": "Сначала — техническая спецификация",
+          "paragraphs": [
+            "Зафиксируйте материал и назначение: ПВХ, ПНД или заказное исполнение FRHF. Затем укажите наружный и внутренний диаметр, механические показатели, температурные условия и требования проекта. Не заменяйте измеримые параметры формулировками «усиленная» или «премиальная».",
+            "Если нужен аналог имеющейся трубы, передайте её спецификацию и перечислите характеристики, которые должны совпасть. Образец может помочь согласовать внешний вид, но сам по себе не описывает все свойства материала."
+          ]
+        },
+        {
+          "id": "packaging",
+          "links": [
+            {
+              "href": "/catalog/aksessuary",
+              "label": "Комплектующие для труб"
+            }
+          ],
+          "title": "Упаковка, маркировка и единицы поставки",
+          "paragraphs": [
+            "Согласуйте длину одной бухты, способ упаковки, количество упаковок и правила формирования транспортной партии. Если в ассортимент входят клипсы и коробки, укажите для них отдельные единицы: штука, упаковка, короб. Это уменьшает риск ошибки при расчёте объёма и приёмке.",
+            "Для этикетки нужны утверждённое название, артикул, сведения об изготовителе, размеры, метраж и другая обязательная для согласованного изделия информация. Макет и способ нанесения торговой марки согласуют до выпуска. Возможность использования знаков соответствия связывают с документами на продукцию."
+          ]
+        },
+        {
+          "id": "acceptance",
+          "links": [
+            {
+              "href": "/blog/dokumenty-na-gofrotrubu",
+              "label": "Проверка сертификатов и протоколов"
+            },
+            {
+              "href": "/blog/gofrotruba-frhf",
+              "label": "Что уточнить по FRHF"
+            }
+          ],
+          "title": "Документы и критерии приёмки",
+          "paragraphs": [
+            "Заранее определите, какие документы передаются с партией и кто отвечает за оформление подтверждений для продукции под вашим брендом. Особенно это важно для заказной композиции: сертификаты ПВХ или ПНД не распространяются автоматически на другое исполнение.",
+            "Критерии приёмки должны быть проверяемыми: артикул, размеры, метраж, комплектность, маркировка и согласованные показатели. Если для проекта требуется предварительный образец, включите его в план согласования до серийной партии."
+          ]
+        },
+        {
+          "id": "logistics",
+          "title": "Объём партии и график отгрузок",
+          "paragraphs": [
+            "В запросе укажите стартовый объём и предполагаемую периодичность повторных заказов. Минимальную партию СТМ, срок изготовления и стоимость рассчитывают под спецификацию. Условия обычной складской поставки нельзя автоматически считать условиями контрактного производства.",
+            "Завод и склад расположены в посёлке Рылеево, 608/1. Компания организует поставки по Москве, Московской области и России собственным и привлечённым транспортом. В предоставленных условиях бесплатная доставка от 100 бухт действует в пределах МКАД, кроме территории внутри ТТК, либо до транспортной компании; применимость к конкретному заказу согласуют с менеджером."
+          ]
+        },
+        {
+          "id": "brief",
+          "links": [
+            {
+              "href": "/#request",
+              "label": "Обсудить производство под вашей маркой"
+            }
+          ],
+          "title": "Что отправить для первого расчёта",
+          "paragraphs": [
+            "Для начала соберите короткий бриф: какие позиции нужны, где они будут применяться, какой метраж планируется и к какой дате. Добавьте требования к бренду и документам. Если часть характеристик ещё не определена, перечислите их как вопросы к согласованию.",
+            "После расчёта сравнивайте предложения по одной спецификации. Цена за метр имеет смысл только вместе с материалом, исполнением, длиной бухты, упаковкой и условиями доставки. Такой подход помогает принять решение о закупке без скрытой разницы в комплектации."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "href": "/#about",
+          "label": "Сведения о заводе"
+        },
+        {
+          "href": "/#contacts",
+          "label": "Контакты производства и отдела продаж"
+        }
+      ],
+      "related": [
+        "dokumenty-na-gofrotrubu",
+        "gofrotruba-frhf"
+      ],
+      "publishedAt": "2026-09-18",
+      "author": "Редакция РУСПЛАСТЗАВОДА"
+    }
+  ],
+  "documents": [
+    {
+      "slug": "sertifikat-eaes-pvh-00023-25",
+      "title": "Сертификат соответствия ЕАЭС",
+      "subtitle": "ПВХ · № RU C-RU.НК07.В.00023/25 · до 08.10.2030",
+      "pdf": "https://cms.rusplast-zavod.ru/uploads/rpz_a96033dcd7ed4484500b_sertifikat_eaes_pvh_00023_25_7e3a27f746.pdf",
+      "pages": [
+        "https://cms.rusplast-zavod.ru/uploads/rpz_a78ad40b31db443baebd_sertifikat_eaes_pvh_00023_25_1_f19cf3ef80.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_c1d8ffdd118481468a82_sertifikat_eaes_pvh_00023_25_2_0ff95b637b.jpg"
+      ]
+    },
+    {
+      "slug": "sertifikat-pnd-75311",
+      "title": "Добровольный сертификат ПНД",
+      "subtitle": "ПНД · № РОСС RU.32001.04ИБФ1.ОСП32.75311 · до 22.04.2028",
+      "pdf": "https://cms.rusplast-zavod.ru/uploads/rpz_25b8dd7a77d1072e0e19_sertifikat_pnd_75311_a9d93080be.pdf",
+      "pages": [
+        "https://cms.rusplast-zavod.ru/uploads/rpz_054ae1d8b174cb62c241_sertifikat_pnd_75311_1_54c2a99510.jpg"
+      ]
+    },
+    {
+      "slug": "informacionnoe-pismo-pnd-klipsy-198-25",
+      "title": "Информационное письмо",
+      "subtitle": "ПНД и клипсы · № 198/25 от 23.04.2025",
+      "pdf": "https://cms.rusplast-zavod.ru/uploads/rpz_dcc38eceb246b5714797_informacionnoe_pismo_pnd_klipsy_198_25_2d17f63bb1.pdf",
+      "pages": [
+        "https://cms.rusplast-zavod.ru/uploads/rpz_8826f8125acd37c64948_informacionnoe_pismo_pnd_klipsy_198_25_1_5b45e1cf55.jpg"
+      ]
+    },
+    {
+      "slug": "protokol-101-2025",
+      "title": "Протокол № 101С/ЭП/2025",
+      "subtitle": "Протокол испытаний",
+      "pdf": "https://cms.rusplast-zavod.ru/uploads/rpz_5a60f7981bc8a2a56603_protokol_101_2025_95b56875d4.pdf",
+      "pages": [
+        "https://cms.rusplast-zavod.ru/uploads/rpz_206ace791db09f63880a_protokol_101_2025_1_213905bd2b.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_85d60716ccb40278cf7a_protokol_101_2025_2_e8ecc8852c.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_d9645fceb1669c316a35_protokol_101_2025_3_a215b82d07.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_e24f5a1cbaf87aeba49a_protokol_101_2025_4_0b1dac8085.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_92bfc749bd3960037115_protokol_101_2025_5_14067ed307.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_0095262989271aa72dd8_protokol_101_2025_6_1c8e7f1d6f.jpg"
+      ]
+    },
+    {
+      "slug": "protokol-102-2025",
+      "title": "Протокол № 102С/ЭП/2025",
+      "subtitle": "Протокол испытаний",
+      "pdf": "https://cms.rusplast-zavod.ru/uploads/rpz_dc1c5d95c5b3f36e15e9_protokol_102_2025_7b1b84099e.pdf",
+      "pages": [
+        "https://cms.rusplast-zavod.ru/uploads/rpz_2c7021fc62fcd5bf6ef1_protokol_102_2025_1_5fb072b280.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_0b2764e155307a230629_protokol_102_2025_2_5ca2934914.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_a26b069e8571783ca449_protokol_102_2025_3_630d628850.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_32aff621f473b3976745_protokol_102_2025_4_b08daf27c4.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_e41abc2e8e56425d9703_protokol_102_2025_5_7bd395e2ef.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_3121accd246d97abb64a_protokol_102_2025_6_0b97a049ef.jpg"
+      ]
+    },
+    {
+      "slug": "protokol-103-2025",
+      "title": "Протокол № 103С/ЭП/2025",
+      "subtitle": "Протокол испытаний",
+      "pdf": "https://cms.rusplast-zavod.ru/uploads/rpz_fce83ac6c9972c67846d_protokol_103_2025_605c686bae.pdf",
+      "pages": [
+        "https://cms.rusplast-zavod.ru/uploads/rpz_790cb42f120cef1df8df_protokol_103_2025_01_992f812c09.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_412d7ba15a18335f2542_protokol_103_2025_02_505debdeaa.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_15d33927458f9e390e36_protokol_103_2025_03_6a68a8accc.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_72a7b9ca360bd0ed1a06_protokol_103_2025_04_e81638eb0f.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_7286368153bef5eba70b_protokol_103_2025_05_b35bd4bc7e.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_fd581f0fe089ddd3fdc2_protokol_103_2025_06_eda9f84b41.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_317f4116cd9d721505ef_protokol_103_2025_07_e09051ab25.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_57cb81eb8840bad9674e_protokol_103_2025_08_0d9a424249.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_3a7849de5b8d5bfbe2b2_protokol_103_2025_09_ab99b66ab1.jpg",
+        "https://cms.rusplast-zavod.ru/uploads/rpz_e00a3f1158dd123276da_protokol_103_2025_10_2fb1bb1d9c.jpg"
+      ]
+    }
+  ]
+}

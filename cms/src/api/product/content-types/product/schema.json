@@ -12,33 +12,122 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": { "type": "string", "required": true },
-    "slug": { "type": "uid", "targetField": "name", "required": true },
-    "sku": { "type": "string", "required": true, "unique": true },
-    "material": { "type": "enumeration", "enum": ["ПВХ", "ПНД"], "required": true },
-    "loadClass": { "type": "enumeration", "enum": ["Легкая", "Тяжелая"], "required": true },
-    "description": { "type": "text", "required": true },
-    "packageType": { "type": "string" },
-    "temperature": { "type": "string" },
-    "combustibility": { "type": "string" },
-    "halogenFree": { "type": "boolean", "default": false },
-    "uvResistant": { "type": "boolean", "default": false },
-    "frostResistant": { "type": "boolean", "default": false },
-    "concretePour": { "type": "boolean", "default": false },
-    "protection": { "type": "string" },
-    "color": { "type": "string", "required": true },
-    "innerDiameter": { "type": "float" },
-    "outerDiameter": { "type": "float", "required": true },
-    "bendRadius": { "type": "float" },
-    "climate": { "type": "string" },
-    "coilWeight": { "type": "string" },
-    "coilLength": { "type": "integer", "required": true },
-    "packageLength": { "type": "float" },
-    "packageWidth": { "type": "float" },
-    "packageHeight": { "type": "float" },
-    "compression": { "type": "string" },
-    "price": { "type": "decimal", "required": true, "min": 0 },
-    "image": { "type": "string" },
-    "featured": { "type": "boolean", "default": false }
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "sku": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "material": {
+      "type": "enumeration",
+      "enum": [
+        "ПВХ",
+        "ПНД"
+      ],
+      "required": true
+    },
+    "loadClass": {
+      "type": "enumeration",
+      "enum": [
+        "Легкая",
+        "Тяжелая"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "packageType": {
+      "type": "string"
+    },
+    "temperature": {
+      "type": "string"
+    },
+    "combustibility": {
+      "type": "string"
+    },
+    "halogenFree": {
+      "type": "boolean",
+      "default": false
+    },
+    "uvResistant": {
+      "type": "boolean",
+      "default": false
+    },
+    "frostResistant": {
+      "type": "boolean",
+      "default": false
+    },
+    "concretePour": {
+      "type": "boolean",
+      "default": false
+    },
+    "protection": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "innerDiameter": {
+      "type": "float"
+    },
+    "outerDiameter": {
+      "type": "float",
+      "required": true
+    },
+    "bendRadius": {
+      "type": "float"
+    },
+    "climate": {
+      "type": "string"
+    },
+    "coilWeight": {
+      "type": "string"
+    },
+    "coilLength": {
+      "type": "integer",
+      "required": true
+    },
+    "packageLength": {
+      "type": "float"
+    },
+    "packageWidth": {
+      "type": "float"
+    },
+    "packageHeight": {
+      "type": "float"
+    },
+    "compression": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "image": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
   }
 }

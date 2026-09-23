@@ -20,11 +20,15 @@ export function Header({ selectionCount, onOpenRequest, pathname }: HeaderProps)
   const header = useRef<HTMLElement>(null)
   const navigation = useRef<HTMLElement>(null)
   const menuButton = useRef<HTMLButtonElement>(null)
+  const focusNavigation = useRef(false)
 
   useEffect(() => {
     if (!open) return
 
-    navigation.current?.querySelector('a')?.focus({ preventScroll: true })
+    // Keyboard activation moves into the menu. Touch must not steal focus:
+    // Safari can blur a link with relatedTarget=null before its click arrives.
+    if (focusNavigation.current) navigation.current?.querySelector('a')?.focus({ preventScroll: true })
+    focusNavigation.current = false
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setOpen(false)
@@ -55,7 +59,9 @@ export function Header({ selectionCount, onOpenRequest, pathname }: HeaderProps)
 
   return (
     <header ref={header} className="site-header" onBlur={event => {
-      if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false)
+      // A real focus move outside closes keyboard navigation. A null target
+      // also occurs during touch/scroll and is not evidence of leaving it.
+      if (event.relatedTarget instanceof Node && !event.currentTarget.contains(event.relatedTarget)) setOpen(false)
     }}>
       <div className="header-inner">
         <Brand />
@@ -77,7 +83,10 @@ export function Header({ selectionCount, onOpenRequest, pathname }: HeaderProps)
           <button className="button header-cta" aria-label={selectionCount ? `Открыть заявку, товаров: ${selectionCount}` : 'Получить прайс'} onClick={() => { setOpen(false); onOpenRequest() }}>
             {selectionCount ? <>Заявка <span className="header-count">{selectionCount}</span></> : <><span className="cta-label-full">Получить прайс</span><span className="cta-label-short">Прайс</span><ArrowUpRight className="cta-arrow" size={17} aria-hidden="true" /></>}
           </button>
-          <button ref={menuButton} className="menu-button" aria-expanded={open} aria-controls="main-navigation" aria-label={open ? 'Закрыть меню' : 'Открыть меню'} onClick={() => setOpen(value => !value)}>
+          <button ref={menuButton} type="button" className="menu-button" aria-expanded={open} aria-controls="main-navigation" aria-label={open ? 'Закрыть меню' : 'Открыть меню'} onClick={event => {
+            focusNavigation.current = !open && event.detail === 0
+            setOpen(value => !value)
+          }}>
             {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
           </button>
         </div>

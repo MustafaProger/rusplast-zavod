@@ -1,14 +1,8 @@
 import seedProducts from '../data/products.json'
 import type { Product } from '../types'
 
-const generatedImages = new Map(seedProducts.map(product => [product.sku, product.image]))
-
 export function productImage(product: Product, size: 'thumbnail' | 'detail' = 'thumbnail') {
-  // Existing CMS records may still contain the old shared photographs.
-  // Resolve this catalog's generated illustrations by SKU in every product view.
-  const image = generatedImages.get(product.sku)
-  if (!image) return product.image
-  return size === 'thumbnail' ? image.replace(/\.webp$/, '-thumb.webp') : image
+  return size === 'thumbnail' ? (product.imageThumbnail || product.image) : product.image
 }
 
 export function productDescription(product: Product) {

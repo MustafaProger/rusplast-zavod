@@ -1,0 +1,9 @@
+Mode: built-in image_gen
+Reference: web/public/images/optimized/blog-diameters-1280.webp
+
+Use case: precise-object-edit.
+Asset type: high-resolution photorealistic industrial editorial photograph, landscape 3:2.
+Input image: edit target, original full photograph underlying the user's screenshots.
+Primary request: Recreate this same product photograph at higher quality and correct all malformed corrugations on the four gray plastic conduit tubes. Keep the composition, camera angle, four sizes increasing left to right, straight parallel tube axes running upper-left to lower-right with their open ends facing the foreground, gray workbench, caliper at right, drawing and pen upper-right, perforated metal rail upper-left, fastener tray lower-left.
+CRITICAL GEOMETRY: Each conduit is a perfect straight circular cylinder with mechanically regular, smooth, continuous annular corrugation ribs. Every rib must be coaxial, uniformly spaced, consistent in width and height all around the circumference, projecting as clean concentric elliptical arcs in perspective. The annular ribs are separate closed rings, not helical threads. Absolutely no crushed, chewed, buckled, rippled, dented, twisted, fused, interrupted, lumpy, or wavy ribs anywhere, especially the upper-facing surfaces of the two largest tubes. Clean round openings and even cut rims. Preserve the light neutral gray polymer material and realistic subtle satin finish.
+Professional product photography, crisp detailed tube surfaces, realistic gentle contact shadows, soft daylight, natural industrial setting, subtle background depth of field. All four conduits sharp enough to inspect the regular rib geometry. High image quality suitable for a website and enlarged inspection. No browser interface, text overlay, logo, watermark, collage, or added objects. Return one complete full-frame landscape photograph.

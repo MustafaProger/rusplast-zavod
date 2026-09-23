@@ -31,6 +31,7 @@ export type Product = {
   compression: string
   price: number
   image: string
+  imageThumbnail?: string
   featured: boolean
 }
 

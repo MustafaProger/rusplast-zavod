@@ -14,12 +14,22 @@
   "attributes": {
     "notificationStatus": {
       "type": "enumeration",
-      "enum": ["Ожидает отправки", "Принято SMTP", "Ошибка отправки"],
+      "enum": [
+        "Ожидает отправки",
+        "Принято SMTP",
+        "Ошибка отправки"
+      ],
       "default": "Ожидает отправки",
       "private": true
     },
-    "notificationSentAt": { "type": "datetime", "private": true },
-    "notificationMessageId": { "type": "string", "private": true },
+    "notificationSentAt": {
+      "type": "datetime",
+      "private": true
+    },
+    "notificationMessageId": {
+      "type": "string",
+      "private": true
+    },
     "name": {
       "type": "string",
       "required": true
@@ -56,6 +66,22 @@
     },
     "consentedAt": {
       "type": "datetime"
+    },
+    "consentText": {
+      "type": "text",
+      "private": true
+    },
+    "consentTextSha256": {
+      "type": "string",
+      "private": true
+    },
+    "consentMethod": {
+      "type": "string",
+      "private": true
+    },
+    "retentionExpiresAt": {
+      "type": "datetime",
+      "private": true
     }
   }
 }

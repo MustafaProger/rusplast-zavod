@@ -12,6 +12,7 @@ COPY cms/package.json cms/package-lock.json ./
 RUN npm ci --no-audit --no-fund
 COPY cms/config ./config
 COPY cms/src ./src
+COPY cms/scripts ./scripts
 COPY cms/types ./types
 COPY cms/tsconfig.json cms/favicon.png ./
 COPY cms/public/robots.txt ./public/robots.txt

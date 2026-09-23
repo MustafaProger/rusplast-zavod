@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && node scripts/prerender.mjs",
+    "build": "tsc -b && vite build && node scripts/prerender.mjs && vite build --ssr src/entry-static.tsx --outDir dist-server",
     "lint": "oxlint",
     "qa:visual": "node scripts/visual-qa.cjs",
     "preview": "node scripts/serve.mjs",
-    "qa:seo": "node scripts/seo-qa.mjs"
+    "qa:seo": "node scripts/seo-qa.mjs",
+    "start": "node scripts/server.mjs",
+    "cms:sync": "node scripts/sync-cms.mjs"
   },
   "dependencies": {
     "@fontsource-variable/manrope": "^5.3.0",

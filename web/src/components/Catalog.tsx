@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowRight, Check, Search, SlidersHorizontal } from 'lucide-
 import { useMemo, useState } from 'react'
 import type { LoadClass, Material, Product } from '../types'
 import { productImage } from '../lib/product-presentation'
+import { sortCatalogProducts } from '../lib/catalog-order'
 
 type CatalogProps = {
   products: Product[]
@@ -25,8 +26,9 @@ export function Catalog({ products, selected, onToggleSelected, onOpenProduct, s
   const [color, setColor] = useState('Все')
   const [requestedPage, setPage] = useState(1)
   const [filtersOpen, setFiltersOpen] = useState(false)
+  const orderedProducts = useMemo(() => sortCatalogProducts(products), [products])
 
-  const filtered = useMemo(() => products.filter(product => {
+  const filtered = useMemo(() => orderedProducts.filter(product => {
     const normalizedQuery = query.toLowerCase().trim()
     const searchMatches = !normalizedQuery || product.name.toLowerCase().includes(normalizedQuery) || product.sku.toLowerCase().includes(normalizedQuery)
     return searchMatches
@@ -34,7 +36,7 @@ export function Catalog({ products, selected, onToggleSelected, onOpenProduct, s
       && (loadClass === 'Все' || product.loadClass === loadClass)
       && (diameter === 'Все' || product.outerDiameter === diameter)
       && (color === 'Все' || product.color === color)
-  }), [products, query, material, loadClass, diameter, color])
+  }), [orderedProducts, query, material, loadClass, diameter, color])
 
   const pageSize = showAll ? Math.max(1, products.length) : PAGE_SIZE
   const pages = Math.max(1, Math.ceil(filtered.length / pageSize))
@@ -51,10 +53,10 @@ export function Catalog({ products, selected, onToggleSelected, onOpenProduct, s
 
       <div className={filtersOpen ? 'catalog-filters is-open' : 'catalog-filters'}>
         <label className="search-field"><Search size={20} aria-hidden="true" /><input aria-label="Поиск по артикулу или названию" value={query} onChange={event => { setQuery(event.target.value); setPage(1) }} placeholder="Артикул или название" /></label>
-        <FilterGroup label="Материал" options={['Все', 'ПВХ', 'ПНД']} value={material} onChange={value => { setMaterial(value as 'Все' | Material); setPage(1) }} />
-        <FilterGroup label="Нагрузка" options={['Все', 'Легкая', 'Тяжелая']} value={loadClass} onChange={value => { setLoadClass(value as 'Все' | LoadClass); setPage(1) }} />
-        <FilterGroup label="Диаметр" options={['Все', '16', '20', '25', '32']} value={String(diameter)} onChange={value => { setDiameter(value === 'Все' ? 'Все' : Number(value)); setPage(1) }} suffix="мм" />
-        <FilterGroup label="Цвет" options={['Все', ...new Set(products.map(product => product.color))]} value={color} onChange={value => { setColor(value); setPage(1) }} />
+        <FilterGroup label="Материал" options={['Все', ...new Set(orderedProducts.map(product => product.material))]} value={material} onChange={value => { setMaterial(value as 'Все' | Material); setPage(1) }} />
+        <FilterGroup label="Нагрузка" options={['Все', ...new Set(orderedProducts.map(product => product.loadClass))]} value={loadClass} onChange={value => { setLoadClass(value as 'Все' | LoadClass); setPage(1) }} />
+        <FilterGroup label="Диаметр" options={['Все', ...[...new Set(products.map(product => product.outerDiameter).filter((value): value is number => value != null))].sort((a, b) => a - b).map(String)]} value={String(diameter)} onChange={value => { setDiameter(value === 'Все' ? 'Все' : Number(value)); setPage(1) }} suffix="мм" />
+        <FilterGroup label="Цвет" options={['Все', ...new Set(orderedProducts.map(product => product.color))]} value={color} onChange={value => { setColor(value); setPage(1) }} />
       </div>
 
       <div className="catalog-table" role="region" aria-live="polite" aria-label="Товары">

@@ -53,7 +53,7 @@ try {
     assert.deepEqual(await page.locator('nav[aria-label="Навигация в подвале"] a').allTextContents(), ['Главная', 'Каталог', 'Блог'])
     if (path === '/blog') {
       assert.equal(await page.locator('.article-card-featured').count(), 0)
-      assert.equal(await page.locator('.article-grid > .article-card').count(), 6, 'All articles belong to the same grid')
+      assert.equal(await page.locator('.article-grid > .article-card').count(), manifest.indexable.filter(path => path.startsWith('/blog/')).length, 'All articles belong to the same grid')
     }
     for (const href of await page.locator('a[href]').evaluateAll(nodes => nodes.map(n => n.getAttribute('href')))) {
       if (href.startsWith('/') || href.startsWith('#')) links.add(new URL(href, base + path).href)
@@ -62,6 +62,8 @@ try {
       const article = schema['@graph'].find(item => item['@type'] === 'BlogPosting')
       assert(article, `BlogPosting: ${path}`)
       assert.equal(article.headline, await page.locator('h1').textContent())
+      assert.equal(article.datePublished, await page.locator('.article-meta time').getAttribute('datetime'), `publication date: ${path}`)
+      assert(article.author?.name && article.dateModified, `author and updated date: ${path}`)
       assert(await page.locator('.prose-section').count() >= 5)
       const words = (await page.locator('.article-body').innerText()).split(/\s+/).length
       assert(words > 400, `article substance: ${path}`)
@@ -70,7 +72,7 @@ try {
     if (path === '/catalog') assert.equal(await page.locator('.product-row').count(), 16, 'all products visible without JS')
     if (path === '/catalog/pvh' || path === '/catalog/pnd') assert.equal(await page.locator('.product-row').count(), 8)
   }
-  assert.equal(articleChecks.length, 6)
+  assert.equal(articleChecks.length, manifest.indexable.filter(path => path.startsWith('/blog/')).length)
   for (const href of links) {
     const url = new URL(href)
     const response = await fetch(url)
@@ -105,9 +107,10 @@ try {
   ui.on('pageerror', error => errors.push(error.message))
   ui.on('console', message => { if (message.type() === 'error' && !message.text().includes('status of 404 (Not Found)')) errors.push(message.text()) })
   const layouts = []
+  const layoutPaths = [...new Set(['/', '/blog', '/blog/gofra-pvh-ili-pnd', '/blog/dokumenty-na-gofrotrubu', '/catalog', '/catalog/pvh', '/catalog/pnd', '/catalog/frhf', '/catalog/aksessuary', ...manifest.indexable.filter(path => path.startsWith('/blog/')).slice(0, 1)])]
   for (const width of [1440, 768, 390, 320]) {
     await ui.setViewportSize({ width, height: 1000 })
-    for (const path of ['/', '/blog', '/blog/gofra-pvh-ili-pnd', '/blog/dokumenty-na-gofrotrubu', '/catalog', '/catalog/pvh', '/catalog/pnd', '/catalog/frhf', '/catalog/aksessuary']) {
+    for (const path of layoutPaths) {
       await ui.goto(base + path, { waitUntil: 'networkidle' })
       const overflow = await ui.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
       assert(overflow <= 1, `${width}px overflow at ${path}: ${overflow}`)

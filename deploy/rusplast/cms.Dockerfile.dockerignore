@@ -6,6 +6,8 @@
 !cms/config/**
 !cms/src
 !cms/src/**
+!cms/scripts
+!cms/scripts/**
 !cms/types
 !cms/types/**
 !cms/tsconfig.json

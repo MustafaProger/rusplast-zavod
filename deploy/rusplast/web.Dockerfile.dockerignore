@@ -2,6 +2,11 @@
 !web
 !web/dist
 !web/dist/**
+!web/dist-server
+!web/dist-server/**
+!web/scripts
+!web/scripts/server.mjs
+!web/package.json
 !deploy
 !deploy/rusplast
 !deploy/rusplast/nginx.conf

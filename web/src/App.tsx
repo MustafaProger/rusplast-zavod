@@ -14,9 +14,9 @@ import { ContactSection, LeadForm } from "./components/LeadForm";
 import { LegalPage, type LegalKind } from "./components/Legal";
 import { ProductModal } from "./components/ProductModal";
 import { getProducts } from "./lib/api";
-import seedProducts from "./data/products.json";
+import { ContentContext, initialContent, type SiteContent } from "./lib/content";
 import type { Product } from "./types";
-import { articles, articlePath } from './data/editorial';
+import { articlePath } from './data/editorial';
 import { landingPages } from './data/pages';
 import { applySeo, normalizePath } from './lib/seo';
 import { ArticlePage, BlogPage, BlogPreview, Breadcrumbs, CategoryLinks, Landing, NotFound } from './components/Editorial';
@@ -34,9 +34,10 @@ function loadCart(): Record<string, number> {
     return {};
   }
 }
-function App({ path = typeof window === 'undefined' ? '/' : window.location.pathname }: { path?: string }) {
+function SiteApp({ path = typeof window === 'undefined' ? '/' : window.location.pathname, content = initialContent }: { path?: string; content?: SiteContent }) {
+  const { articles } = content;
   const [products, setProducts] = useState<Product[]>(
-    seedProducts as Product[],
+    content.products,
   );
   const [cart, setCart] = useState<Record<string, number>>({});
   const [cartLoaded, setCartLoaded] = useState(false);
@@ -65,8 +66,8 @@ function App({ path = typeof window === 'undefined' ? '/' : window.location.path
   );
 
   useEffect(() => {
-    applySeo(pathname);
-  }, [pathname]);
+    applySeo(pathname, articles, content.images);
+  }, [pathname, articles, content.images]);
 
   useEffect(() => {
     let frame = 0;
@@ -98,7 +99,7 @@ function App({ path = typeof window === 'undefined' ? '/' : window.location.path
   useEffect(() => {
     const controller = new AbortController();
     getProducts(controller.signal)
-      .then((result) => setProducts(result.products))
+      .then((result) => { if (result.source === 'cms') setProducts(result.products); })
       .catch(() => {});
     return () => controller.abort();
   }, []);
@@ -204,4 +205,6 @@ function App({ path = typeof window === 'undefined' ? '/' : window.location.path
     </div>
   );
 }
-export default App;
+export default function App(props: { path?: string; content?: SiteContent }) {
+  return <ContentContext.Provider value={props.content || initialContent}><SiteApp {...props} /></ContentContext.Provider>
+}

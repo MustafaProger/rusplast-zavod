@@ -1,5 +1,6 @@
-import { articles, articlePath } from '../data/editorial'
+import { articles as defaultArticles, articlePath, type Article } from '../data/editorial'
 import { landingPages } from '../data/pages'
+import snapshot from '../data/cms-snapshot.json'
 
 const configuredOrigin = import.meta.env.VITE_SITE_URL || 'https://rusplast-zavod.ru'
 export const SITE_URL = new URL(configuredOrigin).origin
@@ -10,15 +11,17 @@ export const legalTitles: Record<string, string> = {
   '/terms': 'Пользовательское соглашение',
   '/consent': 'Согласие на обработку персональных данных',
 }
-export const indexablePaths = ['/', '/catalog', ...landingPages.map(page => page.path), '/blog', ...articles.map(articlePath)]
-export const staticPaths = [...indexablePaths, ...Object.keys(legalTitles), '/404']
+export const getIndexablePaths = (articles: Article[] = defaultArticles) => ['/', '/catalog', ...landingPages.map(page => page.path), '/blog', ...articles.map(articlePath)]
+export const indexablePaths = getIndexablePaths()
+export const getStaticPaths = (articles: Article[] = defaultArticles) => [...getIndexablePaths(articles), ...Object.keys(legalTitles), '/404']
+export const staticPaths = getStaticPaths()
 export const normalizePath = (path: string) => path.replace(/\/+$/, '') || '/'
 
-export function getSeo(rawPath: string) {
+export function getSeo(rawPath: string, articles: Article[] = defaultArticles, images: Record<string, string> = snapshot.images) {
   const path = normalizePath(rawPath)
   const article = articles.find(item => articlePath(item) === path)
   const landing = landingPages.find(item => item.path === path)
-  const exists = staticPaths.includes(path) && path !== '/404'
+  const exists = getStaticPaths(articles).includes(path) && path !== '/404'
   const label = article?.title || landing?.label || ({ '/': siteName, '/catalog': 'Каталог продукции', '/blog': 'Блог' } as Record<string, string>)[path] || legalTitles[path] || 'Страница не найдена'
   const title = article ? `${article.seoTitle} | ${siteName}` : landing ? `${landing.title} | ${siteName}` : path === '/' ? 'Гофрированные трубы ПВХ и ПНД от производителя | РУСПЛАСТЗАВОД' : `${label} | ${siteName}`
   const description = article?.description || landing?.description || ({
@@ -27,10 +30,11 @@ export function getSeo(rawPath: string) {
     '/blog': 'Блог РУСПЛАСТЗАВОДА: выбор гофры ПВХ, ПНД и FRHF, диаметры, нагрузка, документы и производство под СТМ. Практические материалы для закупки.',
   } as Record<string, string>)[path] || `${label}. ООО «РУСПЛАСТЗАВОД».`
   const canonical = `${SITE_URL}${exists ? path : '/404'}`
-  const imageName = article?.image || landing?.image || 'hero-pipes'
-  const image = `${SITE_URL}${imageName.startsWith('/') ? imageName : `/images/optimized/${imageName}-1280.webp`}`
+  const imageKey = article?.image || landing?.image || 'hero-pipes'
+  const imageName = images[imageKey] || imageKey
+  const image = new URL(imageName.startsWith('/') || /^https?:/.test(imageName) ? imageName : `/images/optimized/${imageName}-1280.webp`, SITE_URL).href
   const graph: Record<string, unknown>[] = [
-    { '@type': 'Organization', '@id': organizationId, name: siteName, legalName: 'ООО «РУСПЛАСТЗАВОД»', url: SITE_URL, logo: `${SITE_URL}/images/rpz-mark.svg`, foundingDate: '2021', taxID: '9721122788', telephone: '+7-966-007-05-01', email: 'rusplastzavod@gmail.com', address: { '@type': 'PostalAddress', addressCountry: 'RU', addressLocality: 'Москва', streetAddress: 'проспект Андропова, д. 10, помещение 98' }, location: { '@type': 'Place', name: 'Производство и склад РУСПЛАСТЗАВОДА', address: { '@type': 'PostalAddress', addressCountry: 'RU', addressRegion: 'Московская область', addressLocality: 'посёлок Рылеево, Раменский район', streetAddress: '608/1' } } },
+    { '@type': 'Organization', '@id': organizationId, name: siteName, legalName: 'ООО «РУСПЛАСТЗАВОД»', url: SITE_URL, logo: `${SITE_URL}/images/rpz-mark.svg`, foundingDate: '2021', taxID: '9721122788', telephone: '+7-966-007-05-01', email: 'rusplastfactory@mail.ru', address: { '@type': 'PostalAddress', addressCountry: 'RU', addressLocality: 'Москва', streetAddress: 'проспект Андропова, д. 10, помещение 98' }, location: { '@type': 'Place', name: 'Производство и склад РУСПЛАСТЗАВОДА', address: { '@type': 'PostalAddress', addressCountry: 'RU', addressRegion: 'Московская область', addressLocality: 'посёлок Рылеево, Раменский район', streetAddress: '608/1' } } },
     { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, url: SITE_URL, name: siteName, inLanguage: 'ru-RU', publisher: { '@id': organizationId } },
     { '@type': path === '/blog' || path.startsWith('/catalog') ? 'CollectionPage' : 'WebPage', '@id': `${canonical}#webpage`, url: canonical, name: title, description, inLanguage: 'ru-RU', isPartOf: { '@id': `${SITE_URL}/#website` }, ...(article ? { mainEntity: { '@id': `${canonical}#article` } } : {}) },
   ]
@@ -41,13 +45,13 @@ export function getSeo(rawPath: string) {
     crumbs.push({ name: label, item: canonical })
     graph.push({ '@type': 'BreadcrumbList', itemListElement: crumbs.map((item, index) => ({ '@type': 'ListItem', position: index + 1, ...item })) })
   }
-  if (article) graph.push({ '@type': 'BlogPosting', '@id': `${canonical}#article`, headline: article.title, description, image, inLanguage: 'ru-RU', mainEntityOfPage: { '@id': `${canonical}#webpage` }, publisher: { '@id': organizationId }, dateCreated: '2026-09-18', about: article.category, citation: article.sources.map(source => new URL(source.href, SITE_URL).href) })
+  if (article) graph.push({ '@type': 'BlogPosting', '@id': `${canonical}#article`, headline: article.title, description, image, inLanguage: 'ru-RU', mainEntityOfPage: { '@id': `${canonical}#webpage` }, publisher: { '@id': organizationId }, datePublished: article.publishedAt || '2026-09-18', dateModified: article.modifiedAt || article.publishedAt || '2026-09-18', author: { '@type': 'Organization', '@id': organizationId, name: article.author || 'Редакция РУСПЛАСТЗАВОДА', url: SITE_URL + '/#about' }, about: article.category, citation: article.sources.map(source => new URL(source.href, SITE_URL).href) })
   if (path === '/blog') graph.push({ '@type': 'ItemList', itemListElement: articles.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.title, url: `${SITE_URL}${articlePath(item)}` })) })
   return { title, description, canonical, image, exists, robots: exists ? 'index, follow, max-image-preview:large' : 'noindex, follow', type: article ? 'article' : 'website', schema: { '@context': 'https://schema.org', '@graph': graph } }
 }
 
-export function applySeo(path: string) {
-  const seo = getSeo(path)
+export function applySeo(path: string, articles: Article[] = defaultArticles, images: Record<string, string> = snapshot.images) {
+  const seo = getSeo(path, articles, images)
   document.title = seo.title
   const values = { description: seo.description, robots: seo.robots, 'og:title': seo.title, 'og:description': seo.description, 'og:url': seo.canonical, 'og:type': seo.type, 'og:image': seo.image, 'og:locale': 'ru_RU', 'og:site_name': siteName, 'twitter:card': 'summary_large_image', 'twitter:title': seo.title, 'twitter:description': seo.description, 'twitter:image': seo.image }
   for (const [name, content] of Object.entries(values)) {
@@ -65,7 +69,7 @@ export function applySeo(path: string) {
 }
 
 const escapeHtml = (value: string) => value.replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]!)
-export function renderSeo(path: string) {
-  const seo = getSeo(path)
+export function renderSeo(path: string, articles: Article[] = defaultArticles, images: Record<string, string> = snapshot.images) {
+  const seo = getSeo(path, articles, images)
   return `<title>${escapeHtml(seo.title)}</title>\n<meta name="description" content="${escapeHtml(seo.description)}" />\n<meta name="robots" content="${seo.robots}" />\n<link rel="canonical" href="${escapeHtml(seo.canonical)}" />\n${Object.entries({ 'og:title': seo.title, 'og:description': seo.description, 'og:url': seo.canonical, 'og:type': seo.type, 'og:image': seo.image, 'og:locale': 'ru_RU', 'og:site_name': siteName }).map(([key, value]) => `<meta property="${key}" content="${escapeHtml(value)}" />`).join('\n')}\n<meta name="twitter:card" content="summary_large_image" />\n<meta name="twitter:title" content="${escapeHtml(seo.title)}" />\n<meta name="twitter:description" content="${escapeHtml(seo.description)}" />\n<meta name="twitter:image" content="${escapeHtml(seo.image)}" />\n<script id="page-schema" type="application/ld+json">${JSON.stringify(seo.schema).replace(/</g, '\\u003c')}</script>`
 }

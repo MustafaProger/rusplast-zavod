@@ -1,21 +1,11 @@
 import type { Core } from '@strapi/strapi'
-import products from './data/products.json'
 
 export default {
   register() {},
 
   async bootstrap({ strapi }: { strapi: Core.Strapi }) {
-    const productService = strapi.documents('api::product.product')
-    const existing = await productService.findMany({ limit: 1 })
-
-    if (existing.length === 0) {
-      for (const product of products) {
-        if ((product.material !== 'ПВХ' && product.material !== 'ПНД') || (product.loadClass !== 'Легкая' && product.loadClass !== 'Тяжелая')) throw new Error('Invalid seed product classification')
-        await productService.create({ data: { ...product, material: product.material, loadClass: product.loadClass }, status: 'published' })
-      }
-      strapi.log.info(`Seeded ${products.length} products from the supplied Excel catalog`)
-    }
-
+    // Content is imported explicitly by scripts/migrate-content.cjs. Restarting
+    // the CMS must never recreate records an editor intentionally deleted.
     const roleQuery = strapi.db.query('plugin::users-permissions.role')
     const permissionQuery = strapi.db.query('plugin::users-permissions.permission')
     const publicRole = await roleQuery.findOne({ where: { type: 'public' } })
@@ -25,6 +15,10 @@ export default {
     const actions = [
       'api::product.product.find',
       'api::product.product.findOne',
+      'api::article.article.find',
+      'api::article.article.findOne',
+      'api::document.document.find',
+      'api::document.document.findOne',
       'api::lead.lead.create',
     ]
 
