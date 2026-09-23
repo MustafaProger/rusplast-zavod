@@ -1,0 +1,4 @@
+# Preserve the existing FuelLead URL while other domains share this server.
+http://130.49.151.239, http://localhost, http://127.0.0.1 {
+    reverse_proxy 127.0.0.1:18080
+}

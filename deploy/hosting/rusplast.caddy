@@ -1,0 +1,13 @@
+rusplast-zavod.ru {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:18081
+}
+
+www.rusplast-zavod.ru {
+    redir https://rusplast-zavod.ru{uri} permanent
+}
+
+cms.rusplast-zavod.ru {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:18082
+}

@@ -1,0 +1,12 @@
+{
+    email artel.mos@gmail.com
+    acme_ca https://acme-v02.api.letsencrypt.org/directory
+    admin 127.0.0.1:2019
+}
+
+import /etc/caddy/sites-enabled/*.caddy
+
+# Unknown host names must not expose another project's site.
+:80 {
+    respond "Unknown host" 404
+}

@@ -130,7 +130,7 @@ try {
   await ui.getByRole('button', { name: 'Добавить в заявку', exact: true }).click()
   await ui.getByRole('button', { name: 'Закрыть', exact: true }).click()
   await ui.goto(base + '/blog', { waitUntil: 'networkidle' })
-  await ui.getByRole('button', { name: 'В заявке: 1', exact: true }).click()
+  await ui.getByRole('button', { name: 'Открыть заявку, товаров: 1', exact: true }).click()
   assert.equal(await ui.locator('.selected-products li').count(), 1)
   assert(await ui.getByRole('button', { name: 'Отправить заявку', exact: true }).isEnabled(), 'Form enabled after hydration')
   await ui.getByRole('button', { name: 'Закрыть', exact: true }).click()

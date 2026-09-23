@@ -1,0 +1,9 @@
+**
+!web
+!web/dist
+!web/dist/**
+!deploy
+!deploy/rusplast
+!deploy/rusplast/nginx.conf
+!deploy/rusplast/web.Dockerfile
+!deploy/rusplast/web.Dockerfile.dockerignore

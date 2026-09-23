@@ -1,0 +1,7 @@
+# Copy to /etc/caddy/sites-enabled/PROJECT.caddy and replace BOTH placeholders.
+# The project's container must bind its port to 127.0.0.1, not 0.0.0.0.
+# Set the domain's A record to the server before activating this file.
+project.example.com {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:18083
+}

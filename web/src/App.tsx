@@ -159,6 +159,7 @@ function App({ path = typeof window === 'undefined' ? '/' : window.location.path
     <div className="app-shell">
       <a className="skip-link" href="#main-content">Перейти к содержимому</a>
       <Header
+        pathname={pathname}
         selectionCount={selected.length}
         onOpenRequest={() => setRequestOpen(true)}
       />

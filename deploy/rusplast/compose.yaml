@@ -1,0 +1,118 @@
+name: rusplast
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: 10m
+    max-file: '3'
+
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME:-rusplast}
+      POSTGRES_USER: ${DATABASE_USERNAME:-rusplast}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:?Set DATABASE_PASSWORD in the external env file}
+    command: [postgres, -c, shared_buffers=128MB, -c, max_connections=40]
+    volumes:
+      - database:/var/lib/postgresql/data
+    networks: [database]
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"']
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 30s
+    mem_limit: 512m
+    cpus: 1.0
+    pids_limit: 128
+    shm_size: 128m
+    stop_grace_period: 60s
+    security_opt: [no-new-privileges:true]
+    logging: *logging
+
+  cms:
+    image: rusplast-cms:${RELEASE_TAG:-local}
+    build:
+      context: ../..
+      dockerfile: deploy/rusplast/cms.Dockerfile
+      args:
+        PUBLIC_URL: ${PUBLIC_URL:-https://cms.rusplast-zavod.ru}
+    restart: unless-stopped
+    init: true
+    env_file:
+      - ${RUSPLAST_ENV_FILE:-/etc/rusplast/production.env}
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: '1337'
+      PUBLIC_URL: ${PUBLIC_URL:-https://cms.rusplast-zavod.ru}
+      IS_PROXIED: 'true'
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: db
+      DATABASE_PORT: '5432'
+      DATABASE_NAME: ${DATABASE_NAME:-rusplast}
+      DATABASE_USERNAME: ${DATABASE_USERNAME:-rusplast}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:?Set DATABASE_PASSWORD in the external env file}
+      DATABASE_SSL: 'false'
+      DATABASE_POOL_MIN: '0'
+      DATABASE_POOL_MAX: '5'
+      NODE_OPTIONS: --max-old-space-size=768
+      UV_THREADPOOL_SIZE: '2'
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_DISABLE_UPDATE_NOTIFICATION: 'true'
+    ports:
+      - 127.0.0.1:18082:1337
+    volumes:
+      - uploads:/app/public/uploads
+    networks: [application, database]
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, node, -e, 'fetch("http://127.0.0.1:1337/_health", {signal: AbortSignal.timeout(4000)}).then(r => process.exit(r.status === 204 ? 0 : 1)).catch(() => process.exit(1))']
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 120s
+    mem_limit: 1g
+    cpus: 1.5
+    pids_limit: 256
+    stop_grace_period: 45s
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    logging: *logging
+
+  web:
+    image: rusplast-web:${RELEASE_TAG:-local}
+    build:
+      context: ../..
+      dockerfile: deploy/rusplast/web.Dockerfile
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:18081:80
+    networks: [application]
+    depends_on:
+      cms:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, wget, -q, --spider, http://127.0.0.1/healthz]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    mem_limit: 128m
+    cpus: 0.5
+    pids_limit: 64
+    security_opt: [no-new-privileges:true]
+    logging: *logging
+
+networks:
+  application:
+  database:
+    internal: true
+
+volumes:
+  database:
+  uploads:
