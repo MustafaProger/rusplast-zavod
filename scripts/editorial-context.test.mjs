@@ -1,5 +1,8 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
+import https from 'node:https'
+import os from 'node:os'
+import { EventEmitter } from 'node:events'
 
 async function runWithCms(fetch) {
   const originalFetch = globalThis.fetch
@@ -70,4 +73,40 @@ test('permanent access failures and malformed CMS responses are not retried', as
     await assert.rejects(runWithCms(async () => { calls++; return response }), /CMS .* (unavailable: 403|response)/)
     assert.equal(calls, 3, 'One attempt per collection')
   }
+})
+
+test('bound CMS requests retry a reset response stream without changing transport', async t => {
+  const previous = process.env.RUSPLAST_NETWORK_INTERFACE
+  process.env.RUSPLAST_NETWORK_INTERFACE = 'test-interface'
+  t.after(() => {
+    if (previous === undefined) delete process.env.RUSPLAST_NETWORK_INTERFACE
+    else process.env.RUSPLAST_NETWORK_INTERFACE = previous
+  })
+  t.mock.method(os, 'networkInterfaces', () => ({
+    'test-interface': [{ family: 'IPv4', internal: false, address: '192.0.2.10' }],
+  }))
+  const calls = {}
+  t.mock.method(https, 'get', (url, options, callback) => {
+    assert.equal(options.localAddress, '192.0.2.10')
+    assert(options.signal instanceof AbortSignal)
+    const name = new URL(url).pathname.split('/').at(-1)
+    calls[name] = (calls[name] || 0) + 1
+    const request = new EventEmitter()
+    queueMicrotask(() => {
+      const response = new EventEmitter()
+      response.statusCode = 200
+      callback(response)
+      if (calls[name] === 1) {
+        response.emit('error', Object.assign(new Error('connection reset'), { code: 'ECONNRESET' }))
+        return
+      }
+      const data = { products: [{ sku: 'live-sku' }], articles: [{ slug: 'live-article', sections: [] }], documents: [] }[name]
+      response.emit('data', Buffer.from(JSON.stringify({ data })))
+      response.emit('end')
+    })
+    return request
+  })
+  const result = await runWithCms(() => { throw new Error('Unbound fetch must not run') })
+  assert.equal(result.products[0].sku, 'live-sku')
+  assert.deepEqual(calls, { products: 2, articles: 2, documents: 2 })
 })

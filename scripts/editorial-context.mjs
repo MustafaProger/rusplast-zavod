@@ -1,13 +1,41 @@
 /** Live CMS is the only editorial source. No local seed fallback on CMS failures. */
+import https from 'node:https'
+import os from 'node:os'
+
 const site = 'https://rusplast-zavod.ru'
 const cms = 'https://cms.rusplast-zavod.ru'
+const networkInterface = process.env.RUSPLAST_NETWORK_INTERFACE
+const interfaceAddress = networkInterface
+  ? os.networkInterfaces()[networkInterface]?.find(address => address.family === 'IPv4' && !address.internal)?.address
+  : null
+if (networkInterface && !interfaceAddress) throw new Error(`Network interface unavailable: ${networkInterface}`)
+
+async function cmsFetch(url, options) {
+  if (!interfaceAddress) return fetch(url, options)
+  return new Promise((resolve, reject) => {
+    const request = https.get(url, { localAddress: interfaceAddress, signal: options?.signal }, response => {
+      const chunks = []
+      response.on('error', reject)
+      response.on('data', chunk => chunks.push(chunk))
+      response.on('end', () => {
+        const body = Buffer.concat(chunks)
+        resolve({
+          ok: response.statusCode >= 200 && response.statusCode < 300,
+          status: response.statusCode,
+          json: async () => JSON.parse(body.toString('utf8')),
+        })
+      })
+    })
+    request.on('error', reject)
+  })
+}
 async function collection(name, populate = '') {
   const all = []
   for (let page = 1; page <= 100; page++) {
     let payload
     for (let attempt = 0; attempt < 3; attempt++) {
       try {
-        const response = await fetch(`${cms}/api/${name}?status=published&pagination[page]=${page}&pagination[pageSize]=100&sort=id:asc${populate}`, { signal: AbortSignal.timeout(20000) })
+        const response = await cmsFetch(`${cms}/api/${name}?status=published&pagination[page]=${page}&pagination[pageSize]=100&sort=id:asc${populate}`, { signal: AbortSignal.timeout(20000) })
         if (!response.ok) throw Object.assign(new Error(`CMS ${name} unavailable: ${response.status}`), { retryable: [408, 429, 500, 502, 503, 504].includes(response.status) })
         const body = await response.json()
         if (!Array.isArray(body.data)) throw Object.assign(new Error(`Invalid CMS ${name} response`), { retryable: false })

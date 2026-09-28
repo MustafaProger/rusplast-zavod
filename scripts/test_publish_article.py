@@ -204,6 +204,26 @@ class PublisherTests(unittest.TestCase):
         self.assertIsNone(publisher.receipt_for(self.article))
         self.assertEqual(self.urlopen.call_count, 3)
 
+    def test_bound_curl_failure_is_retried_and_leaves_receipt_pending(self):
+        for error in (publisher.subprocess.CalledProcessError(28, ['curl']),
+                      publisher.subprocess.TimeoutExpired(['curl'], 35)):
+            with self.subTest(error=type(error).__name__), \
+                    patch.dict(publisher.os.environ, {'RUSPLAST_NETWORK_INTERFACE': 'en0'}), \
+                    patch.object(publisher.subprocess, 'run', side_effect=error) as command:
+                self.assertIsNone(publisher.receipt_for(self.article))
+                self.assertEqual(command.call_count, 3)
+                self.assertIn('--interface', command.call_args.args[0])
+        self.urlopen.assert_not_called()
+
+    def test_bound_curl_recovers_after_transient_failure(self):
+        responses = [publisher.subprocess.CalledProcessError(28, ['curl']),
+                     publisher.subprocess.CompletedProcess(['curl'], 0, stdout=b'live-response')]
+        with patch.dict(publisher.os.environ, {'RUSPLAST_NETWORK_INTERFACE': 'en0'}), \
+                patch.object(publisher.subprocess, 'run', side_effect=responses) as command:
+            self.assertEqual(publisher.fetch('/publication-manifest.json'), b'live-response')
+            self.assertEqual(command.call_count, 2)
+        self.urlopen.assert_not_called()
+
     def test_cms_publication_never_changes_legacy_article_json(self):
         self.live_article()
         for current in ([self.article], []):

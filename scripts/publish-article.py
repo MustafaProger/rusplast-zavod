@@ -28,6 +28,18 @@ ORIGIN = 'https://rusplast-zavod.ru'
 SSH_HOST = 'root@130.49.151.239'
 
 
+def network_transport():
+    interface = os.environ.get('RUSPLAST_NETWORK_INTERFACE')
+    if not interface:
+        return []
+    address = subprocess.run(['/usr/sbin/ipconfig', 'getifaddr', interface],
+                             stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+                             text=True, check=True, timeout=10).stdout.strip()
+    if not re.fullmatch(r'(?:\d{1,3}\.){3}\d{1,3}', address):
+        raise RuntimeError('Configured network interface has no IPv4 address')
+    return ['-o', 'BindAddress=' + address]
+
+
 def canonical(value):
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
 
@@ -168,7 +180,7 @@ def cms_transfer_inputs(bundle, image_path):
     input_sha = bundle['inputSha256']
     if not re.fullmatch(r'[a-f0-9]{64}', input_sha):
         raise ValueError('Invalid input digest for CMS transfer')
-    transport = ['-o', 'BatchMode=yes', '-o', 'IPQoS=none', '-o', 'ConnectTimeout=15', '-o', 'ConnectionAttempts=3', '-o', 'ServerAliveInterval=15', '-o', 'ServerAliveCountMax=3']
+    transport = [*network_transport(), '-o', 'BatchMode=yes', '-o', 'IPQoS=none', '-o', 'ConnectTimeout=15', '-o', 'ConnectionAttempts=3', '-o', 'ServerAliveInterval=15', '-o', 'ServerAliveCountMax=3']
     ssh = ['ssh', *transport, SSH_HOST]
     remote = '/tmp/rusplast-editorial-' + input_sha
     # All shell values below are fixed paths or hexadecimal digests, never prose.
@@ -220,11 +232,17 @@ def atomic_json(path, value):
 def fetch(path):
     for attempt in range(3):
         try:
+            interface = os.environ.get('RUSPLAST_NETWORK_INTERFACE')
+            if interface:
+                result = subprocess.run(['/usr/bin/curl', '--interface', interface, '--fail', '--silent', '--show-error',
+                                         '--max-time', '30', ORIGIN + path], stdout=subprocess.PIPE,
+                                        stderr=subprocess.DEVNULL, check=True, timeout=35)
+                return result.stdout
             with urlopen(ORIGIN + path, timeout=30) as response:
                 return response.read()
-        except OSError:
+        except (OSError, subprocess.SubprocessError) as error:
             if attempt == 2:
-                raise
+                raise OSError('Public site request failed after three attempts') from error
 
 
 def receipt_for(article):
