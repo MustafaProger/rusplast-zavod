@@ -49,6 +49,8 @@ createServer(async (req, res) => {
     if (!['GET', 'HEAD'].includes(req.method)) return send(405, 'Method not allowed', 'text/plain', { Allow: 'GET, HEAD' })
     if (path.startsWith('/uploads/')) { res.writeHead(308, { Location: publicCms + url.pathname }); return res.end() }
     if (path === '/healthz') return send(200, 'ok', 'text/plain')
+    // Webmaster requires the exact .html URL, without canonical redirects.
+    if (path === '/yandex_5a537de7fa572d65.html') return send(200, await readFile(resolve(root, 'yandex_5a537de7fa572d65.html')), 'text/html; charset=utf-8', { 'Cache-Control': 'no-cache' })
     const canonical = path.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/\/+$/, '') || '/'
     if (canonical !== path && (path.endsWith('/') || path.endsWith('.html'))) { res.writeHead(308, { Location: canonical + url.search }); return res.end() }
     const redirect = { '/proizvodstvo-stm': '/#about', '/certificates': '/#certificates' }[path]
