@@ -14,6 +14,7 @@ import { ContactSection, LeadForm } from "./components/LeadForm";
 import { LegalPage, type LegalKind } from "./components/Legal";
 import { ProductModal } from "./components/ProductModal";
 import { getProducts } from "./lib/api";
+import { trackContactClick, trackGoal } from "./lib/analytics";
 import { ContentContext, initialContent, type SiteContent } from "./lib/content";
 import type { Product } from "./types";
 import { articlePath } from './data/editorial';
@@ -68,6 +69,11 @@ function SiteApp({ path = typeof window === 'undefined' ? '/' : window.location.
   useEffect(() => {
     applySeo(pathname, articles, content.images);
   }, [pathname, articles, content.images]);
+
+  useEffect(() => {
+    document.addEventListener('click', trackContactClick);
+    return () => document.removeEventListener('click', trackContactClick);
+  }, []);
 
   useEffect(() => {
     let frame = 0;
@@ -133,13 +139,15 @@ function SiteApp({ path = typeof window === 'undefined' ? '/' : window.location.
     return () => observer.disconnect();
   }, []);
   const toggleSelected = useCallback((sku: string) => {
+    // Keep tracking outside the state updater: React may replay updaters.
+    if (!cart[sku]) trackGoal('product_add', { items_count: selected.length + 1 });
     setCart((current) => {
       const next = { ...current };
       if (next[sku]) delete next[sku];
       else next[sku] = 1;
       return next;
     });
-  }, []);
+  }, [cart, selected.length]);
   const setQuantity = useCallback((sku: string, quantity: number) => {
     setCart((current) => {
       const next = { ...current };

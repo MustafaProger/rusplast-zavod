@@ -1,6 +1,7 @@
 import { ArrowUpRight, CheckCircle2, Loader2, Minus, Plus, ShoppingBag, Trash2 } from 'lucide-react'
-import { useRef, useState, useSyncExternalStore, type FormEvent } from 'react'
+import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from 'react'
 import { createLead } from '../lib/api'
+import { trackGoal } from '../lib/analytics'
 import type { CartItem } from '../types'
 import { Modal } from './Modal'
 import { LEGAL_VERSION, LegalContent, type LegalKind } from './Legal'
@@ -23,7 +24,32 @@ export function LeadForm({ items = [], mode = 'band', onClose, onQuantity }: Lea
   const [error, setError] = useState('')
   const [legal, setLegal] = useState<LegalKind | null>(null)
   const [submittedItems, setSubmittedItems] = useState<CartItem[]>([])
+  const formElement = useRef<HTMLFormElement>(null)
+  const opened = useRef(false)
+  const started = useRef(false)
+  const formLocation = mode === 'modal' ? 'modal' : 'inline'
   const total = items.reduce((sum, { product, quantity }) => sum + product.price * product.coilLength * quantity, 0)
+
+  useEffect(() => {
+    const markOpened = () => {
+      if (opened.current) return
+      opened.current = true
+      trackGoal('lead_form_open', { form_location: formLocation, items_count: items.length })
+    }
+    if (mode === 'modal') { markOpened(); return }
+    if (!formElement.current || typeof IntersectionObserver === 'undefined') return
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= 0.2)) { markOpened(); observer.disconnect() }
+    }, { threshold: 0.2 })
+    observer.observe(formElement.current)
+    return () => observer.disconnect()
+  }, [mode, formLocation, items.length])
+
+  function markStarted() {
+    if (started.current) return
+    started.current = true
+    trackGoal('lead_form_start', { form_location: formLocation, items_count: items.length })
+  }
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -43,13 +69,15 @@ export function LeadForm({ items = [], mode = 'band', onClose, onQuantity }: Lea
         products: items.map(({ product, quantity }) => ({ sku: product.sku, name: product.name, image: productImage(product, 'detail'), material: product.material, diameter: product.outerDiameter, quantity, coilLength: product.coilLength, meters: product.coilLength * quantity, pricePerMeter: product.price })),
         consent: true, consentVersion: LEGAL_VERSION,
       })
+      // createLead resolves only when the CMS confirms a saved record.
+      trackGoal('lead_submit_success', { form_location: formLocation, items_count: items.length })
       setSubmittedItems(items)
       setSent(true)
     } catch { setError('Не удалось отправить заявку. Данные остались в форме — попробуйте ещё раз или позвоните +7 (966) 007-05-01.') }
     finally { submitting.current = false; setSending(false) }
   }
   const legalLink = (kind: LegalKind, text: string) => <a href={`/${kind}`} onClick={event => { event.preventDefault(); setLegal(kind) }}>{text}</a>
-  const content = sent ? <div className="form-success" role="status">
+  const content = sent ? <div className="form-success ym-hide-content" role="status">
     <CheckCircle2 /><span className="eyebrow">СПАСИБО ЗА ОБРАЩЕНИЕ</span><strong>Заявка принята.</strong><p>Менеджер свяжется с вами в рабочее время, чтобы согласовать детали.</p>
     {submittedItems.length > 0 && <ul className="submitted-items">{submittedItems.map(({ product, quantity }) => <li key={product.sku}>{product.material} · Ø {product.outerDiameter} мм · арт. {product.sku}<b>{quantity} бухт · {quantity * product.coilLength} м</b></li>)}</ul>}
     {onClose && <button className="button button-primary" onClick={onClose}>Готово</button>}
@@ -68,12 +96,12 @@ export function LeadForm({ items = [], mode = 'band', onClose, onQuantity }: Lea
       </> : <div className="request-empty"><ShoppingBag size={36} strokeWidth={1.2} /><p>Выберите трубы в каталоге или опишите задачу. Поможем с характеристиками и объёмом.</p><a href="/catalog" className="hero-link" onClick={onClose}>Перейти в каталог <ArrowUpRight size={16} /></a></div>}
       <div className="request-help"><span>Удобнее обсудить голосом?</span><a href="tel:+79660070501">+7 (966) 007-05-01</a></div>
     </aside>
-    <form className="lead-form" method="post" onSubmit={onSubmit}>
+    <form ref={formElement} className="lead-form ym-hide-content" method="post" onInputCapture={markStarted} onSubmit={onSubmit}>
       <div className="form-heading"><span className="eyebrow">КОНТАКТНЫЕ ДАННЫЕ</span><h3>Куда отправить расчёт?</h3><p>Уточним детали и подготовим предложение.</p></div>
-      <label><span>Ваше имя</span><input name="name" autoComplete="name" placeholder="Как к вам обращаться" required maxLength={100} disabled={sending} /></label>
-      <label><span>Телефон</span><input name="phone" type="tel" autoComplete="tel" placeholder="+7 (999) 123-45-67" required maxLength={25} disabled={sending} /></label>
-      <label className="full-field"><span>Электронная почта</span><input name="email" type="email" autoComplete="email" placeholder="name@company.ru" required maxLength={254} disabled={sending} /></label>
-      <label className="comment-field"><span>Комментарий <small>необязательно</small></span><textarea name="comment" placeholder="Объём, город доставки или особые требования. Не указывайте паспортные и платёжные данные." maxLength={3000} disabled={sending} /></label>
+      <label><span>Ваше имя</span><input className="ym-disable-keys" name="name" autoComplete="name" placeholder="Как к вам обращаться" required maxLength={100} disabled={sending} /></label>
+      <label><span>Телефон</span><input className="ym-disable-keys" name="phone" type="tel" autoComplete="tel" placeholder="+7 (999) 123-45-67" required maxLength={25} disabled={sending} /></label>
+      <label className="full-field"><span>Электронная почта</span><input className="ym-disable-keys" name="email" type="email" autoComplete="email" placeholder="name@company.ru" required maxLength={254} disabled={sending} /></label>
+      <label className="comment-field"><span>Комментарий <small>необязательно</small></span><textarea className="ym-disable-keys" name="comment" placeholder="Объём, город доставки или особые требования. Не указывайте паспортные и платёжные данные." maxLength={3000} disabled={sending} /></label>
       <label className="consent"><input type="checkbox" name="consent" required disabled={sending} /><span>Даю {legalLink('consent', 'согласие на обработку персональных данных')}.</span></label>
       <p className="form-policy">{legalLink('privacy', 'Политика конфиденциальности')} · {legalLink('terms', 'Пользовательское соглашение')}</p>
       {error && <p className="form-error" role="alert">{error}</p>}
