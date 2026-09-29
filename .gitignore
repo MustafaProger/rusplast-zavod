@@ -1,13 +1,48 @@
-.DS_Store
+# Local configuration and secrets
 .env
+.env.*
+!.env.example
+*.local
+
+# Dependencies and generated builds
 node_modules/
 dist/
+dist-server/
+dist-ssr/
 .cache/
 .tmp/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+
+# Generated reports, exports and scratch assets
+/output/
+/design/
+coverage/
+playwright-report/
+test-results/
+*.log
+*.pid
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.dump
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# CMS runtime data
 cms/.strapi/
-cms/.strapi-updater.json
 .strapi-updater.json
 cms/public/uploads/*
 !cms/public/uploads/.gitkeep
 
-dist-server/
+# OS and editor files
+.DS_Store
+._*
+*~
+*.swp
+*.swo

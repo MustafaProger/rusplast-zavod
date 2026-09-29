@@ -85,5 +85,3 @@ node --test tests/article-publication.test.cjs
 # Из web/:
 node scripts/cms-runtime-qa.mjs
 ```
-
-Результат сквозной проверки с новой статьёй и реально сгенерированной обложкой: [ARTICLE_PIPELINE_CHECK-2026-09-23.md](ARTICLE_PIPELINE_CHECK-2026-09-23.md).
