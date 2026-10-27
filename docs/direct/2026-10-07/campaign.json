@@ -1,0 +1,466 @@
+{
+  "status": "DRAFT_IN_DIRECT_NOT_LAUNCHED",
+  "prepared_on": "2026-10-07",
+  "campaign_name": "Руспласт | Поиск | Москва | Заявки",
+  "site": "https://rusplast-zavod.ru",
+  "objective": "Принятая заявка на расчёт поставки",
+  "authorized_total_weekly_rub": 5000,
+  "vat_rate": 0.22,
+  "budget_scope": "Один общий бюджет трёх групп на период",
+  "campaign_type": "Единая перфоманс-кампания, режим эксперта",
+  "placements": [
+    "Поиск: рекламные блоки поисковой выдачи"
+  ],
+  "region": "Москва",
+  "timezone": "Europe/Moscow",
+  "counter_id": 113120530,
+  "goal_id": 665261333,
+  "goal_event": "lead_submit_success",
+  "url_parameters": "utm_source=yandex&utm_medium=cpc&utm_campaign=search_moscow_{campaign_id}&utm_content=ad_{ad_id}.group_{gbid}.device_{device_type}.placement_{source_type}&utm_term={keyword}&match_type={match_type}",
+  "campaign_negative_phrases": [
+    "канализация",
+    "канализационный",
+    "дренаж",
+    "дренажный",
+    "унитаз",
+    "сифон",
+    "вытяжка",
+    "глушитель",
+    "автомобиль",
+    "металлорукав",
+    "водопровод",
+    "водоснабжение",
+    "полив",
+    "вакансия",
+    "резюме",
+    "реферат",
+    "своими руками"
+  ],
+  "callouts": [
+    "Собственное производство",
+    "Оптовая поставка"
+  ],
+  "sitelinks": [
+    {
+      "title": "Каталог ПВХ",
+      "description": "Лёгкое и тяжёлое исполнение 16–32 мм",
+      "url": "https://rusplast-zavod.ru/catalog/pvh"
+    },
+    {
+      "title": "Каталог ПНД",
+      "description": "Чёрные и оранжевые трубы для кабеля",
+      "url": "https://rusplast-zavod.ru/catalog/pnd"
+    },
+    {
+      "title": "Условия поставки",
+      "description": "Минимальный заказ и условия доставки",
+      "url": "https://rusplast-zavod.ru/#delivery"
+    },
+    {
+      "title": "Запросить расчёт",
+      "description": "Укажите продукцию, объём и адрес доставки",
+      "url": "https://rusplast-zavod.ru/#request"
+    }
+  ],
+  "groups": [
+    {
+      "id": "pvh",
+      "name": "ПВХ — оптом",
+      "stage": "FIRST_TEST",
+      "landing": "https://rusplast-zavod.ru/catalog/pvh",
+      "display_path": "ПВХ-оптом",
+      "negative_phrases": [
+        "тяжелый",
+        "750",
+        "frhf"
+      ],
+      "keywords": [
+        "гофрированная труба пвх оптом",
+        "гофра пвх оптом москва",
+        "гофротруба пвх от производителя",
+        "гофрированная труба пвх производитель",
+        "труба пвх для кабеля оптом",
+        "гофра пвх 16 мм оптом",
+        "гофра пвх 20 мм оптом",
+        "гофра пвх 25 мм оптом",
+        "гофра пвх 32 мм оптом",
+        "гофра пвх 350 н оптом",
+        "гофра пвх купить",
+        "гофрированная труба пвх купить",
+        "гофротруба пвх купить"
+      ],
+      "ads": [
+        {
+          "direct_ad_id": "1923469757770068696",
+          "format": "COMBINATORIAL",
+          "status": "DRAFT",
+          "headlines": [
+            "Гофротруба ПВХ оптом в Москве",
+            "Гофра ПВХ от производителя"
+          ],
+          "texts": [
+            "ПВХ 16–32 мм от производителя. Заказ от 15 000 ₽. Оставьте заявку на расчёт.",
+            "Оптовая поставка ПВХ 16–32 мм. Заказ от 15 000 ₽. Запросите расчёт партии."
+          ],
+          "supplementary_headline_submitted": false,
+          "note": "Одно объявление с двумя заголовками и двумя текстами; интерфейс комбинирует компоненты"
+        }
+      ],
+      "direct_group_id": "5809924495",
+      "direct_status": "DRAFT",
+      "keyword_sync": {
+        "confirmed_in_direct": [
+          "гофрированная труба пвх оптом",
+          "гофра пвх оптом москва",
+          "гофротруба пвх от производителя",
+          "гофрированная труба пвх производитель",
+          "труба пвх для кабеля оптом",
+          "гофра пвх 16 мм оптом",
+          "гофра пвх 20 мм оптом",
+          "гофра пвх 25 мм оптом",
+          "гофра пвх 32 мм оптом",
+          "гофра пвх 350 н оптом",
+          "гофра пвх купить",
+          "гофрированная труба пвх купить",
+          "гофротруба пвх купить"
+        ],
+        "pending_in_direct": []
+      },
+      "proposed_supplementary_headlines_not_submitted": [
+        "Заказ от 15 000 ₽",
+        "Для защиты кабеля"
+      ]
+    },
+    {
+      "id": "pvh_heavy",
+      "name": "ПВХ — тяжёлая 750 Н",
+      "stage": "FIRST_TEST",
+      "landing": "https://rusplast-zavod.ru/catalog/pvh",
+      "display_path": "ПВХ-тяжёлая",
+      "negative_phrases": [
+        "frhf"
+      ],
+      "keywords": [
+        "гофра пвх тяжелая оптом",
+        "гофротруба пвх 750 н оптом",
+        "гофрированная труба пвх тяжелая производитель",
+        "гофра пвх тяжелая 16 мм оптом",
+        "гофра пвх тяжелая 20 мм оптом",
+        "гофра пвх тяжелая 25 мм оптом",
+        "гофра пвх тяжелая 32 мм оптом",
+        "гофра пвх тяжелая купить",
+        "гофра пвх 750 н купить"
+      ],
+      "ads": [
+        {
+          "direct_ad_id": "1923469881249679153",
+          "format": "COMBINATORIAL",
+          "status": "DRAFT",
+          "headlines": [
+            "Тяжёлая гофра ПВХ 750 Н оптом",
+            "Гофротруба ПВХ 750 Н от завода"
+          ],
+          "texts": [
+            "Диаметры 16–32 мм. Производство в Подмосковье. От 15 000 ₽. Рассчитаем поставку.",
+            "Тяжёлая ПВХ для кабеля, 16–32 мм. Заказ от 15 000 ₽. Запросите расчёт партии."
+          ],
+          "supplementary_headline_submitted": false,
+          "note": "Одно объявление с двумя заголовками и двумя текстами; интерфейс комбинирует компоненты"
+        }
+      ],
+      "direct_group_id": "5809924940",
+      "direct_status": "DRAFT",
+      "keyword_sync": {
+        "confirmed_in_direct": [
+          "гофра пвх тяжелая оптом",
+          "гофротруба пвх 750 н оптом",
+          "гофрированная труба пвх тяжелая производитель",
+          "гофра пвх тяжелая 16 мм оптом",
+          "гофра пвх тяжелая 20 мм оптом",
+          "гофра пвх тяжелая 25 мм оптом",
+          "гофра пвх тяжелая 32 мм оптом",
+          "гофра пвх тяжелая купить",
+          "гофра пвх 750 н купить"
+        ],
+        "pending_in_direct": []
+      },
+      "proposed_supplementary_headlines_not_submitted": [
+        "Заказ от 15 000 ₽",
+        "Поставка в Москву"
+      ]
+    },
+    {
+      "id": "pnd",
+      "name": "ПНД — чёрная и оранжевая",
+      "stage": "FIRST_TEST",
+      "landing": "https://rusplast-zavod.ru/catalog/pnd",
+      "display_path": "ПНД-оптом",
+      "negative_phrases": [
+        "тяжелый",
+        "750",
+        "двустенный",
+        "двухстенный",
+        "frhf"
+      ],
+      "keywords": [
+        "гофрированная труба пнд оптом",
+        "гофра пнд оптом москва",
+        "гофротруба пнд от производителя",
+        "гофра пнд для кабеля оптом",
+        "гофра пнд черная оптом",
+        "гофра пнд оранжевая оптом",
+        "гофра пнд 16 мм оптом",
+        "гофра пнд 20 мм оптом",
+        "гофра пнд 25 мм оптом",
+        "гофра пнд 32 мм оптом",
+        "гофра пнд купить",
+        "гофрированная труба пнд купить",
+        "гофра пнд черная купить",
+        "гофра пнд оранжевая купить"
+      ],
+      "ads": [
+        {
+          "direct_ad_id": "1923469959634153083",
+          "format": "COMBINATORIAL",
+          "status": "DRAFT",
+          "headlines": [
+            "Гофротруба ПНД оптом в Москве",
+            "Гофра ПНД от производителя"
+          ],
+          "texts": [
+            "Чёрная и оранжевая ПНД 16–32 мм для кабеля. От 15 000 ₽. Запросите расчёт.",
+            "ПНД 350 Н, диаметры 16–32 мм. Заказ от 15 000 ₽. Рассчитаем вашу поставку."
+          ],
+          "supplementary_headline_submitted": false,
+          "note": "Одно объявление с двумя заголовками и двумя текстами; интерфейс комбинирует компоненты"
+        }
+      ],
+      "direct_group_id": "5809925441",
+      "direct_status": "DRAFT",
+      "keyword_sync": {
+        "confirmed_in_direct": [
+          "гофрированная труба пнд оптом",
+          "гофра пнд оптом москва",
+          "гофротруба пнд от производителя",
+          "гофра пнд для кабеля оптом",
+          "гофра пнд черная оптом",
+          "гофра пнд оранжевая оптом",
+          "гофра пнд 16 мм оптом",
+          "гофра пнд 20 мм оптом",
+          "гофра пнд 25 мм оптом",
+          "гофра пнд 32 мм оптом",
+          "гофра пнд купить",
+          "гофрированная труба пнд купить",
+          "гофра пнд черная купить",
+          "гофра пнд оранжевая купить"
+        ],
+        "pending_in_direct": []
+      },
+      "proposed_supplementary_headlines_not_submitted": [
+        "Заказ от 15 000 ₽",
+        "Чёрная и оранжевая"
+      ]
+    },
+    {
+      "id": "frhf",
+      "name": "Резерв — FRHF под заказ",
+      "stage": "RESERVE_PAUSED",
+      "landing": "https://rusplast-zavod.ru/catalog/frhf",
+      "display_path": "FRHF-под-заказ",
+      "negative_phrases": [],
+      "keywords": [
+        "гофра frhf под заказ",
+        "гофротруба frhf производитель",
+        "гофра frhf оптом"
+      ],
+      "ads": [
+        {
+          "title": "Гофротруба FRHF под заказ",
+          "text": "Цена, партия, сроки и документы по запросу. Оставьте заявку на расчёт.",
+          "status": "LOCAL_PROPOSAL_NOT_SUBMITTED",
+          "proposed_supplementary_headline": "Согласуем исполнение"
+        },
+        {
+          "title": "FRHF для вашего проекта",
+          "text": "Укажите характеристики и объём. Согласуем исполнение, документы и стоимость.",
+          "status": "LOCAL_PROPOSAL_NOT_SUBMITTED",
+          "proposed_supplementary_headline": "Производство под заказ"
+        }
+      ],
+      "direct_status": "NOT_CREATED_LOCAL_RESERVE",
+      "keyword_sync": {
+        "confirmed_in_direct": [],
+        "pending_in_direct": []
+      }
+    },
+    {
+      "id": "accessories",
+      "name": "Резерв — комплектующие",
+      "stage": "RESERVE_PAUSED",
+      "landing": "https://rusplast-zavod.ru/catalog/aksessuary",
+      "display_path": "Комплектующие",
+      "negative_phrases": [],
+      "keywords": [
+        "клипсы для гофры оптом",
+        "крепеж для гофротрубы оптом",
+        "клипсы для монтажного пистолета оптом",
+        "распределительные коробки оптом"
+      ],
+      "ads": [
+        {
+          "title": "Клипсы и комплектующие для гофры",
+          "text": "Клипсы, коробки и крепёж. Согласуем размеры, комплектность и условия поставки.",
+          "status": "LOCAL_PROPOSAL_NOT_SUBMITTED",
+          "proposed_supplementary_headline": "Запросите расчёт партии"
+        },
+        {
+          "title": "Комплектующие к партии гофротруб",
+          "text": "Укажите изделия, размеры и объём. Подготовим предложение на поставку.",
+          "status": "LOCAL_PROPOSAL_NOT_SUBMITTED",
+          "proposed_supplementary_headline": "Клипсы и коробки"
+        }
+      ],
+      "direct_status": "NOT_CREATED_LOCAL_RESERVE",
+      "keyword_sync": {
+        "confirmed_in_direct": [],
+        "pending_in_direct": []
+      }
+    },
+    {
+      "id": "private_label",
+      "name": "Резерв — производство под СТМ",
+      "stage": "RESERVE_PAUSED",
+      "landing": "https://rusplast-zavod.ru/#about",
+      "display_path": "Гофра-под-СТМ",
+      "negative_phrases": [],
+      "keywords": [
+        "производство гофротрубы под стм",
+        "гофротруба под своим брендом",
+        "контрактное производство гофротрубы"
+      ],
+      "ads": [
+        {
+          "title": "Гофротрубы под вашей маркой",
+          "text": "Согласуем торговую марку, маркировку и упаковку. Запросите условия производства.",
+          "status": "LOCAL_PROPOSAL_NOT_SUBMITTED",
+          "proposed_supplementary_headline": "Производство под СТМ"
+        },
+        {
+          "title": "Производство гофры под СТМ",
+          "text": "ПВХ и ПНД под вашим брендом. Уточним объём, исполнение, маркировку и упаковку.",
+          "status": "LOCAL_PROPOSAL_NOT_SUBMITTED",
+          "proposed_supplementary_headline": "Обсудим вашу задачу"
+        }
+      ],
+      "direct_status": "NOT_CREATED_LOCAL_RESERVE",
+      "keyword_sync": {
+        "confirmed_in_direct": [],
+        "pending_in_direct": []
+      }
+    }
+  ],
+  "campaign_id": "715154470",
+  "account_mode": "Direct Pro",
+  "media_budget_rub_ex_vat": 4000,
+  "total_budget_rub_inc_vat": 4880,
+  "budget_period": {
+    "start": "2026-10-07",
+    "end": "2026-10-13",
+    "timezone": "Europe/Moscow",
+    "after_period": "Остановить показы, остаток автоматически не расходовать",
+    "late_start_action": "До начала показов сдвинуть даты на полные 7 дней фактического теста, сохранив общий лимит"
+  },
+  "schedule": "Пн–Пт 10:00–18:00 МСК",
+  "strategy": "Максимум кликов; автоматическое управление; ограничение расхода Бюджет; бюджет на период",
+  "strategy_priority": {
+    "goal": "Вовлечённые сессии",
+    "value_rub": 0.3,
+    "origin": "YANDEX_DEFAULT",
+    "is_lead_value": false,
+    "note": "Приоритет Яндекса по умолчанию; не стоимость принятой заявки и не целевой CPA"
+  },
+  "goal_role": "KPI_IN_METRIKA_NOT_SELECTED_STRATEGY_PRIORITY",
+  "launch_state": {
+    "advertiser_saved": false,
+    "payer_resolved": false,
+    "payer_response": "Я из своих средств",
+    "personal_funding_confirmed": true,
+    "payer_advertiser_scheme_status": "UNRESOLVED",
+    "payer_advertiser_scheme_note": "Личное финансирование подтверждено, но источник денег не определяет статус пользователя как рекламодателя или агента. Схема реквизитов требует уточнения.",
+    "payment_methods_source": "https://yandex.ru/support/direct/ru/payments/payment-methods",
+    "support_question_status": "PREPARED_NOT_SENT_AUTHORIZATION_NOT_RECEIVED",
+    "legal_terms_accepted": false,
+    "sent_to_moderation": false,
+    "funded": false,
+    "impressions_started": false,
+    "automation_monitor_configured": false,
+    "status": "BLOCKED_BEFORE_LAUNCH",
+    "blockers": [
+      "При подтверждённом личном финансировании не уточнена схема реквизитов плательщика и рекламодателя; данные рекламодателя не сохранены",
+      "Юридические условия не приняты",
+      "Кампания не отправлена на модерацию",
+      "Оплата не выполнена",
+      "Полная боевая цепочка заявки ещё не проверена"
+    ]
+  },
+  "other_simple_start_draft": {
+    "status": "Черновик",
+    "budget_rub": 0,
+    "spend_rub": 0,
+    "action": "Не включать параллельно с тестовой поисковой кампанией"
+  },
+  "callouts_status": "SAVED_IN_DIRECT",
+  "sitelinks_status": "SAVED_IN_DIRECT_INHERITED_BY_THREE_GROUPS",
+  "autotargeting": {
+    "required": true,
+    "categories": [
+      "Целевые запросы"
+    ],
+    "exclude": [
+      "Узкие",
+      "Широкие",
+      "Альтернативные",
+      "Сопутствующие",
+      "Запросы с брендами конкурентов"
+    ],
+    "note": "Сохранено во всех трёх группах. В просмотренных примерах ПВХ все 9381 широких запроса исключены; итог 0. Не расширять категории ради чисел прогноза, опираться на ключевые фразы.",
+    "status": "SAVED_IN_DIRECT"
+  },
+  "keyword_sync_status": "36_CONFIRMED_IN_DIRECT_DRAFT",
+  "keyword_counts": {
+    "all_including_reserve": 46,
+    "first_test_planned": 36,
+    "first_test_confirmed_in_direct": 36,
+    "first_test_pending_final_verification": 0,
+    "reserve_local_only": 10
+  },
+  "forecast": {
+    "status": "RECEIVED_FROM_DIRECT_DOM_TABLE",
+    "captured_on": "2026-10-07",
+    "region": "Москва",
+    "period": "1 неделя",
+    "platforms": "Все площадки, включая мобильные",
+    "initial": {
+      "file": "forecast-initial.txt",
+      "keyword_count": 27,
+      "traffic_level": 85,
+      "budget_rub_ex_vat": 7.5
+    },
+    "expanded": {
+      "file": "forecast-expanded.txt",
+      "keyword_count": 36,
+      "traffic_level": 85,
+      "impressions": 54,
+      "clicks": 14,
+      "budget_rub_ex_vat": 407.8,
+      "alternative_traffic_level_100_budget_rub_ex_vat": 765.1
+    },
+    "limitations": [
+      "Прогноз не гарантирует показы, клики, расходы или заявки",
+      "Прогноз не моделирует точно автотаргетинг и расписание кампании",
+      "В расширенном прогнозе для девяти новых фраз учтены общие минуса, но не групповые; расчёт не полностью эквивалентен сохранённой кампании",
+      "Минус-фраза своими руками исключена только из синтаксиса прогноза; в кампании сохранена",
+      "Низкий прогнозный объём не гарантирует расход всего бюджета периода"
+    ]
+  }
+}

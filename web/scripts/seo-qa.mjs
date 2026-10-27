@@ -154,7 +154,7 @@ try {
       if (width < 960) await ui.getByRole('button', { name: 'Открыть меню', exact: true }).click()
       await ui.locator('#main-navigation').getByRole('link', { name: 'Главная', exact: true }).click()
       await ui.waitForURL(base + '/')
-      await ui.getByRole('heading', { name: 'Гофрированные трубы. От нашего завода.', exact: true }).waitFor()
+      await ui.getByRole('heading', { name: 'Гофротрубы ПВХ и ПНД. Оптом в Москве.', exact: true }).waitFor()
       assert.equal(await ui.locator('body.menu-open').count(), 0)
       assert.equal(await ui.locator('#catalog, .catalog-directory, .product-row').count(), 0)
       navigationChecks.push({ width, source, target: '/' })

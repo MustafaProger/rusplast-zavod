@@ -8,8 +8,8 @@ export function Hero({ onOpenRequest }: HeroProps) {
     <section className="hero" id="top">
       <div className="hero-copy">
         <span className="eyebrow">РУСПЛАСТЗАВОД · СОБСТВЕННОЕ ПРОИЗВОДСТВО</span>
-        <h1>Гофрированные трубы.<br /><span>От нашего завода.</span></h1>
-        <p>Гофрированные трубы ПВХ и ПНД для защиты кабеля.<br className="desktop-break" /> От нашего завода — к вашему проекту.</p>
+        <h1>Гофротрубы ПВХ и ПНД.<br /><span>Оптом в Москве.</span></h1>
+        <p>Гофрированные трубы для кабеля напрямую от производителя в Московской области.<br className="desktop-break" /> Диаметры 16–32 мм. Подберём исполнение и рассчитаем поставку под ваш объём.</p>
         <div className="hero-actions">
           <a className="button button-primary" href="/catalog">Выбрать продукцию <ArrowUpRight size={17} /></a>
           <button className="hero-link" onClick={onOpenRequest}>Рассчитать поставку <ArrowUpRight size={18} /></button>

@@ -23,10 +23,10 @@ export function getSeo(rawPath: string, articles: Article[] = defaultArticles, i
   const landing = landingPages.find(item => item.path === path)
   const exists = getStaticPaths(articles).includes(path) && path !== '/404'
   const label = article?.title || landing?.label || ({ '/': siteName, '/catalog': 'Каталог продукции', '/blog': 'Блог' } as Record<string, string>)[path] || legalTitles[path] || 'Страница не найдена'
-  const title = article ? `${article.seoTitle} | ${siteName}` : landing ? `${landing.title} | ${siteName}` : path === '/' ? 'Гофрированные трубы ПВХ и ПНД от производителя | РУСПЛАСТЗАВОД' : `${label} | ${siteName}`
+  const title = article ? `${article.seoTitle} | ${siteName}` : landing ? `${landing.seoTitle || landing.title} | ${siteName}` : path === '/' ? 'Гофротруба оптом в Москве от производителя | РУСПЛАСТЗАВОД' : path === '/catalog' ? 'Каталог гофротруб ПВХ и ПНД 16–32 мм — цены | РУСПЛАСТЗАВОД' : `${label} | ${siteName}`
   const description = article?.description || landing?.description || ({
-    '/': 'РУСПЛАСТЗАВОД — производитель гофротруб ПВХ и ПНД в Московской области. Каталог 16–32 мм, комплектующие, заказные FRHF и производство под СТМ.',
-    '/catalog': 'Каталог гофрированных труб ПВХ и ПНД 16–32 мм: характеристики, фильтры и расчёт поставки. FRHF под заказ, клипсы и комплектующие от РУСПЛАСТЗАВОДА.',
+    '/': 'Гофрированные трубы ПВХ и ПНД 16–32 мм оптом от завода в Московской области. Заказ от 15 000 ₽, доставка в Москву, документы и расчёт партии.',
+    '/catalog': 'Выберите гофротрубу ПВХ или ПНД 16, 20, 25 и 32 мм: цены за метр, нагрузка, цвет и длина бухты. Добавьте товары в заявку для расчёта поставки в Москву и область.',
     '/blog': 'Блог РУСПЛАСТЗАВОДА: выбор гофры ПВХ, ПНД и FRHF, диаметры, нагрузка, документы и производство под СТМ. Практические материалы для закупки.',
   } as Record<string, string>)[path] || `${label}. ООО «РУСПЛАСТЗАВОД».`
   const canonical = `${SITE_URL}${exists ? path : '/404'}`
